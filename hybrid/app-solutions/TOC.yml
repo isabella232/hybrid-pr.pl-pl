@@ -1,0 +1,74 @@
+- name: Dokumentacja hybrydowej platformy Azure
+  href: index.yml
+- name: Omówienie
+  items:
+    - name: Przykłady hybrydowych wzorców i rozwiązań
+      href: overview-patterns-solution-examples.md
+- name: Wzorce
+  items:
+    - name: Pojedyncze
+      items:
+        - name: Skalowanie między chmurami
+          href: pattern-cross-cloud-scale.md
+        - name: Hybrydowa ciągła integracja/ciągłe wdrażanie w metodyce DevOps
+          href: pattern-cicd-pipeline.md
+        - name: Aplikacja rozproszona geograficznie
+          href: pattern-geo-distributed.md
+        - name: Przekaźnik hybrydowy
+          href: pattern-hybrid-relay.md
+        - name: Dane warstwowe
+          href: pattern-tiered-data-analytics.md
+        - name: Trenowanie modelu uczenia maszynowego na urządzeniu brzegowym
+          href: pattern-train-ml-model-at-edge.md
+    - name: Wiele
+      items:
+        - name: Skalowanie między chmurami (dane lokalne)
+          href: pattern-cross-cloud-scale-onprem-data.md
+        - name: Wykrywanie osób odwiedzających sklep (sprzedaż detaliczna)
+          href: pattern-retail-footfall-detection.md
+        - name: Wykrywanie braków magazynowych na urządzeniu brzegowym
+          href: pattern-out-of-stock-at-edge.md
+- name: Przewodniki wdrażania rozwiązania
+  items:
+    - name: Skalowanie między chmurami
+      href: solution-deployment-guide-cross-cloud-scaling.md
+    - name: Skalowanie między chmurami (dane lokalne)
+      href: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+    - name: Hybrydowa ciągła integracja/ciągłe wdrażanie w metodyce DevOps
+      href: 'https://aka.ms/hybriddevopsdeploy'
+    - name: Wykrywanie osób odwiedzających sklep (sprzedaż detaliczna)
+      href: solution-deployment-guide-retail-footfall-detection.md
+    - name: Aplikacja rozproszona geograficznie
+      href: solution-deployment-guide-geo-distributed.md
+    - name: Łączność hybrydowa
+      href: solution-deployment-guide-connectivity.md
+    - name: Tożsamość hybrydowa
+      href: solution-deployment-guide-identity.md
+    - name: Przekaźnik hybrydowy
+      href: 'https://aka.ms/hybridrelaydeployment'
+    - name: Dane warstwowe
+      href: 'https://aka.ms/tiereddatadeploy'
+    - name: Baza danych MongoDB o wysokiej dostępności
+      href: solution-deployment-guide-mongodb-ha.md
+    - name: Serwer SQL Server 2016 o wysokiej dostępności
+      href: solution-deployment-guide-sql-ha.md
+    - name: Braki magazynowe na urządzeniu brzegowym
+      href: 'https://aka.ms/edgeinferencingdeploy'
+    - name: Trenowanie modeli uczenia maszynowego na urządzeniu brzegowym
+      href: 'https://aka.ms/edgetrainingdeploy'
+- name: Pojęcia
+  items:
+    - name: Zagadnienia dotyczące projektowania aplikacji hybrydowych
+      href: overview-app-design-considerations.md
+- name: Powiązane
+  items:
+    - name: Dokumentacja platformy Azure
+      href: /azure
+    - name: Dokumentacja usługi Azure Stack
+      href: /azure-stack
+- name: Zasoby
+  items:
+    - name: Microsoft Learn
+      href: /learn
+    - name: Microsoft Q&A
+      href: /answers/products/

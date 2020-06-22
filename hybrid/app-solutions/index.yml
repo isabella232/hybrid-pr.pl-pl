@@ -1,0 +1,72 @@
+### YamlMime:Landing
+title: Dokumentacja hybrydowych wzorców i rozwiązań platformy Azure
+summary: Dowiedz się, jak wykorzystać przykłady hybrydowych wzorców i rozwiązań podczas programowania własnej aplikacji. Platforma Azure i usługa Azure Stack umożliwiają programowanie aplikacji hybrydowych bazujących na pakiecie usług inteligentnej chmury i inteligentnych urządzeń brzegowych.
+metadata:
+  title: Dokumentacja hybrydowych wzorców i rozwiązań platformy Azure
+  description: Dowiedz się, jak wykorzystać przykłady hybrydowych wzorców i rozwiązań podczas programowania własnej aplikacji. Platforma Azure i usługa Azure Stack umożliwiają programowanie aplikacji hybrydowych bazujących na pakiecie usług inteligentnej chmury i inteligentnych urządzeń brzegowych.
+  ms.service: azure-stack
+  ms.topic: landing-page
+  author: BryanLa
+  ms.author: bryanla
+  ms.date: 10/31/2019
+  ms.openlocfilehash: 923e8aa2af78b5d23ba1f25d8b0eb5b80edc4f0a
+  ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+  ms.translationtype: HT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 06/17/2020
+  ms.locfileid: "84909722"
+landingContent:
+- title: Informacje o hybrydowych wzorcach i rozwiązaniach
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Co to są przykłady hybrydowych wzorców i rozwiązań?
+      url: overview-patterns-solution-examples.md
+  - linkListType: concept
+    links:
+    - text: Zagadnienia dotyczące projektowania aplikacji hybrydowych
+      url: overview-app-design-considerations.md
+- title: Eksplorowanie hybrydowych wzorców
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Skalowanie między chmurami
+      url: pattern-cross-cloud-scale.md
+    - text: Hybrydowa ciągła integracja/ciągłe wdrażanie w metodyce DevOps
+      url: pattern-cicd-pipeline.md
+    - text: Wykrywanie osób odwiedzających sklep (sprzedaż detaliczna)
+      url: pattern-retail-footfall-detection.md
+    - text: Aplikacja rozproszona geograficznie
+      url: pattern-geo-distributed.md
+- title: Wdrażanie przykładów hybrydowych rozwiązań
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Skalowanie między chmurami
+      url: solution-deployment-guide-cross-cloud-scaling.md
+    - text: Hybrydowa ciągła integracja/ciągłe wdrażanie w metodyce DevOps
+      url: https://aka.ms/hybriddevopsdeploy
+    - text: Wykrywanie osób odwiedzających sklep (sprzedaż detaliczna)
+      url: solution-deployment-guide-retail-footfall-detection.md
+    - text: Aplikacja rozproszona geograficznie
+      url: solution-deployment-guide-geo-distributed.md
+- title: Scenariusz z wykrywaniem osób odwiedzających sklep
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Wzorce
+      url: pattern-retail-footfall-detection.md
+  - linkListType: tutorial
+    links:
+    - text: Przewodnik wdrażania rozwiązania
+      url: solution-deployment-guide-retail-footfall-detection.md
+- title: Scenariusz skalowania między chmurami z użyciem danych lokalnych
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Wzorce
+      url: pattern-cross-cloud-scale-onprem-data.md
+  - linkListType: tutorial
+    links:
+    - text: Przewodnik wdrażania rozwiązania
+      url: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
