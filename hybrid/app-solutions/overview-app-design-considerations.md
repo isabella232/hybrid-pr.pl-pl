@@ -7,20 +7,20 @@ ms.date: 06/07/2020
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 4fd52f76baad8059e130adfc01cdd0152b40a510
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: c56575ac8ea6cb35d60bb9419269db89b0295721
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911112"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477222"
 ---
 # <a name="hybrid-app-design-considerations"></a>Zagadnienia dotyczące projektowania aplikacji hybrydowych
 
 Microsoft Azure jest jedyną spójną chmurą hybrydową. Umożliwia ponowne wykorzystanie inwestycji programistycznych i umożliwia korzystanie z aplikacji, które mogą obejmować globalne platformy Azure, suwerenne chmury platformy Azure i Azure Stack, które są rozszerzeniami platformy Azure w centrum danych. Aplikacje obejmujące chmury są również nazywane *aplikacjami hybrydowymi*.
 
-[*Przewodnik po architekturze aplikacji platformy Azure*](https://docs.microsoft.com/azure/architecture/guide) zawiera opis podejścia strukturalnego do projektowania aplikacji, które są skalowalne, odporne i o wysokiej dostępności. Zagadnienia opisane w [*przewodniku po architekturze aplikacji platformy Azure*](https://docs.microsoft.com/azure/architecture/guide) są równie stosowane dla aplikacji, które są przeznaczone dla jednej chmury i dla aplikacji, które obejmują chmury.
+[*Przewodnik po architekturze aplikacji platformy Azure*](/azure/architecture/guide) zawiera opis podejścia strukturalnego do projektowania aplikacji, które są skalowalne, odporne i o wysokiej dostępności. Zagadnienia opisane w [*przewodniku po architekturze aplikacji platformy Azure*](/azure/architecture/guide) są równie stosowane dla aplikacji, które są przeznaczone dla jednej chmury i dla aplikacji, które obejmują chmury.
 
-Ten artykuł rozszerza [*filary jakości oprogramowania*](https://docs.microsoft.com/azure/architecture/guide/pillars) omówione w [ *przewodniku po architekturze*](https://docs.microsoft.com/azure/architecture/guide/) [*aplikacji platformy Azure*](https://docs.microsoft.com/azure/architecture/guide/) , koncentrując się na projektowaniu aplikacji hybrydowych. Ponadto dodamy filar *umieszczania* , ponieważ aplikacje hybrydowe nie są wyłącznie w jednej chmurze lub jednym lokalnym centrum danych.
+Ten artykuł rozszerza [*filary jakości oprogramowania*](/azure/architecture/guide/pillars) omówione w [ *przewodniku po architekturze*](/azure/architecture/guide/) [*aplikacji platformy Azure*](/azure/architecture/guide/) , koncentrując się na projektowaniu aplikacji hybrydowych. Ponadto dodamy filar *umieszczania* , ponieważ aplikacje hybrydowe nie są wyłącznie w jednej chmurze lub jednym lokalnym centrum danych.
 
 Scenariusze hybrydowe różnią się w zależności od zasobów, które są dostępne do programowania, i obejmują zagadnienia, takie jak lokalizacja geograficzna, zabezpieczenia, dostęp do Internetu i inne zagadnienia. Mimo że ten przewodnik nie może wyliczyć określonych zagadnień, może on dostarczyć pewnych najważniejszych wytycznych i najlepszych rozwiązań, które należy wykonać. Pomyślne projektowanie, konfigurowanie, wdrażanie i konserwowanie architektury aplikacji hybrydowej obejmuje wiele zagadnień związanych z projektowaniem, które mogą być nieznane.
 
@@ -93,7 +93,7 @@ Umieszczenie jest ważnym zadaniem do pozycjonowania składników, dzięki czemu
 
 **Sprawdź wymagane lokalizacje.** Upewnij się, że aplikacja lub jej składniki są wymagane do działania w programie lub wymagają certyfikacji w odniesieniu do określonej chmury. Może to obejmować wymagania dotyczące suwerenności firmy lub podyktowanie przez prawo. Sprawdź również, czy dla określonej lokalizacji lub ustawień regionalnych są wymagane wszystkie operacje lokalne.
 
-**Ustalanie zależności łączności.** Wymagane lokalizacje i inne czynniki mogą dyktować zależności między składnikami. Podczas umieszczania składników należy określić optymalne połączenia i zabezpieczenia komunikacji między nimi. Dostępne opcje to: [ *VPN*,](https://docs.microsoft.com/azure/vpn-gateway/) [ *ExpressRoute*](https://docs.microsoft.com/azure/expressroute/) i [ *połączenia hybrydowe*.](https://docs.microsoft.com/azure/app-service/app-service-hybrid-connections)
+**Ustalanie zależności łączności.** Wymagane lokalizacje i inne czynniki mogą dyktować zależności między składnikami. Podczas umieszczania składników należy określić optymalne połączenia i zabezpieczenia komunikacji między nimi. Dostępne opcje to: [ *VPN*,](/azure/vpn-gateway/) [ *ExpressRoute*](/azure/expressroute/) i [ *połączenia hybrydowe*.](/azure/app-service/app-service-hybrid-connections)
 
 **Oceń możliwości platformy.** W przypadku każdego składnika aplikacji Sprawdź, czy wymagany dostawca zasobów dla składnika aplikacji jest dostępny w chmurze i czy przepustowość może uwzględniać oczekiwane wymagania dotyczące przepływności i opóźnienia.
 
@@ -109,7 +109,7 @@ Umieszczenie jest ważnym zadaniem do pozycjonowania składników, dzięki czemu
 
 Skalowalność to zdolność systemu do obsługi zwiększonego obciążenia aplikacji, która może się różnić w miarę upływu czasu, ponieważ inne czynniki i siły wpływają na rozmiar odbiorców (oprócz rozmiaru i zakresu aplikacji).
 
-W przypadku podstawowej dyskusji tego filaru zobacz [*skalowalność*](https://docs.microsoft.com/azure/architecture/guide/pillars#scalability) w pięciu filarach doskonałości architektury.
+W przypadku podstawowej dyskusji tego filaru zobacz [*skalowalność*](/azure/architecture/guide/pillars#scalability) w pięciu filarach doskonałości architektury.
 
 Podejście skalowania w poziomie dla aplikacji hybrydowych umożliwia dodanie większej liczby wystąpień w celu spełnienia wymagań, a następnie wyłączenie ich w okresach ciszy.
 
@@ -155,7 +155,7 @@ Aby zapoznać się z podstawową dyskusją tego filaru, zobacz [*dostępność*]
 
 Odporność na aplikacje hybrydowe i system mają na celu odzyskiwanie z błędów i kontynuowanie działania. Celem odporności jest przywrócenie aplikacji do stanu w pełni funkcjonalnym po wystąpieniu błędu. Strategie odporności obejmują rozwiązania, takie jak tworzenie kopii zapasowych, replikacja i odzyskiwanie po awarii.
 
-W przypadku podstawowej dyskusji tego filaru zapoznaj się z [*odpornością*](https://docs.microsoft.com/azure/architecture/guide/pillars#resiliency) w pięciu filarach doskonałości architektury.
+W przypadku podstawowej dyskusji tego filaru zapoznaj się z [*odpornością*](/azure/architecture/guide/pillars#resiliency) w pięciu filarach doskonałości architektury.
 
 ### <a name="resiliency-checklist"></a>Lista kontrolna dotycząca odporności
 
@@ -201,7 +201,7 @@ Określ części aplikacji, które wymagają monitorowania.
 
 Zabezpieczenia są jednym z głównych zagadnień związanych z każdą aplikacją w chmurze i coraz bardziej krytyczne dla hybrydowych aplikacji w chmurze.
 
-W przypadku podstawowej dyskusji tego filaru zapoznaj się z tematem [*zabezpieczenia*](https://docs.microsoft.com/azure/architecture/guide/pillars#security) w pięciu filarach dotyczących architektury.
+W przypadku podstawowej dyskusji tego filaru zapoznaj się z tematem [*zabezpieczenia*](/azure/architecture/guide/pillars#security) w pięciu filarach dotyczących architektury.
 
 ### <a name="security-checklist"></a>Lista kontrolna zabezpieczeń
 
@@ -227,7 +227,7 @@ Może to wyglądać jak czasochłonne zadanie wcześniej, ale w przypadku projek
 
 ## <a name="next-steps"></a>Następne kroki
 
-Więcej informacji zawierają następujące zasoby:
+Więcej informacji można znaleźć w następujących zasobach:
 
 - [Chmura hybrydowa](https://azure.microsoft.com/overview/hybrid-cloud/)
 - [Hybrydowe aplikacje w chmurze](https://azure.microsoft.com/solutions/hybrid-cloud-app/)

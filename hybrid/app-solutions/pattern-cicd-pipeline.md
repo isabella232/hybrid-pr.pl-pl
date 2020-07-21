@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 306cc9604a8e919724f9f76b7e5122d534d2d1ae
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: e26056a9507a7467473b009725d4f210d9d59ec8
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911121"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477239"
 ---
 # <a name="devops-pattern"></a>Wzorzec DevOps
 
@@ -47,7 +47,7 @@ Wzorzec DevOps jest przeznaczony do zapewnienia spójności między wdrożeniami
 - Czy parametry wdrożenia będą działały we wszystkich środowiskach docelowych?
 - Czy właściwości specyficzne dla zasobów są dostępne we wszystkich chmurach docelowych?
 
-Aby uzyskać więcej informacji, zobacz [opracowywanie szablonów Azure Resource Manager na potrzeby spójności w chmurze](https://docs.microsoft.com/azure/azure-resource-manager/templates-cloud-consistency).
+Aby uzyskać więcej informacji, zobacz [opracowywanie szablonów Azure Resource Manager na potrzeby spójności w chmurze](/azure/azure-resource-manager/templates-cloud-consistency).
 
 Ponadto należy wziąć pod uwagę następujące kwestie podczas decydowania o sposobie wdrożenia tego wzorca:
 

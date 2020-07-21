@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: b34ba7c10ff5f658d645923ae8b6de2fb2607ccb
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: f6064aaa1087a3c0cfc26e09371e81752c777edb
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911448"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477273"
 ---
 # <a name="deploy-a-highly-available-mongodb-solution-to-azure-and-azure-stack-hub"></a>Wdróż rozwiązanie MongoDB o wysokiej dostępności na platformie Azure i w centrum Azure Stack
 
@@ -40,9 +40,9 @@ W tym rozwiązaniu utworzysz przykładowe środowisko, aby:
 - Dwa połączone systemy Azure Stack Hub zintegrowane (Azure Stack Hub). To wdrożenie nie działa na Azure Stack Development Kit (ASDK). Aby dowiedzieć się więcej na temat Azure Stack Hub, zobacz [co to jest centrum Azure Stack?](https://azure.microsoft.com/products/azure-stack/hub/)
   - Subskrypcja dzierżawy w każdym centrum Azure Stack. 
   - **Zanotuj każdy identyfikator subskrypcji i punkt końcowy Azure Resource Manager dla poszczególnych centrów Azure Stack.**
-- Nazwa główna usługi Azure Active Directory (Azure AD), która ma uprawnienia do subskrypcji dzierżawy w poszczególnych centrach Azure Stack. Jeśli centra Azure Stack są wdrażane na różnych dzierżawach usługi Azure AD, może być konieczne utworzenie dwóch jednostek usługi. Aby dowiedzieć się, jak utworzyć jednostkę usługi dla Azure Stack Hub, zobacz [Korzystanie z tożsamości aplikacji w celu uzyskiwania dostępu do zasobów centrum Azure Stack](https://docs.microsoft.com/azure-stack/user/azure-stack-create-service-principals).
+- Nazwa główna usługi Azure Active Directory (Azure AD), która ma uprawnienia do subskrypcji dzierżawy w poszczególnych centrach Azure Stack. Jeśli centra Azure Stack są wdrażane na różnych dzierżawach usługi Azure AD, może być konieczne utworzenie dwóch jednostek usługi. Aby dowiedzieć się, jak utworzyć jednostkę usługi dla Azure Stack Hub, zobacz [Korzystanie z tożsamości aplikacji w celu uzyskiwania dostępu do zasobów centrum Azure Stack](/azure-stack/user/azure-stack-create-service-principals).
   - **Zanotuj każdy identyfikator aplikacji jednostki usługi, klucz tajny klienta i nazwę dzierżawy (xxxxx.onmicrosoft.com).**
-- Ubuntu 16,04 został zespolony z każdym z rynków centrum Azure Stack. Aby dowiedzieć się więcej na temat zespalania portalu Marketplace, zobacz artykuł [Pobieranie elementów z witryny Marketplace do centrum Azure Stack](https://docs.microsoft.com/azure-stack/operator/azure-stack-download-azure-marketplace-item).
+- Ubuntu 16,04 został zespolony z każdym z rynków centrum Azure Stack. Aby dowiedzieć się więcej na temat zespalania portalu Marketplace, zobacz artykuł [Pobieranie elementów z witryny Marketplace do centrum Azure Stack](/azure-stack/operator/azure-stack-download-azure-marketplace-item).
 - [Docker for Windows](https://docs.docker.com/docker-for-windows/) zainstalowany na komputerze lokalnym.
 
 ## <a name="get-the-docker-image"></a>Pobierz obraz platformy Docker

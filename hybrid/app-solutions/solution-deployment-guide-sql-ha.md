@@ -7,16 +7,16 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: ff6d5b9667e63a6b8d232b6dd93db2d8b12fd46d
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: 85b859457b9b54a973c5fc23329b927212b60a07
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911042"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477086"
 ---
 # <a name="deploy-a-sql-server-2016-availability-group-to-azure-and-azure-stack-hub"></a>Wdróż grupę dostępności SQL Server 2016 na platformie Azure i w centrum Azure Stack
 
-Ten artykuł przeprowadzi Cię przez automatyczne wdrożenie podstawowego klastra o wysokiej dostępności (HA) SQL Server 2016 przedsiębiorstwa z asynchroniczną lokacją odzyskiwania po awarii w dwóch środowiskach Azure Stack Hub. Aby dowiedzieć się więcej o SQL Server 2016 i wysokiej dostępności, zobacz [zawsze włączone grupy dostępności: rozwiązanie wysokiej dostępności i odzyskiwania po awarii](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
+Ten artykuł przeprowadzi Cię przez automatyczne wdrożenie podstawowego klastra o wysokiej dostępności (HA) SQL Server 2016 przedsiębiorstwa z asynchroniczną lokacją odzyskiwania po awarii w dwóch środowiskach Azure Stack Hub. Aby dowiedzieć się więcej o SQL Server 2016 i wysokiej dostępności, zobacz [zawsze włączone grupy dostępności: rozwiązanie wysokiej dostępności i odzyskiwania po awarii](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
 
 W tym rozwiązaniu utworzysz przykładowe środowisko w celu:
 
@@ -40,9 +40,9 @@ W tym rozwiązaniu utworzysz przykładowe środowisko w celu:
 - Dwa połączone systemy Azure Stack Hub zintegrowane (Azure Stack Hub). To wdrożenie nie działa na Azure Stack Development Kit (ASDK). Aby dowiedzieć się więcej o centrum Azure Stack, zobacz [omówienie Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 - Subskrypcja dzierżawy w każdym centrum Azure Stack.
   - **Zanotuj każdy identyfikator subskrypcji i punkt końcowy Azure Resource Manager dla poszczególnych centrów Azure Stack.**
-- Nazwa główna usługi Azure Active Directory (Azure AD), która ma uprawnienia do subskrypcji dzierżawy w poszczególnych centrach Azure Stack. Jeśli centra Azure Stack są wdrażane na różnych dzierżawach usługi Azure AD, może być konieczne utworzenie dwóch jednostek usługi. Aby dowiedzieć się, jak utworzyć jednostkę usługi dla Azure Stack Hub, zobacz [Tworzenie nazw głównych usług, aby umożliwić aplikacjom dostęp do Azure Stack zasobów centrum](https://docs.microsoft.com/azure-stack/user/azure-stack-create-service-principals).
+- Nazwa główna usługi Azure Active Directory (Azure AD), która ma uprawnienia do subskrypcji dzierżawy w poszczególnych centrach Azure Stack. Jeśli centra Azure Stack są wdrażane na różnych dzierżawach usługi Azure AD, może być konieczne utworzenie dwóch jednostek usługi. Aby dowiedzieć się, jak utworzyć jednostkę usługi dla Azure Stack Hub, zobacz [Tworzenie nazw głównych usług, aby umożliwić aplikacjom dostęp do Azure Stack zasobów centrum](/azure-stack/user/azure-stack-create-service-principals).
   - **Zanotuj każdy identyfikator aplikacji jednostki usługi, klucz tajny klienta i nazwę dzierżawy (xxxxx.onmicrosoft.com).**
-- SQL Server 2016 Enterprise jest zespolona z każdym rynkiem Azure Stack centrum. Aby dowiedzieć się więcej na temat zespalania portalu Marketplace, zobacz artykuł [Pobieranie elementów z witryny Marketplace do centrum Azure Stack](https://docs.microsoft.com/azure-stack/operator/azure-stack-download-azure-marketplace-item).
+- SQL Server 2016 Enterprise jest zespolona z każdym rynkiem Azure Stack centrum. Aby dowiedzieć się więcej na temat zespalania portalu Marketplace, zobacz artykuł [Pobieranie elementów z witryny Marketplace do centrum Azure Stack](/azure-stack/operator/azure-stack-download-azure-marketplace-item).
     **Upewnij się, że Twoja organizacja ma odpowiednie licencje SQL.**
 - [Docker for Windows](https://docs.docker.com/docker-for-windows/) zainstalowany na komputerze lokalnym.
 
@@ -105,6 +105,6 @@ Obrazy platformy Docker dla każdego wdrożenia eliminują problemy zależności
 
 ## <a name="next-steps"></a>Następne kroki
 
-- Użyj SQL Server Management Studio, aby ręcznie przełączyć klaster w tryb failover. Zobacz [przeprowadzenie wymuszonej ręcznej pracy awaryjnej grupy dostępności zawsze włączone (SQL Server)](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017)
+- Użyj SQL Server Management Studio, aby ręcznie przełączyć klaster w tryb failover. Zobacz [przeprowadzenie wymuszonej ręcznej pracy awaryjnej grupy dostępności zawsze włączone (SQL Server)](/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017)
 - Dowiedz się więcej o aplikacjach hybrydowych w chmurze. Zobacz [hybrydowe rozwiązania w chmurze.](https://aka.ms/azsdevtutorials)
 - Użyj własnych danych lub zmodyfikuj kod w tym przykładzie w witrynie [GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns).

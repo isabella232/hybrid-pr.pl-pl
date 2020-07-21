@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 740a8c0ec904fe8eb3f9744626bc9dd6655bdb52
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: 10cb042e2c6d0c6cb567e14072cd80bc663d686c
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911527"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477341"
 ---
 # <a name="deploy-an-app-that-scales-cross-cloud-using-azure-and-azure-stack-hub"></a>Wdrażanie aplikacji, która skaluje wiele chmur przy użyciu platformy Azure i usługi Azure Stack Hub
 
@@ -68,7 +68,7 @@ Rozwiązanie międzychmurowe zapewnia bezproblemowe zarządzanie i przyjazny int
 
 ### <a name="get-a-custom-domain-and-configure-dns"></a>Pobierz domenę niestandardową i skonfiguruj system DNS
 
-Zaktualizuj plik strefy DNS dla domeny. Usługa Azure AD sprawdzi własność niestandardowej nazwy domeny. Użyj [Azure DNS](https://docs.microsoft.com/azure/dns/dns-getstarted-portal) dla systemu Azure/usługi Office 365/zewnętrznych rekordów DNS na platformie Azure lub Dodaj wpis DNS w [innym rejestratorze DNS](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/).
+Zaktualizuj plik strefy DNS dla domeny. Usługa Azure AD sprawdzi własność niestandardowej nazwy domeny. Użyj [Azure DNS](/azure/dns/dns-getstarted-portal) dla systemu Azure/usługi Office 365/zewnętrznych rekordów DNS na platformie Azure lub Dodaj wpis DNS w [innym rejestratorze DNS](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/).
 
 1. Zarejestruj domenę niestandardową z rejestratorem publicznym.
 2. Zaloguj się do rejestratora nazw domen dla domeny. Aby można było zaktualizować DNS, może być wymagane zatwierdzenie administratora.
@@ -97,7 +97,7 @@ Azure Repos
 
 ### <a name="create-self-contained-web-app-deployment-for-app-services-in-both-clouds"></a>Utwórz samodzielne wdrożenie aplikacji sieci Web dla App Services w obu chmurach
 
-1. Edytuj plik **WebApplication. csproj** . Wybierz `Runtimeidentifier` i Dodaj `win10-x64` . (Zobacz dokumentację [wdrożenia prewartą](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) ).
+1. Edytuj plik **WebApplication. csproj** . Wybierz `Runtimeidentifier` i Dodaj `win10-x64` . (Zobacz dokumentację [wdrożenia prewartą](/dotnet/core/deploying/deploy-with-vs#simpleSelf) ).
 
     ![Edytuj plik projektu aplikacji sieci Web](media/solution-deployment-guide-cross-cloud-scaling/image3.png)
 
@@ -113,7 +113,7 @@ Azure Repos
 
     ![Dodawanie kodu do aplikacji sieci Web](media/solution-deployment-guide-cross-cloud-scaling/image4.png)
 
-3. Uruchom kompilację. Proces [kompilacji samodzielnego wdrażania](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) spowoduje opublikowanie artefaktów działających na platformie Azure i w centrum Azure Stack.
+3. Uruchom kompilację. Proces [kompilacji samodzielnego wdrażania](/dotnet/core/deploying/deploy-with-vs#simpleSelf) spowoduje opublikowanie artefaktów działających na platformie Azure i w centrum Azure Stack.
 
 ## <a name="use-an-azure-hosted-agent"></a>Korzystanie z agenta hostowanego na platformie Azure
 
@@ -211,7 +211,7 @@ Azure Pipelines i Azure DevOps Services zapewniają wysoce konfigurowalny i zarz
 21. Zapisz wszystkie zmiany.
 
 > [!Note]  
-> Niektóre ustawienia zadań mogą zostać automatycznie zdefiniowane jako [zmienne środowiskowe](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables) podczas tworzenia definicji wydania na podstawie szablonu. Tych ustawień nie można modyfikować w ustawieniach zadania; Zamiast tego należy wybrać element środowiska nadrzędnego, aby edytować te ustawienia.
+> Niektóre ustawienia zadań mogą zostać automatycznie zdefiniowane jako [zmienne środowiskowe](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) podczas tworzenia definicji wydania na podstawie szablonu. Tych ustawień nie można modyfikować w ustawieniach zadania; Zamiast tego należy wybrać element środowiska nadrzędnego, aby edytować te ustawienia.
 
 ## <a name="publish-to-azure-stack-hub-via-visual-studio"></a>Publikowanie w centrum Azure Stack przy użyciu programu Visual Studio
 
@@ -254,7 +254,7 @@ Użyj [szablonów Azure Resource Manager](https://azure.microsoft.com/resources/
 
 #### <a name="create-self-contained-web-app-deployment-for-app-services-in-both-clouds"></a>Utwórz samodzielne wdrożenie aplikacji sieci Web dla App Services w obu chmurach
 
-1. Edytuj plik **WebApplication. csproj** : Wybierz `Runtimeidentifier` , a następnie Dodaj `win10-x64` . Aby uzyskać więcej informacji, zobacz dokumentację dotyczącą [wdrażania samodzielnego](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) .
+1. Edytuj plik **WebApplication. csproj** : Wybierz `Runtimeidentifier` , a następnie Dodaj `win10-x64` . Aby uzyskać więcej informacji, zobacz dokumentację dotyczącą [wdrażania samodzielnego](/dotnet/core/deploying/deploy-with-vs#simpleSelf) .
 
 2. Użyj Team Explorer, aby sprawdzić kod w Azure Repos.
 
@@ -268,7 +268,7 @@ Użyj [szablonów Azure Resource Manager](https://azure.microsoft.com/resources/
 
 3. W **argumentach**Add **-r Win10-x64** Code. To dodanie jest wymagane do wyzwolenia wdrożenia samodzielnego z platformą .NET Core.
 
-4. Uruchom kompilację. Proces [kompilacji samodzielnego wdrożenia](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) spowoduje opublikowanie artefaktów, które mogą być uruchamiane na platformie Azure i w centrum Azure Stack.
+4. Uruchom kompilację. Proces [kompilacji samodzielnego wdrożenia](/dotnet/core/deploying/deploy-with-vs#simpleSelf) spowoduje opublikowanie artefaktów, które mogą być uruchamiane na platformie Azure i w centrum Azure Stack.
 
 #### <a name="use-an-azure-hosted-build-agent"></a>Korzystanie z agenta kompilacji hostowanej na platformie Azure
 
@@ -329,7 +329,7 @@ Tworzenie definicji wydania jest ostatnim krokiem w procesie kompilacji aplikacj
 23. Zapisz wszystkie zmiany.
 
 > [!Note]  
-> Niektóre ustawienia zadań zlecenia są automatycznie definiowane jako [zmienne środowiskowe](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables) podczas tworzenia definicji wydania na podstawie szablonu. Tych ustawień nie można modyfikować w ustawieniach zadania, ale można je modyfikować w elementach środowiska nadrzędnego.
+> Niektóre ustawienia zadań zlecenia są automatycznie definiowane jako [zmienne środowiskowe](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) podczas tworzenia definicji wydania na podstawie szablonu. Tych ustawień nie można modyfikować w ustawieniach zadania, ale można je modyfikować w elementach środowiska nadrzędnego.
 
 ## <a name="create-a-release"></a>Tworzenie wersji
 
@@ -361,4 +361,4 @@ Elastyczna i niezawodna usługa w chmurze zapewnia bezpieczeństwo danych, tworz
 
 ## <a name="next-steps"></a>Następne kroki
 
-- Aby dowiedzieć się więcej o wzorcach chmury platformy Azure, zobacz [wzorce projektowe w chmurze](https://docs.microsoft.com/azure/architecture/patterns).
+- Aby dowiedzieć się więcej o wzorcach chmury platformy Azure, zobacz [wzorce projektowe w chmurze](/azure/architecture/patterns).

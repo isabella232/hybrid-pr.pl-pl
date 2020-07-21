@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 75289eae902c5363862e345bdedb97cbcee0476e
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: 6de35cb55c4c35a2a9927f9ffc2516ccb00cd89f
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910888"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477324"
 ---
 # <a name="deploy-hybrid-app-with-on-premises-data-that-scales-cross-cloud"></a>Wdróż aplikację hybrydową przy użyciu danych lokalnych, które skaluje się z wielu chmur
 
@@ -131,7 +131,7 @@ Azure App Service upraszcza uruchamianie aplikacji sieci Web i zarządzanie nią
 
 ### <a name="create-web-apps"></a>Tworzenie aplikacji sieci Web
 
-1. Utwórz aplikację sieci Web na platformie Azure, postępując zgodnie z instrukcjami w temacie [Zarządzanie planem App Service na platformie Azure](https://docs.microsoft.com/azure/app-service/app-service-plan-manage#create-an-app-service-plan). Upewnij się, że aplikacja sieci Web została umieszczona w tej samej subskrypcji i grupie zasobów, co w sieci hybrydowej.
+1. Utwórz aplikację sieci Web na platformie Azure, postępując zgodnie z instrukcjami w temacie [Zarządzanie planem App Service na platformie Azure](/azure/app-service/app-service-plan-manage#create-an-app-service-plan). Upewnij się, że aplikacja sieci Web została umieszczona w tej samej subskrypcji i grupie zasobów, co w sieci hybrydowej.
 
 2. Powtórz poprzedni krok (1) w Azure Stack centrum.
 
@@ -172,7 +172,7 @@ Brama sieci wirtualnej na stronie platformy Azure w sieci hybrydowej musi zezwal
 
 ### <a name="integrate-the-azure-app-service-app-with-the-hybrid-network"></a>Integrowanie aplikacji Azure App Service z siecią hybrydową
 
-1. Aby połączyć aplikację z siecią wirtualną platformy Azure, postępuj zgodnie z instrukcjami w temacie [wymagana integracja](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet#gateway-required-vnet-integration)z siecią wirtualną.
+1. Aby połączyć aplikację z siecią wirtualną platformy Azure, postępuj zgodnie z instrukcjami w temacie [wymagana integracja](/azure/app-service/web-sites-integrate-with-vnet#gateway-required-vnet-integration)z siecią wirtualną.
 
 2. Przejdź do pozycji **Ustawienia** dla planu App Service hostowania aplikacji sieci Web. W obszarze **Ustawienia**wybierz pozycję **Sieć**.
 
@@ -186,7 +186,7 @@ Brama sieci wirtualnej na stronie platformy Azure w sieci hybrydowej musi zezwal
 
     ![Zakresy adresów IP do rozesłania w ramach integracji Virtual Network](media/solution-deployment-guide-hybrid/image13.png)
 
-Aby dowiedzieć się więcej o tym, jak App Service integrują się z usługą Azure sieci wirtualnych, zobacz [Integrowanie aplikacji z usługą azure Virtual Network](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet).
+Aby dowiedzieć się więcej o tym, jak App Service integrują się z usługą Azure sieci wirtualnych, zobacz [Integrowanie aplikacji z usługą azure Virtual Network](/azure/app-service/web-sites-integrate-with-vnet).
 
 ### <a name="configure-the-azure-stack-hub-virtual-network"></a>Konfigurowanie sieci wirtualnej Azure Stack Hub
 
@@ -210,7 +210,7 @@ Ten samouczek używa Azure DNS do zarządzania systemem DNS, ponieważ domeny Ap
 
 ### <a name="create-subdomains"></a>Tworzenie poddomen
 
-Ponieważ Traffic Manager opiera się na rekordach CNAME systemu DNS, poddomena jest wymagana do prawidłowego kierowania ruchu do punktów końcowych. Aby uzyskać więcej informacji na temat rekordów DNS i mapowania domen, zobacz [Mapowanie domen za pomocą Traffic Manager](https://docs.microsoft.com/azure/app-service/web-sites-traffic-manager-custom-domain-name).
+Ponieważ Traffic Manager opiera się na rekordach CNAME systemu DNS, poddomena jest wymagana do prawidłowego kierowania ruchu do punktów końcowych. Aby uzyskać więcej informacji na temat rekordów DNS i mapowania domen, zobacz [Mapowanie domen za pomocą Traffic Manager](/azure/app-service/web-sites-traffic-manager-custom-domain-name).
 
 W przypadku punktu końcowego platformy Azure utworzysz poddomenę, za pomocą której użytkownicy mogą uzyskiwać dostęp do aplikacji sieci Web. W tym samouczku można używać **App.Northwind.com**, ale należy dostosować tę wartość na podstawie własnej domeny.
 
@@ -218,13 +218,13 @@ Należy również utworzyć poddomenę z rekordem dla punktu końcowego Azure St
 
 ### <a name="configure-a-custom-domain-in-azure"></a>Konfigurowanie domeny niestandardowej na platformie Azure
 
-1. Dodaj nazwę hosta **App.Northwind.com** do aplikacji sieci Web platformy Azure, [mapując rekord CNAME na Azure App Service](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record).
+1. Dodaj nazwę hosta **App.Northwind.com** do aplikacji sieci Web platformy Azure, [mapując rekord CNAME na Azure App Service](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record).
 
 ### <a name="configure-custom-domains-in-azure-stack-hub"></a>Konfigurowanie domen niestandardowych w centrum Azure Stack
 
-1. Dodaj nazwę hosta **azurestack.Northwind.com** do aplikacji sieci web centrum Azure Stack, [mapując rekord A na Azure App Service](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-domain#map-an-a-record). Użyj adresu IP z obsługą routingu internetowego dla aplikacji App Service.
+1. Dodaj nazwę hosta **azurestack.Northwind.com** do aplikacji sieci web centrum Azure Stack, [mapując rekord A na Azure App Service](/azure/app-service/app-service-web-tutorial-custom-domain#map-an-a-record). Użyj adresu IP z obsługą routingu internetowego dla aplikacji App Service.
 
-2. Dodaj nazwę hosta **App.Northwind.com** do aplikacji sieci web centrum Azure Stack, [mapując rekord CNAME na Azure App Service](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record). Użyj nazwy hosta skonfigurowanej w poprzednim kroku (1) jako elementu docelowego rekordu CNAME.
+2. Dodaj nazwę hosta **App.Northwind.com** do aplikacji sieci web centrum Azure Stack, [mapując rekord CNAME na Azure App Service](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record). Użyj nazwy hosta skonfigurowanej w poprzednim kroku (1) jako elementu docelowego rekordu CNAME.
 
 ## <a name="configure-ssl-certificates-for-cross-cloud-scaling"></a>Konfigurowanie certyfikatów SSL na potrzeby skalowania między chmurami
 
@@ -238,23 +238,23 @@ Aby dodać protokół SSL do platformy Azure:
 
 1. Upewnij się, że pobrany certyfikat SSL jest prawidłowy dla utworzonej domeny podrzędnej. (Można używać certyfikatów symboli wieloznacznych).
 
-2. Na platformie Azure postępuj zgodnie z instrukcjami zawartymi w sekcji **Przygotowywanie aplikacji sieci Web** i **Powiązywanie certyfikatu protokołu SSL** w artykule [Powiązywanie istniejącego niestandardowego certyfikatu protokołu SSL z usługą Azure Web Apps](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-ssl) . Wybierz **protokół SSL oparty na SNI** jako **Typ protokołu SSL**.
+2. Na platformie Azure postępuj zgodnie z instrukcjami zawartymi w sekcji **Przygotowywanie aplikacji sieci Web** i **Powiązywanie certyfikatu protokołu SSL** w artykule [Powiązywanie istniejącego niestandardowego certyfikatu protokołu SSL z usługą Azure Web Apps](/azure/app-service/app-service-web-tutorial-custom-ssl) . Wybierz **protokół SSL oparty na SNI** jako **Typ protokołu SSL**.
 
-3. Przekieruj cały ruch do portu HTTPS. Postępuj zgodnie z instrukcjami w sekcji **Wymuszanie protokołu HTTPS** w artykule [Powiązywanie istniejącego niestandardowego certyfikatu protokołu SSL z usługą Azure Web Apps](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-ssl) .
+3. Przekieruj cały ruch do portu HTTPS. Postępuj zgodnie z instrukcjami w sekcji **Wymuszanie protokołu HTTPS** w artykule [Powiązywanie istniejącego niestandardowego certyfikatu protokołu SSL z usługą Azure Web Apps](/azure/app-service/app-service-web-tutorial-custom-ssl) .
 
 Aby dodać protokół SSL do Azure Stack Hub:
 
 1. Powtórz kroki 1-3, które były używane na platformie Azure.
 
-## <a name="configure-and-deploy-the-web-app"></a>Konfigurowanie i wdrażanie aplikacji sieci Web
+## <a name="configure-and-deploy-the-web-app"></a>Konfigurowanie i wdrażanie aplikacji internetowej
 
-Skonfigurujesz kod aplikacji w taki sposób, aby zgłaszał dane telemetryczne do poprawnego wystąpienia Application Insights i skonfigurować aplikacje sieci Web przy użyciu właściwych parametrów połączenia. Aby dowiedzieć się więcej na temat Application Insights, zobacz [co to jest Application Insights?](https://docs.microsoft.com/azure/application-insights/app-insights-overview)
+Skonfigurujesz kod aplikacji w taki sposób, aby zgłaszał dane telemetryczne do poprawnego wystąpienia Application Insights i skonfigurować aplikacje sieci Web przy użyciu właściwych parametrów połączenia. Aby dowiedzieć się więcej na temat Application Insights, zobacz [co to jest Application Insights?](/azure/application-insights/app-insights-overview)
 
 ### <a name="add-application-insights"></a>Dodaj Application Insights
 
 1. Otwórz aplikację sieci Web w Microsoft Visual Studio.
 
-2. [Dodaj Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/asp-net-core#enable-client-side-telemetry-for-web-applications) do projektu, aby przesłać dane telemetryczne, których Application Insights używa do tworzenia alertów w przypadku wzrostu lub zmniejszenia ruchu w sieci Web.
+2. [Dodaj Application Insights](/azure/azure-monitor/app/asp-net-core#enable-client-side-telemetry-for-web-applications) do projektu, aby przesłać dane telemetryczne, których Application Insights używa do tworzenia alertów w przypadku wzrostu lub zmniejszenia ruchu w sieci Web.
 
 ### <a name="configure-dynamic-connection-strings"></a>Konfigurowanie dynamicznych parametrów połączenia
 
@@ -287,7 +287,7 @@ Za pomocą zmiennych środowiskowych App Service można przekazać inne parametr
 
 1. Utwórz parametry połączenia dla systemu Azure i centrum Azure Stack. Ciągi powinny być takie same, z wyjątkiem adresów IP, które są używane.
 
-2. Na platformie Azure i Azure Stack Hub Dodaj odpowiednie parametry połączenia [jako ustawienia aplikacji](https://docs.microsoft.com/azure/app-service/web-sites-configure) w aplikacji sieci Web, używając `SQLCONNSTR\_` jako prefiksu w nazwie.
+2. Na platformie Azure i Azure Stack Hub Dodaj odpowiednie parametry połączenia [jako ustawienia aplikacji](/azure/app-service/web-sites-configure) w aplikacji sieci Web, używając `SQLCONNSTR\_` jako prefiksu w nazwie.
 
 3. **Zapisz** ustawienia aplikacji sieci Web i ponownie uruchom aplikację.
 
@@ -386,7 +386,7 @@ Utwórz profil Traffic Manager na platformie Azure, a następnie skonfiguruj pun
    - W obszarze **Grupa zasobów**Utwórz nową grupę zasobów dla tego profilu.
    - W obszarze **Lokalizacja grupy zasobów** wybierz lokalizację grupy zasobów. To ustawienie dotyczy lokalizacji grupy zasobów i nie ma wpływu na profil Traffic Manager, który został wdrożony globalnie.
 
-4. Wybierz przycisk **Utwórz**.
+4. Wybierz pozycję **Utwórz**.
 
     ![Utwórz profil Traffic Manager](media/solution-deployment-guide-hybrid/image19.png)
 
@@ -543,4 +543,4 @@ Poniższe kroki służą do konfigurowania automatycznego przełączania ruchu.
 
 ## <a name="next-steps"></a>Następne kroki
 
-- Aby dowiedzieć się więcej o wzorcach chmury platformy Azure, zobacz [wzorce projektowe w chmurze](https://docs.microsoft.com/azure/architecture/patterns).
+- Aby dowiedzieć się więcej o wzorcach chmury platformy Azure, zobacz [wzorce projektowe w chmurze](/azure/architecture/patterns).

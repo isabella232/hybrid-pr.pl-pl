@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 0e1a0fc4fb4110fdb406d4b4b2e72abb8f5412c9
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: 16c5d7820e8c865a9f88cb00da5cc7c854379414
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910869"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477290"
 ---
 # <a name="configure-hybrid-cloud-connectivity-using-azure-and-azure-stack-hub"></a>Konfigurowanie łączności w chmurze hybrydowej przy użyciu platformy Azure i usługi Azure Stack Hub
 
@@ -37,7 +37,7 @@ Do skompilowania wdrożenia połączenia hybrydowego wymagane są kilka składni
 ### <a name="azure"></a>Azure
 
 - Jeśli nie masz subskrypcji platformy Azure, przed rozpoczęciem utwórz [bezpłatne konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-- Utwórz [aplikację internetową](https://docs.microsoft.com/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?view=vsts&tabs=vsts) na platformie Azure. Zanotuj adres URL aplikacji sieci Web, ponieważ będzie on potrzebny w rozwiązaniu.
+- Utwórz [aplikację internetową](/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?tabs=vsts&view=vsts) na platformie Azure. Zanotuj adres URL aplikacji sieci Web, ponieważ będzie on potrzebny w rozwiązaniu.
 
 ### <a name="azure-stack-hub"></a>Azure Stack Hub
 
@@ -69,7 +69,7 @@ Przed rozpoczęciem konfigurowania łączności w chmurze hybrydowej Sprawdź, c
 
 #### <a name="solution-example-values"></a>Przykładowe wartości rozwiązania
 
-W przykładach w tym rozwiązaniu użyto następujących wartości. Możesz użyć tych wartości do utworzenia środowiska testowego lub odwoływać się do nich, aby lepiej zrozumieć przykłady. Aby uzyskać więcej informacji na temat ustawień bramy sieci VPN, zobacz [Informacje o ustawieniach VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings).
+W przykładach w tym rozwiązaniu użyto następujących wartości. Możesz użyć tych wartości do utworzenia środowiska testowego lub odwoływać się do nich, aby lepiej zrozumieć przykłady. Aby uzyskać więcej informacji na temat ustawień bramy sieci VPN, zobacz [Informacje o ustawieniach VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings).
 
 Specyfikacje połączenia:
 
@@ -99,7 +99,7 @@ Adresy IP sieci i podsieci:
 
 ## <a name="create-a-virtual-network-in-global-azure-and-azure-stack-hub"></a>Tworzenie sieci wirtualnej na platformie Azure i w centrum Azure Stack
 
-Wykonaj następujące kroki, aby utworzyć sieć wirtualną przy użyciu portalu. Tych [przykładowych wartości](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal#values) można użyć, jeśli ten artykuł jest używany tylko jako rozwiązanie. Jeśli ten artykuł jest używany do konfigurowania środowiska produkcyjnego, Zastąp Przykładowe ustawienia własnymi wartościami.
+Wykonaj następujące kroki, aby utworzyć sieć wirtualną przy użyciu portalu. Tych [przykładowych wartości](/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal#values) można użyć, jeśli ten artykuł jest używany tylko jako rozwiązanie. Jeśli ten artykuł jest używany do konfigurowania środowiska produkcyjnego, Zastąp Przykładowe ustawienia własnymi wartościami.
 
 > [!IMPORTANT]
 > Musisz się upewnić, że nie ma nakładania się adresów IP na platformie Azure ani w przestrzeni adresowej sieci wirtualnej centrum Azure Stack Hub.
@@ -212,4 +212,4 @@ Połączenie można zobaczyć na stronie **połączenia** bramy sieci wirtualnej
 
 ## <a name="next-steps"></a>Następne kroki
 
-- Aby dowiedzieć się więcej o wzorcach chmury platformy Azure, zobacz [wzorce projektowe w chmurze](https://docs.microsoft.com/azure/architecture/patterns).
+- Aby dowiedzieć się więcej o wzorcach chmury platformy Azure, zobacz [wzorce projektowe w chmurze](/azure/architecture/patterns).

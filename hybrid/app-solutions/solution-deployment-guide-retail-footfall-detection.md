@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 6913cc522da447092dad0af24e148a3b2576495c
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: 5f2e18e164e54f60b1bb7a14026a0c75c7d7ce69
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910897"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477171"
 ---
 # <a name="deploy-an-ai-based-footfall-detection-solution-using-azure-and-azure-stack-hub"></a>Wdrażanie rozwiązania wykrywania FootFall opartego na formacie AI przy użyciu platformy Azure i usługi Azure Stack Hub
 
@@ -44,7 +44,7 @@ Przed rozpoczęciem pracy z tym przewodnikiem wdrażania upewnij się, że:
 - Utwórz dwie jednostki usługi w katalogu:
   - Jeden skonfigurowany do użycia z zasobami platformy Azure z dostępem w zakresie subskrypcji platformy Azure.
   - Jeden skonfigurowany do użycia z zasobami centrum Azure Stack, z dostępem w zakresie subskrypcji centrum Azure Stack.
-  - Aby dowiedzieć się więcej na temat tworzenia jednostek usługi i autoryzowania dostępu, zobacz [Korzystanie z tożsamości aplikacji w celu uzyskania dostępu do zasobów](/azure-stack/operator/azure-stack-create-service-principals.md). Jeśli wolisz używać interfejsu wiersza polecenia platformy Azure, zobacz [Tworzenie jednostki usługi platformy Azure przy użyciu interfejsu wiersza polecenia platformy Azure](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest).
+  - Aby dowiedzieć się więcej na temat tworzenia jednostek usługi i autoryzowania dostępu, zobacz [Korzystanie z tożsamości aplikacji w celu uzyskania dostępu do zasobów](/azure-stack/operator/azure-stack-create-service-principals.md). Jeśli wolisz używać interfejsu wiersza polecenia platformy Azure, zobacz [Tworzenie jednostki usługi platformy Azure przy użyciu interfejsu wiersza polecenia platformy Azure](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest).
 - Wdróż usługę Azure Cognitive Services na platformie Azure lub w centrum Azure Stack.
   - Najpierw [Dowiedz się więcej o Cognitive Services](https://azure.microsoft.com/services/cognitive-services/).
   - Następnie odwiedź stronę [wdrażanie usługi Azure Cognitive Services w usłudze Azure Stack Hub](/azure-stack/user/azure-stack-solution-template-cognitive-services.md) , aby wdrożyć Cognitive Services na Azure Stack centrum. Najpierw musisz zarejestrować się w celu uzyskania dostępu do wersji zapoznawczej.

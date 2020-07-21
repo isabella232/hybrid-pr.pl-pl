@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 1b3c683dd3e4a68413f83fd3cc129d6e6f594e1b
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: 650eef0f144ecafab4586d93f72e1defdf4a61ce
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911317"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477256"
 ---
 # <a name="configure-hybrid-cloud-identity-for-azure-and-azure-stack-hub-apps"></a>Konfigurowanie tożsamości chmury hybrydowej dla aplikacji platformy Azure i usługi Azure Stack Hub
 
@@ -69,4 +69,4 @@ Aby nawiązać połączenie z centrum Azure Stack przy użyciu kodu, użyj inter
 ## <a name="next-steps"></a>Następne kroki
 
 - Aby dowiedzieć się więcej o sposobie obsługi tożsamości w centrum Azure Stack, zobacz temat [Architektura tożsamości dla centrum Azure Stack](/azure-stack/operator/azure-stack-identity-architecture.md).
-- Aby dowiedzieć się więcej o wzorcach chmury platformy Azure, zobacz [wzorce projektowe w chmurze](https://docs.microsoft.com/azure/architecture/patterns).
+- Aby dowiedzieć się więcej o wzorcach chmury platformy Azure, zobacz [wzorce projektowe w chmurze](/azure/architecture/patterns).
