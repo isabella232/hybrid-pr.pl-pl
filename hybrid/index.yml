@@ -10,27 +10,27 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: ac27dd4f6dd719fade045f33750502fa2572bd9a
-  ms.sourcegitcommit: 6914306c4a326c4532d2fc7f325953b56d9d92f8
+  ms.openlocfilehash: ee69d8f1110166063edc5a4b2cdbfaf36b402868
+  ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 07/01/2020
-  ms.locfileid: "85594059"
+  ms.lasthandoff: 07/20/2020
+  ms.locfileid: "86477307"
 highlightedContent:
   items:
   - title: Azure Hybrid Virtual Event
     itemType: video
     url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
-  - title: 'Build 2020: Sesje poświęcone rozwiązaniom hybrydowym'
+  - title: 'Build 2020: sesje poświęcone rozwiązaniom hybrydowym'
     itemType: video
     url: https://mybuild.microsoft.com/sessions?q=hybrid&g=%255B%2522on-demand%2522%255D
-  - title: 'Build 2020: Sesje poświęcone usłudze Azure Arc'
+  - title: 'Build 2020: sesje poświęcone usłudze Azure Arc'
     itemType: video
     url: https://mybuild.microsoft.com/sessions?q=%2522%2520Arc%2520%2522&g=%255B%2522on-demand%2522%255D
-  - title: 'Build 2020: Sesje poświęcone inteligentnym urządzeniom brzegowym'
+  - title: 'Build 2020: sesje poświęcone inteligentnym urządzeniom brzegowym'
     itemType: video
     url: https://mybuild.microsoft.com/sessions?q=%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522
-  - title: 'Ignite 2019: Sesje poświęcone rozwiązaniom hybrydowym'
+  - title: 'Ignite 2019: sesje poświęcone rozwiązaniom hybrydowym'
     itemType: video
     url: https://myignite.techcommunity.microsoft.com/sessions?t={"from":"2019-11-03T08:00:00-05:00","to":"2019-11-08T19:00:00-05:00"}&q=hybrid&s={"name":"translate.refine.label.sort.relevance","type":0}&g=["on-demand"]
 productDirectory:
@@ -62,11 +62,11 @@ conceptualContent:
   title: Technologie umożliwiające pracę hybrydową
   summary: Usługi i produkty do tworzenia oraz obsługi rozwiązań hybrydowych.
   items:
-  - title: SI i uczenie maszynowe
+  - title: Sztuczna inteligencja i uczenie maszynowe
     links:
     - url: /azure/bot-service
       itemType: overview
-      text: Usługa Azure Bot
+      text: Azure Bot Service
     - url: /azure/search/
       itemType: overview
       text: Azure Cognitive Search
@@ -99,7 +99,7 @@ conceptualContent:
     - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
       itemType: overview
       text: Usługa IoT Edge na platformie Kubernetes
-  - title: baza danych
+  - title: Baza danych
     links:
     - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
       itemType: overview
@@ -136,7 +136,7 @@ conceptualContent:
     - url: /azure-stack/operator/event-hubs-rp-overview
       itemType: overview
       text: Usługa Event Hubs w infrastrukturze Azure Stack Hub
-  - title: Brzeg
+  - title: Edge
     links:
     - url: /azure/databox-online/data-box-gateway-overview
       itemType: overview
@@ -169,7 +169,7 @@ conceptualContent:
       text: Azure Security Center
     - url: /azure/sentinel/
       itemType: overview
-      text: Usługa Azure Sentinel
+      text: Azure Sentinel
     - url: /azure/active-directory/devices/concept-azure-ad-join-hybrid
       itemType: overview
       text: Urządzenia dołączone hybrydowo do usługi Azure AD
@@ -215,7 +215,7 @@ conceptualContent:
       text: Azure Load Balancer
     - url: /azure/private-link/
       itemType: overview
-      text: Link prywatny platformy Azure
+      text: Azure Private Link
     - url: /azure/azure-relay/
       itemType: overview
       text: Azure Relay
@@ -228,7 +228,7 @@ conceptualContent:
     - url: /azure/vpn-gateway/
       itemType: overview
       text: Azure VPN Gateway
-  - title: Magazyn
+  - title: Storage
     links:
     - url: /azure/avere-vfxt/avere-vfxt-overview
       itemType: overview
@@ -251,29 +251,29 @@ additionalContent:
     items:
     - title: Przykłady wzorców i rozwiązań aplikacji hybrydowych
       links:
-      - url: /hybrid/app-solutions/overview-patterns-solution-examples
+      - url: ./app-solutions/overview-patterns-solution-examples.md
         text: Co to są przykłady wzorców i rozwiązań?
-      - url: /hybrid/app-solutions/overview-app-design-considerations
+      - url: ./app-solutions/overview-app-design-considerations.md
         text: Zagadnienia dotyczące projektowania aplikacji hybrydowych
     - title: Eksplorowanie hybrydowych wzorców
       links:
-      - url: /hybrid/app-solutions/pattern-cross-cloud-scale
+      - url: ./app-solutions/pattern-cross-cloud-scale.md
         text: Skalowanie między chmurami
-      - url: /hybrid/app-solutions/pattern-cicd-pipeline
+      - url: ./app-solutions/pattern-cicd-pipeline.md
         text: Hybrydowa ciągła integracja/ciągłe wdrażanie w metodyce DevOps
-      - url: /hybrid/app-solutions/pattern-retail-footfall-detection
+      - url: ./app-solutions/pattern-retail-footfall-detection.md
         text: Wykrywanie osób odwiedzających sklep (sprzedaż detaliczna)
-      - url: /hybrid/app-solutions/pattern-geo-distributed
+      - url: ./app-solutions/pattern-geo-distributed.md
         text: Aplikacja rozproszona geograficznie
     - title: Wdrażanie przykładów hybrydowych rozwiązań
       links:
-      - url: /hybrid/app-solutions/solution-deployment-guide-cross-cloud-scaling
+      - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
         text: Skalowanie między chmurami
       - url: https://aka.ms/hybriddevopsdeploy
         text: Hybrydowa ciągła integracja/ciągłe wdrażanie w metodyce DevOps
-      - url: /hybrid/app-solutions/solution-deployment-guide-retail-footfall-detection
+      - url: ./app-solutions/solution-deployment-guide-retail-footfall-detection.md
         text: Wykrywanie osób odwiedzających sklep (sprzedaż detaliczna)
-      - url: /hybrid/app-solutions/solution-deployment-guide-geo-distributed
+      - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
         text: Aplikacja rozproszona geograficznie
   - title: Zasoby dodatkowe
     items:
