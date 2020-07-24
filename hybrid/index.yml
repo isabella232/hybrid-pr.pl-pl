@@ -10,14 +10,17 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: ee69d8f1110166063edc5a4b2cdbfaf36b402868
-  ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+  ms.openlocfilehash: 9793f34db13e324de65b719613c0f4dbf4bdf127
+  ms.sourcegitcommit: 8d75007af6ad574e0629208464bbadb97a5c438e
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 07/20/2020
-  ms.locfileid: "86477307"
+  ms.lasthandoff: 07/22/2020
+  ms.locfileid: "86949665"
 highlightedContent:
   items:
+  - title: Odkryj nowe rozwiązanie Azure Stack HCI
+    itemType: video
+    url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/
   - title: Azure Hybrid Virtual Event
     itemType: video
     url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
@@ -62,7 +65,7 @@ conceptualContent:
   title: Technologie umożliwiające pracę hybrydową
   summary: Usługi i produkty do tworzenia oraz obsługi rozwiązań hybrydowych.
   items:
-  - title: Sztuczna inteligencja i uczenie maszynowe
+  - title: SI i uczenie maszynowe
     links:
     - url: /azure/bot-service
       itemType: overview
@@ -169,7 +172,7 @@ conceptualContent:
       text: Azure Security Center
     - url: /azure/sentinel/
       itemType: overview
-      text: Azure Sentinel
+      text: Usługa Azure Sentinel
     - url: /azure/active-directory/devices/concept-azure-ad-join-hybrid
       itemType: overview
       text: Urządzenia dołączone hybrydowo do usługi Azure AD
