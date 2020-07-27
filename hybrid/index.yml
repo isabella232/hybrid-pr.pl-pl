@@ -10,17 +10,20 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: 9793f34db13e324de65b719613c0f4dbf4bdf127
-  ms.sourcegitcommit: 8d75007af6ad574e0629208464bbadb97a5c438e
+  ms.openlocfilehash: 5e47f05293640339329914a3183fae51649ded4c
+  ms.sourcegitcommit: ad41cc782094d57b506a3a1d98209f6cf94f0f3b
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 07/22/2020
-  ms.locfileid: "86949665"
+  ms.lasthandoff: 07/24/2020
+  ms.locfileid: "87121811"
 highlightedContent:
   items:
   - title: Odkryj nowe rozwiązanie Azure Stack HCI
     itemType: video
     url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/
+  - title: 'Inspire 2020: Co nowego w rozwiązaniu Azure Stack HCI'
+    itemType: video
+    url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030
   - title: Azure Hybrid Virtual Event
     itemType: video
     url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
@@ -231,7 +234,7 @@ conceptualContent:
     - url: /azure/vpn-gateway/
       itemType: overview
       text: Azure VPN Gateway
-  - title: Storage
+  - title: Magazyn
     links:
     - url: /azure/avere-vfxt/avere-vfxt-overview
       itemType: overview
@@ -258,7 +261,7 @@ additionalContent:
         text: Co to są przykłady wzorców i rozwiązań?
       - url: ./app-solutions/overview-app-design-considerations.md
         text: Zagadnienia dotyczące projektowania aplikacji hybrydowych
-    - title: Eksplorowanie hybrydowych wzorców
+    - title: Eksplorowanie wzorców aplikacji hybrydowych
       links:
       - url: ./app-solutions/pattern-cross-cloud-scale.md
         text: Skalowanie między chmurami
@@ -268,7 +271,7 @@ additionalContent:
         text: Wykrywanie osób odwiedzających sklep (sprzedaż detaliczna)
       - url: ./app-solutions/pattern-geo-distributed.md
         text: Aplikacja rozproszona geograficznie
-    - title: Wdrażanie przykładów hybrydowych rozwiązań
+    - title: Wdrażanie przykładów rozwiązań aplikacji hybrydowych
       links:
       - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
         text: Skalowanie między chmurami
@@ -298,6 +301,8 @@ additionalContent:
         text: Programowanie na platformie .NET dla platformy Azure
       - url: https://github.com/likamrat/azure_arc
         text: Przewodniki do szybkiego rozpoczynania pracy z usługą Azure Arc
+      - url: https://github.com/Azure/AzureStackHCI-EvalGuide
+        text: Przewodnik dotyczący oceny rozwiązania Azure Stack HCI
       - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
         text: Certyfikacja dla urządzeń usługi Azure IoT Edge
       - url: /samples/browse/
