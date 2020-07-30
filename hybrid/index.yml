@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: 5e47f05293640339329914a3183fae51649ded4c
-  ms.sourcegitcommit: ad41cc782094d57b506a3a1d98209f6cf94f0f3b
+  ms.openlocfilehash: ab8146340f284af226f336af8fddd2a30977869d
+  ms.sourcegitcommit: 2efdd6422c2af773ad7890dcbc546e816e501c0e
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 07/24/2020
-  ms.locfileid: "87121811"
+  ms.lasthandoff: 07/28/2020
+  ms.locfileid: "87264101"
 highlightedContent:
   items:
   - title: Odkryj nowe rozwiązanie Azure Stack HCI
@@ -72,7 +72,7 @@ conceptualContent:
     links:
     - url: /azure/bot-service
       itemType: overview
-      text: Azure Bot Service
+      text: Usługa Azure Bot
     - url: /azure/search/
       itemType: overview
       text: Azure Cognitive Search
@@ -221,7 +221,7 @@ conceptualContent:
       text: Azure Load Balancer
     - url: /azure/private-link/
       itemType: overview
-      text: Azure Private Link
+      text: Link prywatny platformy Azure
     - url: /azure/azure-relay/
       itemType: overview
       text: Azure Relay
@@ -286,9 +286,11 @@ additionalContent:
     - title: Zasoby ogólne
       links:
       - url: /azure-stack/operator/compare-azure-azure-stack
-        text: Globalna platforma Azure a usługa Azure Stack
+        text: Chmura globalna platformy Azure a usługa Azure Stack
       - url: https://azure.microsoft.com/overview/azure-hybrid/
         text: Możliwości pracy hybrydowej platformy Azure
+      - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
+        text: Wprowadzenie do aplikacji hybrydowych usługi Azure Stack
       - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
         text: Scenariusze chmury hybrydowej klientów
       - url: /learn
