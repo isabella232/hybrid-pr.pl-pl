@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 741ddf2c3ed234788af359dd233f6a656fbea13c
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 27d07070becfa902a715b451baae7c81c7e4b46f
+ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477358"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88886836"
 ---
 # <a name="direct-traffic-with-a-geo-distributed-app-using-azure-and-azure-stack-hub"></a>Kierowanie ruchu za pomocą aplikacji rozproszonej geograficznie przy użyciu platformy Azure i usługi Azure Stack Hub
 
@@ -84,7 +84,7 @@ Wymagana jest subskrypcja platformy Azure i instalacja centrum Azure Stack.
 
 ### <a name="obtain-a-custom-domain-and-configure-dns"></a>Uzyskaj domenę niestandardową i skonfiguruj system DNS
 
-Zaktualizuj plik strefy DNS dla domeny. Usługa Azure AD może następnie zweryfikować własność niestandardowej nazwy domeny. Użyj [Azure DNS](/azure/dns/dns-getstarted-portal) dla systemu Azure/usługi Office 365/zewnętrznych rekordów DNS na platformie Azure lub Dodaj wpis DNS w [innym rejestratorze DNS](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/).
+Zaktualizuj plik strefy DNS dla domeny. Usługa Azure AD może następnie zweryfikować własność niestandardowej nazwy domeny. Użyj [Azure DNS](/azure/dns/dns-getstarted-portal) dla systemu azure/Microsoft 365/zewnętrznych rekordów DNS na platformie Azure lub Dodaj wpis DNS w [innym rejestratorze DNS](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 1. Zarejestruj domenę niestandardową z rejestratorem publicznym.
 
@@ -256,7 +256,7 @@ Aby ukończyć to rozwiązanie:
 
 - Kup nazwę domeny i Zapewnij dostęp do rejestru DNS dostawcy domeny.
 
-Zaktualizuj plik strefy DNS dla domeny. Usługa Azure AD sprawdzi własność niestandardowej nazwy domeny. Użyj [Azure DNS](/azure/dns/dns-getstarted-portal) dla systemu Azure/usługi Office 365/zewnętrznych rekordów DNS na platformie Azure lub Dodaj wpis DNS w [innym rejestratorze DNS](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/).
+Zaktualizuj plik strefy DNS dla domeny. Usługa Azure AD sprawdzi własność niestandardowej nazwy domeny. Użyj [Azure DNS](/azure/dns/dns-getstarted-portal) dla systemu azure/Microsoft 365/zewnętrznych rekordów DNS na platformie Azure lub Dodaj wpis DNS w [innym rejestratorze DNS](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 - Zarejestruj domenę niestandardową z rejestratorem publicznym.
 
@@ -533,7 +533,7 @@ Na stronie aplikacja sieci Web wybierz pozycję **Ustawienia SL**. Następnie w 
 
 ![Wymuszanie protokołu HTTPS](media/solution-deployment-guide-geo-distributed/image43.png)
 
-Po zakończeniu operacji przejdź do dowolnego adresu URL protokołu HTTP, który wskazuje aplikację. Na przykład:
+Po zakończeniu operacji przejdź do dowolnego adresu URL protokołu HTTP, który wskazuje aplikację. Przykład:
 
 - https://<app_name>. azurewebsites.net
 - `https://northwindcloud.com`
@@ -593,7 +593,7 @@ Aplikacja domyślnie zezwala na [protokół TLS](https://wikipedia.org/wiki/Tran
 
 10. Pozycję **Dodaj jako wyłączone** pozostaw niezaznaczoną.
 
-11. Wybierz przycisk **OK**.
+11. Wybierz pozycję **OK**.
 
 12. Dodawanie punkt końcowy platformy Azure:
 
@@ -611,7 +611,7 @@ Aplikacja domyślnie zezwala na [protokół TLS](https://wikipedia.org/wiki/Tran
 
 15. Pozycję **Dodaj jako wyłączone** pozostaw niezaznaczoną.
 
-16. Wybierz przycisk **OK**.
+16. Wybierz pozycję **OK**.
 
     > [!Note]  
     >  Utwórz co najmniej jeden punkt końcowy z zakresem geograficznym (World), który będzie używany jako domyślny punkt końcowy dla zasobu.

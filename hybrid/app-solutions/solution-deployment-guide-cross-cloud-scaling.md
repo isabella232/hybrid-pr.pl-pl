@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 10cb042e2c6d0c6cb567e14072cd80bc663d686c
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 5ae6c4323324fa104cd0e5c7b5198492be14b8eb
+ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477341"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88886819"
 ---
 # <a name="deploy-an-app-that-scales-cross-cloud-using-azure-and-azure-stack-hub"></a>Wdrażanie aplikacji, która skaluje wiele chmur przy użyciu platformy Azure i usługi Azure Stack Hub
 
@@ -40,7 +40,7 @@ W tym rozwiązaniu utworzysz przykładowe środowisko w celu:
 - Subskrypcja platformy Azure. W razie konieczności przed rozpoczęciem Utwórz [bezpłatne konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) .
 - Zintegrowany system Azure Stack Hub lub wdrożenie Azure Stack Development Kit (ASDK).
   - Aby uzyskać instrukcje dotyczące instalowania centrum Azure Stack, zobacz [Install the ASDK](/azure-stack/asdk/asdk-install.md).
-  - W przypadku skryptu automatyzacji po wdrożeniu ASDK przejdź do:[https://github.com/mattmcspirit/azurestack](https://github.com/mattmcspirit/azurestack)
+  - W przypadku skryptu automatyzacji po wdrożeniu ASDK przejdź do: [https://github.com/mattmcspirit/azurestack](https://github.com/mattmcspirit/azurestack)
   - Instalacja może wymagać kilku godzin.
 - Wdróż [App Service](/azure-stack/operator/azure-stack-app-service-deploy.md) usługi PaaS Services w usłudze Azure Stack Hub.
 - [Utwórz plany/oferty](/azure-stack/operator/service-plan-offer-subscription-overview.md) w ramach środowiska Azure Stack Hub.
@@ -68,7 +68,7 @@ Rozwiązanie międzychmurowe zapewnia bezproblemowe zarządzanie i przyjazny int
 
 ### <a name="get-a-custom-domain-and-configure-dns"></a>Pobierz domenę niestandardową i skonfiguruj system DNS
 
-Zaktualizuj plik strefy DNS dla domeny. Usługa Azure AD sprawdzi własność niestandardowej nazwy domeny. Użyj [Azure DNS](/azure/dns/dns-getstarted-portal) dla systemu Azure/usługi Office 365/zewnętrznych rekordów DNS na platformie Azure lub Dodaj wpis DNS w [innym rejestratorze DNS](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/).
+Zaktualizuj plik strefy DNS dla domeny. Usługa Azure AD sprawdzi własność niestandardowej nazwy domeny. Użyj [Azure DNS](/azure/dns/dns-getstarted-portal) dla systemu azure/Microsoft 365/zewnętrznych rekordów DNS na platformie Azure lub Dodaj wpis DNS w [innym rejestratorze DNS](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 1. Zarejestruj domenę niestandardową z rejestratorem publicznym.
 2. Zaloguj się do rejestratora nazw domen dla domeny. Aby można było zaktualizować DNS, może być wymagane zatwierdzenie administratora.
