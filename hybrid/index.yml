@@ -10,35 +10,38 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 09/02/2020
-  ms.openlocfilehash: 8df4847263d2632d35f0817752fbdf69afbe01d3
-  ms.sourcegitcommit: 36f2c0f6e8ed4512b76d77dde8c4e7473cc4719c
+  ms.openlocfilehash: 8109b1b42c133afa3179b362c543118965486ac7
+  ms.sourcegitcommit: 64698a0824c87d0838b57cff05187f4225bb619c
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 09/03/2020
-  ms.locfileid: "89410778"
+  ms.lasthandoff: 09/24/2020
+  ms.locfileid: "91209709"
 highlightedContent:
   items:
+  - title: 'Ignite 2020: Sesje poświęcone rozwiązaniom hybrydowym'
+    itemType: video
+    url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=hybrid
+  - title: 'Ignite 2020: Sesje poświęcone usłudze Azure Arc'
+    itemType: video
+    url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=" Arc "
+  - title: 'Ignite 2020: Sesje poświęcone inteligentnym urządzeniom brzegowym'
+    itemType: video
+    url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q="intelligent edge"
   - title: Odkryj nowe rozwiązanie Azure Stack HCI
     itemType: video
     url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/
   - title: 'Inspire 2020: Co nowego w rozwiązaniu Azure Stack HCI'
     itemType: video
     url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030
-  - title: Azure Hybrid Virtual Event
-    itemType: video
-    url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
   - title: 'Build 2020: sesje poświęcone rozwiązaniom hybrydowym'
     itemType: video
     url: https://mybuild.microsoft.com/sessions?q=hybrid&g=%255B%2522on-demand%2522%255D
   - title: 'Build 2020: sesje poświęcone usłudze Azure Arc'
     itemType: video
     url: https://mybuild.microsoft.com/sessions?q=%2522%2520Arc%2520%2522&g=%255B%2522on-demand%2522%255D
-  - title: 'Build 2020: sesje poświęcone inteligentnym urządzeniom brzegowym'
+  - title: 'Build 2020: Sesje poświęcone inteligentnym urządzeniom brzegowym'
     itemType: video
     url: https://mybuild.microsoft.com/sessions?q=%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522
-  - title: 'Ignite 2019: sesje poświęcone rozwiązaniom hybrydowym'
-    itemType: video
-    url: https://myignite.techcommunity.microsoft.com/sessions?t={"from":"2019-11-03T08:00:00-05:00","to":"2019-11-08T19:00:00-05:00"}&q=hybrid&s={"name":"translate.refine.label.sort.relevance","type":0}&g=["on-demand"]
 productDirectory:
   title: Platforma chmury hybrydowej Azure
   summary: Platformy z obsługą pracy hybrydowej służące do tworzenia i obsługi rozwiązań hybrydowych.
@@ -107,9 +110,12 @@ conceptualContent:
       text: Usługa IoT Edge na platformie Kubernetes
   - title: baza danych
     links:
-    - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
+    - url: /azure/azure-arc/data/overview
       itemType: overview
-      text: Usługi danych z obsługą usługi Azure Arc (rejestracja w prywatnej wersji zapoznawczej)
+      text: Usługi danych z obsługą usługi Azure Arc (wersja zapoznawcza)
+    - url: /sql/sql-server/azure-arc/overview
+      itemType: overview
+      text: Program SQL Server z obsługą usługi Azure Arc (wersja zapoznawcza)
     - url: /azure/azure-sql-edge/overview
       itemType: overview
       text: Azure SQL Edge (wersja zapoznawcza)
@@ -181,15 +187,18 @@ conceptualContent:
       text: Urządzenia dołączone hybrydowo do usługi Azure AD
   - title: Zarządzanie
     links:
-    - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
+    - url: /azure/azure-arc/data/overview
       itemType: overview
-      text: Usługi danych z obsługą usługi Azure Arc (rejestracja w prywatnej wersji zapoznawczej)
+      text: Usługi danych z obsługą usługi Azure Arc (wersja zapoznawcza)
     - url: /azure/azure-arc/kubernetes/
       itemType: overview
       text: Platforma Kubernetes z obsługą usługi Azure Arc (wersja zapoznawcza)
     - url: /azure/azure-arc/servers
       itemType: overview
-      text: Serwery z obsługą usługi Azure Arc (wersja zapoznawcza)
+      text: Serwery z usługą Azure Arc
+    - url: /sql/sql-server/azure-arc/overview
+      itemType: overview
+      text: Program SQL Server z obsługą usługi Azure Arc (wersja zapoznawcza)
     - url: /azure/automation/
       itemType: overview
       text: Azure Automation
@@ -216,6 +225,9 @@ conceptualContent:
     - url: /azure/expressroute/
       itemType: overview
       text: Azure ExpressRoute
+    - url: /azure/networking/azure-orbital-overview
+      itemType: overview
+      text: Azure Orbital (wersja zapoznawcza)
     - url: /azure/load-balancer/
       itemType: overview
       text: Azure Load Balancer
@@ -234,7 +246,7 @@ conceptualContent:
     - url: /azure/vpn-gateway/
       itemType: overview
       text: Azure VPN Gateway
-  - title: Magazyn
+  - title: Storage
     links:
     - url: /azure/avere-vfxt/avere-vfxt-overview
       itemType: overview
@@ -306,6 +318,8 @@ additionalContent:
         text: Blog poświęcony hybrydowej platformie Azure
       - url: https://azure.microsoft.com/overview/azure-hybrid/
         text: Możliwości pracy hybrydowej platformy Azure
+      - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
+        text: Wirtualne wydarzenie poświęcone użyciu hybrydowemu platformy Azure
       - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
         text: Rozwiązania usługi Azure Stack Hub klientów
       - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
