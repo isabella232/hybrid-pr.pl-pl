@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 85b859457b9b54a973c5fc23329b927212b60a07
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 2c20d621247ec8e1278feb092586232cc08d5480
+ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477086"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91852477"
 ---
 # <a name="deploy-a-sql-server-2016-availability-group-to-azure-and-azure-stack-hub"></a>Wdróż grupę dostępności SQL Server 2016 na platformie Azure i w centrum Azure Stack
 
@@ -106,5 +106,5 @@ Obrazy platformy Docker dla każdego wdrożenia eliminują problemy zależności
 ## <a name="next-steps"></a>Następne kroki
 
 - Użyj SQL Server Management Studio, aby ręcznie przełączyć klaster w tryb failover. Zobacz [przeprowadzenie wymuszonej ręcznej pracy awaryjnej grupy dostępności zawsze włączone (SQL Server)](/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017)
-- Dowiedz się więcej o aplikacjach hybrydowych w chmurze. Zobacz [hybrydowe rozwiązania w chmurze.](https://aka.ms/azsdevtutorials)
+- Dowiedz się więcej o aplikacjach hybrydowych w chmurze. Zobacz [hybrydowe rozwiązania w chmurze.](/azure-stack/user/)
 - Użyj własnych danych lub zmodyfikuj kod w tym przykładzie w witrynie [GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns).

@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: f6064aaa1087a3c0cfc26e09371e81752c777edb
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: def9abaa2a7231648f11453f66119399be015a4d
+ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477273"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91852511"
 ---
 # <a name="deploy-a-highly-available-mongodb-solution-to-azure-and-azure-stack-hub"></a>Wdróż rozwiązanie MongoDB o wysokiej dostępności na platformie Azure i w centrum Azure Stack
 
@@ -105,5 +105,5 @@ Obrazy platformy Docker dla każdego wdrożenia eliminują problemy zależności
 ## <a name="next-steps"></a>Następne kroki
 
 - Jeśli włączono maszynę wirtualną pola skoku w centrum Azure Stack DR, możesz nawiązać połączenie za pośrednictwem protokołu SSH i korzystać z klastra MongoDB przez zainstalowanie interfejsu wiersza polecenia Mongo. Aby dowiedzieć się więcej na temat współpracy z usługą MongoDB, zobacz [powłoka Mongo](https://docs.mongodb.com/manual/mongo/).
-- Aby dowiedzieć się więcej na temat hybrydowych aplikacji w chmurze, zobacz [hybrydowe rozwiązania w chmurze.](https://aka.ms/azsdevtutorials)
+- Aby dowiedzieć się więcej na temat hybrydowych aplikacji w chmurze, zobacz [hybrydowe rozwiązania w chmurze.](/azure-stack/user/)
 - Zmodyfikuj kod do tego przykładu w serwisie [GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns).
