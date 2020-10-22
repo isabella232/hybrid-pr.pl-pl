@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 6de35cb55c4c35a2a9927f9ffc2516ccb00cd89f
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: ecc42a94e2c59531b2a2e933772b0d8ce8c58609
+ms.sourcegitcommit: 0d5b5336bdb969588d0b92e04393e74b8f682c3b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477324"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353482"
 ---
 # <a name="deploy-hybrid-app-with-on-premises-data-that-scales-cross-cloud"></a>Wdróż aplikację hybrydową przy użyciu danych lokalnych, które skaluje się z wielu chmur
 
@@ -37,7 +37,7 @@ Ten samouczek obejmuje następujące zadania:
 > - Skonfiguruj automatyczne przełączanie ruchu między globalnymi centrami Azure i Azure Stack.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![Diagram filarów hybrydowych](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub to rozszerzenie platformy Azure. Usługa Azure Stack Hub zapewnia elastyczność i innowacje w chmurze obliczeniowej w środowisku lokalnym, umożliwiając jedyną chmurę hybrydową, która umożliwia tworzenie i wdrażanie aplikacji hybrydowych w dowolnym miejscu.  
 > 
 > [Zagadnienia dotyczące projektowania aplikacji hybrydowych](overview-app-design-considerations.md) w artykule przegląd filarów jakości oprogramowania (rozmieszczenia, skalowalności, dostępności, odporności, możliwości zarządzania i zabezpieczeń) do projektowania, wdrażania i obsługi aplikacji hybrydowych. Zagadnienia dotyczące projektowania pomagają zoptymalizować projekt aplikacji hybrydowej i zminimalizować wyzwania w środowiskach produkcyjnych.
@@ -153,7 +153,7 @@ Aby zapewnić łączność między frontonem sieci Web na platformie Azure a SQL
 
 Brama sieci wirtualnej na stronie platformy Azure w sieci hybrydowej musi zezwalać na połączenia typu punkt-lokacja z usługą Azure App Service.
 
-1. Na platformie Azure przejdź do strony bramy sieci wirtualnej. W obszarze **Ustawienia**wybierz pozycję **Konfiguracja punktu do lokacji**.
+1. W Azure Portal przejdź do strony bramy sieci wirtualnej. W obszarze **Ustawienia**wybierz pozycję **Konfiguracja punktu do lokacji**.
 
     ![Opcja punkt-lokacja w bramie sieci wirtualnej platformy Azure](media/solution-deployment-guide-hybrid/image8.png)
 
@@ -192,7 +192,7 @@ Aby dowiedzieć się więcej o tym, jak App Service integrują się z usługą A
 
 Bramę sieci lokalnej w sieci wirtualnej Azure Stack Hub należy skonfigurować do kierowania ruchem z zakresu adresów App Service punkt-lokacja.
 
-1. W obszarze Azure Stack Hub przejdź do pozycji **Brama sieci lokalnej**. W obszarze **Ustawienia** wybierz pozycję **Konfiguracja**.
+1. W portalu Azure Stack Hub przejdź do pozycji **Brama sieci lokalnej**. W obszarze **Ustawienia** wybierz pozycję **Konfiguracja**.
 
     ![Opcja konfiguracji bramy w bramie sieci lokalnej centrum Azure Stack](media/solution-deployment-guide-hybrid/image14.png)
 
@@ -238,13 +238,13 @@ Aby dodać protokół SSL do platformy Azure:
 
 1. Upewnij się, że pobrany certyfikat SSL jest prawidłowy dla utworzonej domeny podrzędnej. (Można używać certyfikatów symboli wieloznacznych).
 
-2. Na platformie Azure postępuj zgodnie z instrukcjami zawartymi w sekcji **Przygotowywanie aplikacji sieci Web** i **Powiązywanie certyfikatu protokołu SSL** w artykule [Powiązywanie istniejącego niestandardowego certyfikatu protokołu SSL z usługą Azure Web Apps](/azure/app-service/app-service-web-tutorial-custom-ssl) . Wybierz **protokół SSL oparty na SNI** jako **Typ protokołu SSL**.
+2. W Azure Portal postępuj zgodnie z instrukcjami podanymi w sekcji **przygotowanie aplikacji sieci Web** i **POwiązaniu certyfikatu SSL** w artykule [Powiązywanie istniejącego niestandardowego certyfikatu protokołu SSL z usługą Azure Web Apps](/azure/app-service/app-service-web-tutorial-custom-ssl) . Wybierz **protokół SSL oparty na SNI** jako **Typ protokołu SSL**.
 
-3. Przekieruj cały ruch do portu HTTPS. Postępuj zgodnie z instrukcjami w sekcji **Wymuszanie protokołu HTTPS** w artykule [Powiązywanie istniejącego niestandardowego certyfikatu protokołu SSL z usługą Azure Web Apps](/azure/app-service/app-service-web-tutorial-custom-ssl) .
+3. Przekieruj cały ruch do portu HTTPS. Postępuj zgodnie z instrukcjami w sekcji   **Wymuszanie protokołu HTTPS** w artykule [Powiązywanie istniejącego niestandardowego certyfikatu protokołu SSL z usługą Azure Web Apps](/azure/app-service/app-service-web-tutorial-custom-ssl) .
 
 Aby dodać protokół SSL do Azure Stack Hub:
 
-1. Powtórz kroki 1-3, które były używane na platformie Azure.
+1. Powtórz kroki 1-3, które były używane w przypadku platformy Azure, przy użyciu portalu Centrum Azure Stack.
 
 ## <a name="configure-and-deploy-the-web-app"></a>Konfigurowanie i wdrażanie aplikacji internetowej
 
@@ -300,7 +300,7 @@ Gdy tworzysz aplikację sieci Web w środowisku App Service, rozpocznie się ono
 
 ### <a name="enable-automatic-scale-out"></a>Włącz automatyczne skalowanie w poziomie
 
-1. Na platformie Azure Znajdź plan App Service dla witryn, które mają być skalowane w poziomie, a następnie wybierz pozycję **skalowanie w poziomie (plan App Service)**.
+1. W Azure Portal Znajdź plan App Service dla witryn, które mają być skalowane w poziomie, a następnie wybierz pozycję **skalowanie w poziomie (plan App Service)**.
 
     ![Skalowanie w poziomie Azure App Service](media/solution-deployment-guide-hybrid/image16.png)
 
@@ -372,7 +372,7 @@ Po zmniejszeniu natężenia ruchu aplikacja internetowa platformy Azure może au
 
 ## <a name="create-a-traffic-manager-profile-and-configure-cross-cloud-scaling"></a>Utwórz profil Traffic Manager i skonfiguruj skalowanie między chmurami
 
-Utwórz profil Traffic Manager na platformie Azure, a następnie skonfiguruj punkty końcowe, aby umożliwić skalowanie między chmurami.
+Utwórz profil Traffic Manager przy użyciu Azure Portal, a następnie skonfiguruj punkty końcowe, aby umożliwić skalowanie między chmurami.
 
 ### <a name="create-traffic-manager-profile"></a>Utwórz profil Traffic Manager
 
@@ -413,7 +413,7 @@ Utwórz profil Traffic Manager na platformie Azure, a następnie skonfiguruj pun
 Następnie skonfigurujesz punkt końcowy platformy Azure.
 
 1. W obszarze **profil Traffic Manager**wybierz pozycję **punkty końcowe**.
-2. Wybierz pozycję **+ Dodaj**.
+2. Wybierz pozycję **+Dodaj**.
 3. Na stronie **Dodawanie punktu końcowego**Użyj następujących ustawień platformy Azure:
 
    - W obszarze **Typ**wybierz pozycję **punkt końcowy platformy Azure**.
@@ -430,15 +430,15 @@ Po skonfigurowaniu obu punktów końcowych są one wyświetlane w **Traffic Mana
 
 ![Punkty końcowe w profilu Traffic Manager](media/solution-deployment-guide-hybrid/image20.png)
 
-## <a name="set-up-application-insights-monitoring-and-alerting"></a>Konfigurowanie Application Insights monitorowania i alertów
+## <a name="set-up-application-insights-monitoring-and-alerting-in-azure"></a>Konfigurowanie Application Insights monitorowania i alertów na platformie Azure
 
 Usługa Azure Application Insights umożliwia monitorowanie aplikacji i wysyłanie alertów na podstawie skonfigurowanych warunków. Oto kilka przykładów: aplikacja jest niedostępna, występuje błędy lub pokazuje problemy z wydajnością.
 
-Do tworzenia alertów służą Application Insights metryki. Gdy te alerty wyzwalają, wystąpienie aplikacji sieci Web automatycznie przejdzie z centrum Azure Stack na platformę Azure w celu skalowania w poziomie, a następnie z powrotem do centrum Azure Stack w celu skalowania w poziomie.
+Do tworzenia alertów służą metryki usługi Azure Application Insights. Gdy te alerty wyzwalają, wystąpienie aplikacji sieci Web automatycznie przejdzie z centrum Azure Stack na platformę Azure w celu skalowania w poziomie, a następnie z powrotem do centrum Azure Stack w celu skalowania w poziomie.
 
 ### <a name="create-an-alert-from-metrics"></a>Tworzenie alertu na podstawie metryki
 
-Przejdź do grupy zasobów w tym samouczku, a następnie wybierz wystąpienie Application Insights, aby otworzyć **Application Insights**.
+W Azure Portal przejdź do grupy zasobów w tym samouczku i wybierz wystąpienie Application Insights, aby otworzyć **Application Insights**.
 
 ![Application Insights](media/solution-deployment-guide-hybrid/image21.png)
 
