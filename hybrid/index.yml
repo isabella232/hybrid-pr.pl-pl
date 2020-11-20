@@ -1,21 +1,21 @@
 ### YamlMime:Hub
-title: Dokumentacja hybrydowej platformy Azure
-summary: Zasoby służące do tworzenia i obsługi rozwiązań hybrydowych, które obejmują chmurę globalną, centrum danych i urządzenia brzegowe.
+title: Dokumentacja hybrydowej i wielochmurowej platformy Azure
+summary: Zasoby służące do tworzenia oraz obsługi rozwiązań hybrydowych i wielochmurowych, które obejmują chmurę globalną, centrum danych i urządzenia brzegowe.
 brand: azure
 metadata:
-  title: Dokumentacja hybrydowej chmury platformy Azure
-  description: Zasoby służące do tworzenia i obsługi rozwiązań hybrydowych, które obejmują chmurę globalną, centrum danych i urządzenia brzegowe.
+  title: Dokumentacja hybrydowej i wielochmurowej platformy Azure
+  description: Zasoby służące do tworzenia oraz obsługi rozwiązań hybrydowych i wielochmurowych, które obejmują chmurę globalną, centrum danych i urządzenia brzegowe.
   ms.service: multiple
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 09/02/2020
-  ms.openlocfilehash: 823d9f2f8823c47854647ce378c6866978df7feb
-  ms.sourcegitcommit: 6be3914e28349883dba004697dc550a6fd1b7393
+  ms.date: 11/16/2020
+  ms.openlocfilehash: 23c1d6e1444e637a8e012b2628d3dfbafe903b3e
+  ms.sourcegitcommit: 40117c1f26640d276fcdb9c760bb4e508c0c6003
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 10/30/2020
-  ms.locfileid: "93062920"
+  ms.lasthandoff: 11/18/2020
+  ms.locfileid: "94873027"
 highlightedContent:
   items:
   - title: Wprowadzenie do usługi Azure Modular Datacenter
@@ -43,8 +43,8 @@ highlightedContent:
     itemType: video
     url: https://mybuild.microsoft.com/sessions?q=%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522
 productDirectory:
-  title: Platforma chmury hybrydowej Azure
-  summary: Platformy z obsługą pracy hybrydowej służące do tworzenia i obsługi rozwiązań hybrydowych.
+  title: Hybrydowa i wielochmurowa platforma Azure
+  summary: Platformy służące do tworzenia oraz obsługi rozwiązań hybrydowych i wielochmurowych.
   items:
   - title: Platforma globalnej chmury publicznej/suwerennej Azure.
     imageSrc: media/index/logo_azure.svg
@@ -70,8 +70,8 @@ productDirectory:
     - url: /windows/iot-core/
       text: System Windows dla Internetu rzeczy
 conceptualContent:
-  title: Technologie umożliwiające pracę hybrydową
-  summary: Usługi i produkty do tworzenia oraz obsługi rozwiązań hybrydowych.
+  title: Technologie hybrydowe i wielochmurowe
+  summary: Usługi i produkty do tworzenia oraz obsługi rozwiązań hybrydowych i wielochmurowych.
   items:
   - title: SI i uczenie maszynowe
     links:
@@ -155,7 +155,7 @@ conceptualContent:
       text: Usługa Event Hubs w infrastrukturze Azure Stack Hub
     - url: /azure-stack/user/iot-hub-overview
       itemType: overview
-      text: Usługa IoT Hub w infrastrukturze Azure Stack Hub
+      text: Usługa IoT Hub w infrastrukturze Azure Stack Hub (wersja zapoznawcza)
   - title: Edge
     links:
     - url: /azure/databox-online/data-box-gateway-overview
@@ -164,6 +164,9 @@ conceptualContent:
     - url: /azure/iot-edge/
       itemType: overview
       text: Azure IoT Edge
+    - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
+      itemType: overview
+      text: Usługa Azure IoT Edge na platformie Kubernetes
     - url: /azure-sphere
       itemType: overview
       text: Azure Sphere
@@ -173,9 +176,6 @@ conceptualContent:
     - url: /azure/azure-sql-edge/overview
       itemType: overview
       text: Azure SQL Edge (wersja zapoznawcza)
-    - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
-      itemType: overview
-      text: Usługa IoT Edge na platformie Kubernetes
     - url: /windows/iot-core/
       itemType: overview
       text: System Windows dla Internetu rzeczy
@@ -273,16 +273,16 @@ conceptualContent:
       text: Azure FXT Edge Filer
 additionalContent:
   sections:
-  - title: Rozwiązania hybrydowe
-    summary: Wskazówki i przykłady umożliwiające eksplorowanie oraz ponowne używanie w projektach hybrydowych.
+  - title: Rozwiązania hybrydowe i wielochmurowe
+    summary: Wskazówki i przykłady umożliwiające eksplorowanie oraz ponowne używanie w projektach hybrydowych i wielochmurowych.
     items:
-    - title: Przykłady wzorców i rozwiązań aplikacji hybrydowych
+    - title: Przykłady rozwiązań i wzorce aplikacji
       links:
       - url: ./app-solutions/overview-patterns-solution-examples.md
         text: Co to są przykłady wzorców i rozwiązań?
       - url: ./app-solutions/overview-app-design-considerations.md
-        text: Zagadnienia dotyczące projektowania aplikacji hybrydowych
-    - title: Eksplorowanie wzorców aplikacji hybrydowych
+        text: Zagadnienia dotyczące projektowania aplikacji
+    - title: Eksplorowanie wzorców aplikacji
       links:
       - url: ./app-solutions/pattern-cross-cloud-scale.md
         text: Skalowanie między chmurami
@@ -292,7 +292,7 @@ additionalContent:
         text: Wykrywanie osób odwiedzających sklep (sprzedaż detaliczna)
       - url: ./app-solutions/pattern-geo-distributed.md
         text: Aplikacja rozproszona geograficznie
-    - title: Wdrażanie przykładów rozwiązań aplikacji hybrydowych
+    - title: Wdrażanie przykładów rozwiązań aplikacji
       links:
       - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
         text: Skalowanie między chmurami

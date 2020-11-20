@@ -1,32 +1,32 @@
 ### YamlMime:Landing
-title: Dokumentacja hybrydowych wzorców i rozwiązań platformy Azure
-summary: Dowiedz się, jak wykorzystać przykłady hybrydowych wzorców i rozwiązań podczas programowania własnej aplikacji. Platforma Azure i usługa Azure Stack umożliwiają programowanie aplikacji hybrydowych bazujących na pakiecie usług inteligentnej chmury i inteligentnych urządzeń brzegowych.
+title: Dokumentacja hybrydowych i wielochmurowych wzorców oraz rozwiązań platformy Azure
+summary: Dowiedz się, jak podczas tworzenia aplikacji używać przykładów rozwiązań oraz wzorców hybrydowych i wielochmurowych, które zostały oparte na pakiecie usług inteligentnej chmury i inteligentnych urządzeń brzegowych.
 metadata:
-  title: Dokumentacja hybrydowych wzorców i rozwiązań platformy Azure
-  description: Dowiedz się, jak wykorzystać przykłady hybrydowych wzorców i rozwiązań podczas programowania własnej aplikacji. Platforma Azure i usługa Azure Stack umożliwiają programowanie aplikacji hybrydowych bazujących na pakiecie usług inteligentnej chmury i inteligentnych urządzeń brzegowych.
+  title: Dokumentacja hybrydowych i wielochmurowych wzorców oraz rozwiązań platformy Azure
+  description: Dowiedz się, jak podczas tworzenia aplikacji używać przykładów rozwiązań oraz wzorców hybrydowych i wielochmurowych, które zostały oparte na pakiecie usług inteligentnej chmury i inteligentnych urządzeń brzegowych.
   ms.service: azure-stack
   ms.topic: landing-page
   author: BryanLa
   ms.author: bryanla
   ms.date: 10/31/2019
-  ms.openlocfilehash: 923e8aa2af78b5d23ba1f25d8b0eb5b80edc4f0a
-  ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+  ms.openlocfilehash: f51256c555011744f847e457b8bac46a1b5c4b14
+  ms.sourcegitcommit: 40117c1f26640d276fcdb9c760bb4e508c0c6003
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 06/17/2020
-  ms.locfileid: "84909722"
+  ms.lasthandoff: 11/18/2020
+  ms.locfileid: "94872986"
 landingContent:
-- title: Informacje o hybrydowych wzorcach i rozwiązaniach
+- title: Informacje o hybrydowych i wielochmurowych wzorcach oraz rozwiązaniach
   linkLists:
   - linkListType: overview
     links:
-    - text: Co to są przykłady hybrydowych wzorców i rozwiązań?
+    - text: Co to są przykłady wzorców i rozwiązań?
       url: overview-patterns-solution-examples.md
   - linkListType: concept
     links:
-    - text: Zagadnienia dotyczące projektowania aplikacji hybrydowych
+    - text: Zagadnienia dotyczące projektowania aplikacji
       url: overview-app-design-considerations.md
-- title: Eksplorowanie hybrydowych wzorców
+- title: Eksplorowanie wzorców hybrydowych i wielochmurowych
   linkLists:
   - linkListType: architecture
     links:
@@ -38,7 +38,7 @@ landingContent:
       url: pattern-retail-footfall-detection.md
     - text: Aplikacja rozproszona geograficznie
       url: pattern-geo-distributed.md
-- title: Wdrażanie przykładów hybrydowych rozwiązań
+- title: Wdrażanie przykładów rozwiązań hybrydowych i wielochmurowych
   linkLists:
   - linkListType: tutorial
     links:
