@@ -1,8 +1,8 @@
-- name: Dokumentacja hybrydowej platformy Azure
+- name: Dokumentacja rozwiązań hybrydowych i wielochmurowych
   href: index.yml
 - name: Omówienie
   items:
-    - name: Przykłady hybrydowych wzorców i rozwiązań
+    - name: Przykłady rozwiązań i wzorce
       href: overview-patterns-solution-examples.md
 - name: Wzorce
   items:
@@ -58,7 +58,7 @@
       href: 'https://aka.ms/edgetrainingdeploy'
 - name: Pojęcia
   items:
-    - name: Zagadnienia dotyczące projektowania aplikacji hybrydowych
+    - name: Zagadnienia dotyczące projektowania aplikacji
       href: overview-app-design-considerations.md
 - name: Powiązane
   items:
