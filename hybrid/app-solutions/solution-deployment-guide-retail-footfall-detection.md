@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 5f2e18e164e54f60b1bb7a14026a0c75c7d7ce69
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 2177b32474dea695967e197acbd4bc1e18422d7b
+ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477171"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96901494"
 ---
 # <a name="deploy-an-ai-based-footfall-detection-solution-using-azure-and-azure-stack-hub"></a>Wdrażanie rozwiązania wykrywania FootFall opartego na formacie AI przy użyciu platformy Azure i usługi Azure Stack Hub
 
@@ -26,7 +26,7 @@ W tym rozwiązaniu dowiesz się, jak:
 > - Użyj zestawu SDK Custom Vision AI do wnioskowania na brzegu.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![Diagram filarów hybrydowych](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub to rozszerzenie platformy Azure. Usługa Azure Stack Hub zapewnia elastyczność i innowacje w chmurze obliczeniowej w środowisku lokalnym, umożliwiając jedyną chmurę hybrydową, która umożliwia tworzenie i wdrażanie aplikacji hybrydowych w dowolnym miejscu.  
 > 
 > [Zagadnienia dotyczące projektowania aplikacji hybrydowych](overview-app-design-considerations.md) w artykule przegląd filarów jakości oprogramowania (rozmieszczenia, skalowalności, dostępności, odporności, możliwości zarządzania i zabezpieczeń) do projektowania, wdrażania i obsługi aplikacji hybrydowych. Zagadnienia dotyczące projektowania pomagają zoptymalizować projekt aplikacji hybrydowej i zminimalizować wyzwania w środowiskach produkcyjnych.
@@ -44,7 +44,7 @@ Przed rozpoczęciem pracy z tym przewodnikiem wdrażania upewnij się, że:
 - Utwórz dwie jednostki usługi w katalogu:
   - Jeden skonfigurowany do użycia z zasobami platformy Azure z dostępem w zakresie subskrypcji platformy Azure.
   - Jeden skonfigurowany do użycia z zasobami centrum Azure Stack, z dostępem w zakresie subskrypcji centrum Azure Stack.
-  - Aby dowiedzieć się więcej na temat tworzenia jednostek usługi i autoryzowania dostępu, zobacz [Korzystanie z tożsamości aplikacji w celu uzyskania dostępu do zasobów](/azure-stack/operator/azure-stack-create-service-principals.md). Jeśli wolisz używać interfejsu wiersza polecenia platformy Azure, zobacz [Tworzenie jednostki usługi platformy Azure przy użyciu interfejsu wiersza polecenia platformy Azure](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest).
+  - Aby dowiedzieć się więcej na temat tworzenia jednostek usługi i autoryzowania dostępu, zobacz [Korzystanie z tożsamości aplikacji w celu uzyskania dostępu do zasobów](/azure-stack/operator/azure-stack-create-service-principals.md). Jeśli wolisz używać interfejsu wiersza polecenia platformy Azure, zobacz [Tworzenie jednostki usługi platformy Azure przy użyciu interfejsu wiersza polecenia platformy Azure](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&preserve-view=true).
 - Wdróż usługę Azure Cognitive Services na platformie Azure lub w centrum Azure Stack.
   - Najpierw [Dowiedz się więcej o Cognitive Services](https://azure.microsoft.com/services/cognitive-services/).
   - Następnie odwiedź stronę [wdrażanie usługi Azure Cognitive Services w usłudze Azure Stack Hub](/azure-stack/user/azure-stack-solution-template-cognitive-services.md) , aby wdrożyć Cognitive Services na Azure Stack centrum. Najpierw musisz zarejestrować się w celu uzyskania dostępu do wersji zapoznawczej.
@@ -56,7 +56,7 @@ Przed rozpoczęciem pracy z tym przewodnikiem wdrażania upewnij się, że:
   - [Docker CE](https://hub.docker.com/search/?type=edition&offering=community)
   - [Porter](https://porter.sh/). Za pomocą Porter można wdrażać aplikacje w chmurze przy użyciu dodanych manifestów pakietu CNAB.
   - [Visual Studio Code](https://code.visualstudio.com/)
-  - [Narzędzia usługi Azure IoT dla Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools)
+  - [Rozszerzenie Azure IoT Tools dla programu Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools)
   - [Rozszerzenie języka Python dla Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
   - [Python](https://www.python.org/)
 
@@ -152,7 +152,7 @@ Użyj interfejsu wiersza polecenia Porter, aby wygenerować zestaw poświadczeń
 
 Teraz, gdy dane przepływają do Azure Stream Analytics z aparatu, musimy ręcznie autoryzować ją do komunikowania się z Power BI.
 
-1. W Azure Portal Otwórz **wszystkie zasoby**i zadanie *Process-FootFall \[ \] yoursuffix* .
+1. W Azure Portal Otwórz **wszystkie zasoby** i zadanie *Process-FootFall \[ \] yoursuffix* .
 
 2. W sekcji **Topologia zadania** okienka zadania usługi Stream Analytics wybierz opcję **Dane wyjściowe**.
 
@@ -174,7 +174,7 @@ Teraz, gdy dane przepływają do Azure Stream Analytics z aparatu, musimy ręczn
 
 2. W obszarze roboczym Power BI wybierz pozycję **+ Utwórz** , aby utworzyć nowy pulpit nawigacyjny o nazwie *FootFall Analysis.*
 
-3. W górnej części okna wybierz pozycję **Dodaj kafelek**. Następnie wybierz pozycje **Niestandardowe dane przesyłane strumieniowo** i **Dalej**. Wybierz **zestaw danych FootFall-DataSet** w **zestawach**danych. Wybierz **kartę** z listy rozwijanej **typ wizualizacji** , a następnie Dodaj opcję **wiek** do **pól**. Wybierz pozycję **Dalej**, aby wprowadzić nazwę kafelka, a następnie wybierz pozycję **Zastosuj**, aby utworzyć kafelek.
+3. W górnej części okna wybierz pozycję **Dodaj kafelek**. Następnie wybierz pozycje **Niestandardowe dane przesyłane strumieniowo** i **Dalej**. Wybierz **zestaw danych FootFall-DataSet** w **zestawach** danych. Wybierz **kartę** z listy rozwijanej **typ wizualizacji** , a następnie Dodaj opcję **wiek** do **pól**. Wybierz pozycję **Dalej**, aby wprowadzić nazwę kafelka, a następnie wybierz pozycję **Zastosuj**, aby utworzyć kafelek.
 
 4. W razie potrzeby możesz dodać dodatkowe pola i karty.
 
@@ -194,5 +194,5 @@ porter uninstall footfall-camera –tag intelligentedge/footfall-camera-deployme
 
 ## <a name="next-steps"></a>Następne kroki
 
-- Dowiedz się więcej o [zagadnienia dotyczące projektowania aplikacji hybrydowych]. (overview-app-design-considerations.md)
+- Dowiedz się więcej na temat [zagadnień dotyczących projektowania aplikacji hybrydowych](overview-app-design-considerations.md)
 - Przejrzyj i Zaproponuj ulepszenia [kodu dla tego przykładu w witrynie GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/footfall-analysis).
