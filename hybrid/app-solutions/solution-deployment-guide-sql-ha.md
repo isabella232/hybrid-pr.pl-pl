@@ -7,14 +7,14 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 2c20d621247ec8e1278feb092586232cc08d5480
-ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
+ms.openlocfilehash: 0f857515a44ece7f967ade3dee8f493481709851
+ms.sourcegitcommit: c890f2c5e5e5f9f93c921f02dd1a6ca5026d5289
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91852477"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97091806"
 ---
-# <a name="deploy-a-sql-server-2016-availability-group-to-azure-and-azure-stack-hub"></a>Wdróż grupę dostępności SQL Server 2016 na platformie Azure i w centrum Azure Stack
+# <a name="deploy-a-sql-server-2016-availability-group-across-two-azure-stack-hub-environments"></a>Wdróż grupę dostępności SQL Server 2016 w dwóch środowiskach Azure Stack Hub
 
 Ten artykuł przeprowadzi Cię przez automatyczne wdrożenie podstawowego klastra o wysokiej dostępności (HA) SQL Server 2016 przedsiębiorstwa z asynchroniczną lokacją odzyskiwania po awarii w dwóch środowiskach Azure Stack Hub. Aby dowiedzieć się więcej o SQL Server 2016 i wysokiej dostępności, zobacz [zawsze włączone grupy dostępności: rozwiązanie wysokiej dostępności i odzyskiwania po awarii](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
 
