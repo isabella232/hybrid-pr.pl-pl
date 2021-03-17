@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 03/09/2021
-  ms.openlocfilehash: 218f52c27dee54dd4265a9c1eebc6de330bd6154
-  ms.sourcegitcommit: a5851a7351c39249a58da8d0cf121bbf0b306dca
+  ms.openlocfilehash: 59508b4cce80dd3a18a3e36feef6690290e26168
+  ms.sourcegitcommit: 25bfa6f85c1295ecbaf24e812ccebf1b7220bef8
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/10/2021
-  ms.locfileid: "102606197"
+  ms.lasthandoff: 03/16/2021
+  ms.locfileid: "103600662"
 highlightedContent:
   items:
   - title: 'Zapłon 2021: sesje hybrydowe'
@@ -336,12 +336,16 @@ additionalContent:
       links:
       - url: /learn/modules/align-requirements-in-azure/
         text: Dopasowywanie wymagań do typów chmury i modeli usług na platformie Azure
+      - url: /azure/architecture/browse/?azure_categories=hybrid
+        text: Architektury hybrydowe platformy Azure
       - url: https://azure.microsoft.com/overview/azure-hybrid/
         text: Możliwości pracy hybrydowej platformy Azure
       - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
         text: Wirtualne wydarzenie poświęcone użyciu hybrydowemu platformy Azure
+      - url: /azure/cloud-adoption-framework/scenarios/hybrid/scenario-overview
+        text: Środowisko wdrażania chmury — scenariusz hybrydowy i wielochmurowy
       - url: /learn/modules/intro-to-azure-hybrid-services/
-        text: Wprowadzenie do chmury hybrydowej platformy Azure
+        text: Wprowadzenie do usług chmury hybrydowej platformy Azure
       - url: https://events.microsoft.com/
         text: Wykaz zdarzeń firmy Microsoft
       - url: /learn
@@ -350,6 +354,10 @@ additionalContent:
       links:
       - url: /learn/modules/azure-sentinel-deploy-configure/
         text: Wdrażanie usługi Azure Sentinel i nawiązywanie połączenia ze źródłami danych
+      - url: /learn/modules/expose-hybrid-services-with-azure-relay/
+        text: Bezpieczne uwidacznianie usług hybrydowych za pomocą usługi Azure Relay
+      - url: /learn/modules/implement-manage-hybrid-identity/
+        text: Zaimplementuj tożsamość hybrydową i zarządzaj nią
       - url: /learn/modules/implement-hybrid-identity-windows-server/
         text: Implementowanie tożsamości hybrydowej przy użyciu systemu Windows Server
       - url: /learn/modules/intro-to-azure-sentinel/
@@ -358,16 +366,18 @@ additionalContent:
         text: Monitorowanie i zabezpieczenia chmury hybrydowej systemu Windows Server oraz zarządzanie nią
     - title: Zarządzanie
       links:
-      - url: https://github.com/likamrat/azure_arc
+      - url: https://azurearcjumpstart.io/
         text: Przewodniki do szybkiego rozpoczynania pracy z usługą Azure Arc
-      - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
-        text: Strategie zapewniania wysokiej dostępności i odzyskiwania po awarii
-      - url: /learn/modules/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/
-        text: Narzędzia platformy IaaS i PaaS na potrzeby wysokiej dostępności i odzyskiwania po awarii
+      - url: /learn/browse/?terms=%22%20Arc%20%22
+        text: Usługa Azure Arc — informacje o modułach
+      - url: /describe-high-availability-disaster-recovery-strategies/
+        text: Opisywanie strategii wysokiej dostępności i odzyskiwania po awarii
+      - url: /learn/browse/?terms="disaster%20recovery"
+        text: Odzyskiwanie po awarii modułów — informacje
+      - url: /learn/browse/?terms="high%20availability"
+        text: Moduły uczenia wysokiej dostępności
       - url: /learn/modules/intro-to-azure-arc/
         text: Wprowadzenie do usługi Azure Arc
-      - url: /learn/modules/manage-hybrid-workloads-azure-arc/
-        text: Zarządzanie obciążeniami hybrydowymi za pomocą usługi Azure Arc
       - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
         text: Monitorowanie maszyn wirtualnych IaaS z systemem Windows Server i wystąpień hybrydowych
       - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
@@ -388,20 +398,6 @@ additionalContent:
         text: Implementowanie hybrydowego tworzenia i odzyskiwania kopii zapasowych przy użyciu usługi IaaS i systemu Windows Server
   - title: Dodatkowe zasoby
     items:
-    - title: Deweloper
-      links:
-      - url: /azure/developer/
-        text: Dokumentacja i narzędzia dla deweloperów platformy Azure
-      - url: /azure/architecture/browse/?azure_categories=hybrid
-        text: Architektury hybrydowe platformy Azure
-      - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
-        text: Rozszerzenie Azure IoT Tools dla programu Visual Studio Code
-      - url: /samples/browse/
-        text: Przeglądarka przykładów kodu
-      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-        text: Zestaw Vision AI Developer Kit
-      - url: /visualstudio/azure/
-        text: Programowanie dla platformy Azure w programie Visual Studio
     - title: Ogólne
       links:
       - url: https://azure.microsoft.com/blog/topics/hybrid/
@@ -412,7 +408,7 @@ additionalContent:
         text: Rozwiązania usługi Azure Stack Hub klientów
       - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
         text: Scenariusze chmury hybrydowej klientów
-    - title: Pomoc i obsługa techniczna
+    - title: Pomoc techniczna
       links:
       - url: https://azure.microsoft.com/support/options/
         text: Pomoc techniczna platformy Azure
@@ -422,3 +418,15 @@ additionalContent:
         text: Fora Microsoft Q&A
       - url: https://stackoverflow.com/
         text: Stack Overflow
+    - title: Szczegóły techniczne
+      links:
+      - url: /azure/developer/
+        text: Dokumentacja i narzędzia dla deweloperów platformy Azure
+      - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
+        text: Rozszerzenie Azure IoT Tools dla programu Visual Studio Code
+      - url: /samples/browse/
+        text: Przeglądarka przykładów kodu
+      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+        text: Zestaw Vision AI Developer Kit
+      - url: /visualstudio/azure/
+        text: Programowanie dla platformy Azure w programie Visual Studio
