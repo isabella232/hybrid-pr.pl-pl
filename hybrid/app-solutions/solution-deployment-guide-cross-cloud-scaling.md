@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 5ae6c4323324fa104cd0e5c7b5198492be14b8eb
-ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
+ms.openlocfilehash: ed2ad5bed8f4bd80d4a40ab7600842d5544ff97d
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88886819"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895418"
 ---
 # <a name="deploy-an-app-that-scales-cross-cloud-using-azure-and-azure-stack-hub"></a>Wdrażanie aplikacji, która skaluje wiele chmur przy użyciu platformy Azure i usługi Azure Stack Hub
 
@@ -30,7 +30,7 @@ W tym rozwiązaniu utworzysz przykładowe środowisko w celu:
 > - Dowiedz się, jak monitorować i śledzić wdrożenia.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![Diagram filarów hybrydowych](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub to rozszerzenie platformy Azure. Usługa Azure Stack Hub zapewnia elastyczność i innowacje w chmurze obliczeniowej w środowisku lokalnym, umożliwiając jedyną chmurę hybrydową, która umożliwia tworzenie i wdrażanie aplikacji hybrydowych w dowolnym miejscu.  
 > 
 > [Zagadnienia dotyczące projektowania aplikacji hybrydowych](overview-app-design-considerations.md) w artykule przegląd filarów jakości oprogramowania (rozmieszczenia, skalowalności, dostępności, odporności, możliwości zarządzania i zabezpieczeń) do projektowania, wdrażania i obsługi aplikacji hybrydowych. Zagadnienia dotyczące projektowania pomagają zoptymalizować projekt aplikacji hybrydowej i zminimalizować wyzwania w środowiskach produkcyjnych.
@@ -39,16 +39,16 @@ W tym rozwiązaniu utworzysz przykładowe środowisko w celu:
 
 - Subskrypcja platformy Azure. W razie konieczności przed rozpoczęciem Utwórz [bezpłatne konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) .
 - Zintegrowany system Azure Stack Hub lub wdrożenie Azure Stack Development Kit (ASDK).
-  - Aby uzyskać instrukcje dotyczące instalowania centrum Azure Stack, zobacz [Install the ASDK](/azure-stack/asdk/asdk-install.md).
+  - Aby uzyskać instrukcje dotyczące instalowania centrum Azure Stack, zobacz [Install the ASDK](/azure-stack/asdk/asdk-install).
   - W przypadku skryptu automatyzacji po wdrożeniu ASDK przejdź do: [https://github.com/mattmcspirit/azurestack](https://github.com/mattmcspirit/azurestack)
   - Instalacja może wymagać kilku godzin.
-- Wdróż [App Service](/azure-stack/operator/azure-stack-app-service-deploy.md) usługi PaaS Services w usłudze Azure Stack Hub.
-- [Utwórz plany/oferty](/azure-stack/operator/service-plan-offer-subscription-overview.md) w ramach środowiska Azure Stack Hub.
-- [Utwórz subskrypcję dzierżawy](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm.md) w ramach środowiska Azure Stack Hub.
+- Wdróż [App Service](/azure-stack/operator/azure-stack-app-service-deploy) usługi PaaS Services w usłudze Azure Stack Hub.
+- [Utwórz plany/oferty](/azure-stack/operator/service-plan-offer-subscription-overview) w ramach środowiska Azure Stack Hub.
+- [Utwórz subskrypcję dzierżawy](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm) w ramach środowiska Azure Stack Hub.
 - Utwórz aplikację internetową w ramach subskrypcji dzierżawy. Zanotuj nowy adres URL aplikacji sieci Web do późniejszego użycia.
 - Wdróż Azure Pipelines maszynę wirtualną w ramach subskrypcji dzierżawy.
 - Wymagana jest maszyna wirtualna z systemem Windows Server 2016 z platformą .NET 3,5. Ta maszyna wirtualna zostanie utworzona w ramach subskrypcji dzierżawy na Azure Stack Hub jako prywatny agent kompilacji.
-- [System Windows Server 2016 z obrazem maszyny wirtualnej SQL 2017](/azure-stack/operator/azure-stack-add-vm-image.md) jest dostępny w witrynie Centrum Azure Stack Hub. Jeśli ten obraz nie jest dostępny, należy skontaktować się z operatorem centrum Azure Stack, aby upewnić się, że został on dodany do środowiska.
+- [System Windows Server 2016 z obrazem maszyny wirtualnej SQL 2017](/azure-stack/operator/azure-stack-add-vm-image) jest dostępny w witrynie Centrum Azure Stack Hub. Jeśli ten obraz nie jest dostępny, należy skontaktować się z operatorem centrum Azure Stack, aby upewnić się, że został on dodany do środowiska.
 
 ## <a name="issues-and-considerations"></a>Problemy i kwestie do rozważenia
 
@@ -79,7 +79,7 @@ Zaktualizuj plik strefy DNS dla domeny. Usługa Azure AD sprawdzi własność ni
 Skonfiguruj hybrydową ciągłą integrację i ciągłe wdrażanie (CI/CD), aby wdrażać aplikacje sieci Web na platformie Azure i w Azure Stack Hub oraz w celu samowypychania zmian w obu chmurach.
 
 > [!Note]  
-> Wymagane są Azure Stack centrum z odpowiednimi obrazami do uruchomienia (system Windows Server i SQL) oraz wdrożenie App Service. Aby uzyskać więcej informacji, zapoznaj się z dokumentacją App Service [wymagania wstępne dotyczące wdrażania App Service w centrum Azure Stack](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md).
+> Wymagane są Azure Stack centrum z odpowiednimi obrazami do uruchomienia (system Windows Server i SQL) oraz wdrożenie App Service. Aby uzyskać więcej informacji, zapoznaj się z dokumentacją App Service [wymagania wstępne dotyczące wdrażania App Service w centrum Azure Stack](/azure-stack/operator/azure-stack-app-service-before-you-get-started).
 
 ### <a name="add-code-to-azure-repos"></a>Dodaj kod do Azure Repos
 
@@ -133,7 +133,7 @@ Azure Pipelines i Azure DevOps Services zapewniają wysoce konfigurowalny i zarz
 
    ![Zastosuj szablon wdrożenia Azure App Service](meDia/solution-deployment-guide-cross-cloud-scaling/image6.png)
 
-3. W obszarze **Dodawanie artefaktu**Dodaj artefakt dla aplikacji Azure Cloud Build.
+3. W obszarze **Dodawanie artefaktu** Dodaj artefakt dla aplikacji Azure Cloud Build.
 
    ![Dodawanie artefaktu do kompilacji w chmurze platformy Azure](media/solution-deployment-guide-cross-cloud-scaling/image7.png)
 
@@ -145,7 +145,7 @@ Azure Pipelines i Azure DevOps Services zapewniają wysoce konfigurowalny i zarz
 
       ![Wybierz subskrypcję platformy Azure dla punktu końcowego w chmurze platformy Azure](media/solution-deployment-guide-cross-cloud-scaling/image9.png)
 
-6. W obszarze **nazwa usługi App Service**Ustaw wymaganą nazwę usługi Azure App Service.
+6. W obszarze **nazwa usługi App Service** Ustaw wymaganą nazwę usługi Azure App Service.
 
       ![Ustawianie nazwy usługi Azure App Service](media/solution-deployment-guide-cross-cloud-scaling/image10.png)
 
@@ -157,7 +157,7 @@ Azure Pipelines i Azure DevOps Services zapewniają wysoce konfigurowalny i zarz
   
       ![Wybierz pakiet lub folder dla środowiska Azure App Service](media/solution-deployment-guide-cross-cloud-scaling/image12.png)
 
-      ![Wybierz pakiet lub folder dla środowiska Azure App Service](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
+      ![Okno dialogowe selektora folderów 1](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
 
 9. Zapisz wszystkie zmiany i wróć do **potoku wydania**.
 
@@ -194,9 +194,9 @@ Azure Pipelines i Azure DevOps Services zapewniają wysoce konfigurowalny i zarz
 
     ![Wybierz folder do wdrożenia Azure App Service](media/solution-deployment-guide-cross-cloud-scaling/image22.png)
 
-    ![Wybierz folder do wdrożenia Azure App Service](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
+    ![Okno dialogowe selektora folderów 2](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
 
-18. W obszarze Karta zmienna Dodaj zmienną o nazwie `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS` , ustaw jej wartość na **true**i zakres na Azure Stack.
+18. W obszarze Karta zmienna Dodaj zmienną o nazwie `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS` , ustaw jej wartość na **true** i zakres na Azure Stack.
 
     ![Dodawanie zmiennej do wdrożenia aplikacji platformy Azure](media/solution-deployment-guide-cross-cloud-scaling/image24.png)
 
@@ -211,7 +211,7 @@ Azure Pipelines i Azure DevOps Services zapewniają wysoce konfigurowalny i zarz
 21. Zapisz wszystkie zmiany.
 
 > [!Note]  
-> Niektóre ustawienia zadań mogą zostać automatycznie zdefiniowane jako [zmienne środowiskowe](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) podczas tworzenia definicji wydania na podstawie szablonu. Tych ustawień nie można modyfikować w ustawieniach zadania; Zamiast tego należy wybrać element środowiska nadrzędnego, aby edytować te ustawienia.
+> Niektóre ustawienia zadań mogą zostać automatycznie zdefiniowane jako [zmienne środowiskowe](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables) podczas tworzenia definicji wydania na podstawie szablonu. Tych ustawień nie można modyfikować w ustawieniach zadania; Zamiast tego należy wybrać element środowiska nadrzędnego, aby edytować te ustawienia.
 
 ## <a name="publish-to-azure-stack-hub-via-visual-studio"></a>Publikowanie w centrum Azure Stack przy użyciu programu Visual Studio
 
@@ -219,13 +219,13 @@ Tworząc punkty końcowe, kompilacja Azure DevOps Services może wdrożyć aplik
 
 1. Zaloguj się do Azure DevOps Services i przejdź do strony Ustawienia aplikacji.
 
-2. W obszarze **Ustawienia**wybierz pozycję **zabezpieczenia**.
+2. W obszarze **Ustawienia** wybierz pozycję **zabezpieczenia**.
 
-3. W obszarze **grupy VSTS**wybierz pozycję **twórcy punktów końcowych**.
+3. W obszarze **grupy VSTS** wybierz pozycję **twórcy punktów końcowych**.
 
 4. Na karcie **Członkowie** wybierz pozycję **Dodaj**.
 
-5. W obszarze **Dodawanie użytkowników i grup**wprowadź nazwę użytkownika i wybierz tego użytkownika z listy użytkowników.
+5. W obszarze **Dodawanie użytkowników i grup** wprowadź nazwę użytkownika i wybierz tego użytkownika z listy użytkowników.
 
 6. Wybierz pozycję **Save changes** (Zapisz zmiany).
 
@@ -233,7 +233,7 @@ Tworząc punkty końcowe, kompilacja Azure DevOps Services może wdrożyć aplik
 
 8. Na karcie **Członkowie** wybierz pozycję **Dodaj**.
 
-9. W obszarze **Dodawanie użytkowników i grup**wprowadź nazwę użytkownika i wybierz tego użytkownika z listy użytkowników.
+9. W obszarze **Dodawanie użytkowników i grup** wprowadź nazwę użytkownika i wybierz tego użytkownika z listy użytkowników.
 
 10. Wybierz pozycję **Save changes** (Zapisz zmiany).
 
@@ -242,7 +242,7 @@ Teraz, gdy istnieją informacje o punkcie końcowym, Azure Pipelines do połącz
 ## <a name="develop-the-app-build"></a>Opracowywanie kompilacji aplikacji
 
 > [!Note]  
-> Wymagane są Azure Stack centrum z odpowiednimi obrazami do uruchomienia (system Windows Server i SQL) oraz wdrożenie App Service. Aby uzyskać więcej informacji, zobacz [wymagania wstępne dotyczące wdrażania App Service w centrum Azure Stack](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md).
+> Wymagane są Azure Stack centrum z odpowiednimi obrazami do uruchomienia (system Windows Server i SQL) oraz wdrożenie App Service. Aby uzyskać więcej informacji, zobacz [wymagania wstępne dotyczące wdrażania App Service w centrum Azure Stack](/azure-stack/operator/azure-stack-app-service-before-you-get-started).
 
 Użyj [szablonów Azure Resource Manager](https://azure.microsoft.com/resources/templates/) , takich jak kod aplikacji sieci web z Azure Repos do wdrożenia w obu chmurach.
 
@@ -266,7 +266,7 @@ Użyj [szablonów Azure Resource Manager](https://azure.microsoft.com/resources/
 
 2. Przejdź do strony **Kompilowanie aplikacji sieci Web** dla projektu.
 
-3. W **argumentach**Add **-r Win10-x64** Code. To dodanie jest wymagane do wyzwolenia wdrożenia samodzielnego z platformą .NET Core.
+3. W **argumentach** Add **-r Win10-x64** Code. To dodanie jest wymagane do wyzwolenia wdrożenia samodzielnego z platformą .NET Core.
 
 4. Uruchom kompilację. Proces [kompilacji samodzielnego wdrożenia](/dotnet/core/deploying/deploy-with-vs#simpleSelf) spowoduje opublikowanie artefaktów, które mogą być uruchamiane na platformie Azure i w centrum Azure Stack.
 
@@ -286,50 +286,50 @@ Tworzenie definicji wydania jest ostatnim krokiem w procesie kompilacji aplikacj
 
 2. Na karcie **wersje** wybierz opcję **[+]** , a następnie wybierz pozycję **Utwórz definicję wydania**.
 
-3. W obszarze **Wybierz szablon**wybierz pozycję **wdrożenie Azure App Service**, a następnie wybierz pozycję **Zastosuj**.
+3. W obszarze **Wybierz szablon** wybierz pozycję **wdrożenie Azure App Service**, a następnie wybierz pozycję **Zastosuj**.
 
-4. Na stronie **Dodawanie artefaktu**ze **źródła (definicji kompilacji)** wybierz aplikację Azure Cloud Build.
+4. Na stronie **Dodawanie artefaktu** ze **źródła (definicji kompilacji)** wybierz aplikację Azure Cloud Build.
 
 5. Na karcie **potok** wybierz link **1 faza**, **1 zadanie** , aby **wyświetlić zadania środowiska**.
 
-6. Na karcie **zadania** wprowadź wartość Azure jako **nazwę środowiska** , a następnie wybierz pozycję AzureCloud Traders — Web EP z listy **subskrypcji platformy Azure** .
+6. Na karcie **zadania** wprowadź wartość Azure jako **nazwę środowiska** , a następnie wybierz pozycję AzureCloud Traders-Web EP z listy **subskrypcji platformy Azure** .
 
 7. Wprowadź **nazwę usługi Azure App Service**, która znajduje się `northwindtraders` w następnym przechwyceniu ekranu.
 
 8. W przypadku fazy agenta wybierz pozycję **hostowana program VS2017** z listy **kolejek agentów** .
 
-9. W obszarze **wdróż Azure App Service**wybierz prawidłowy **pakiet lub folder** dla środowiska.
+9. W obszarze **wdróż Azure App Service** wybierz prawidłowy **pakiet lub folder** dla środowiska.
 
-10. W obszarze **Wybierz plik lub folder**wybierz pozycję **OK** , aby określić **lokalizację**.
+10. W obszarze **Wybierz plik lub folder** wybierz pozycję **OK** , aby określić **lokalizację**.
 
 11. Zapisz wszystkie zmiany i wróć do **potoku**.
 
-12. Na karcie **potok** wybierz pozycję **Dodaj artefakt**i wybierz pozycję **NorthwindCloud Traders-statek** ze **źródła (definicji kompilacji)** .
+12. Na karcie **potok** wybierz pozycję **Dodaj artefakt** i wybierz pozycję **NorthwindCloud Traders-statek** ze **źródła (definicji kompilacji)** .
 
-13. Po **wybraniu szablonu**Dodaj inne środowisko. Wybierz **wdrożenie Azure App Service** a następnie wybierz pozycję **Zastosuj**.
+13. Po **wybraniu szablonu** Dodaj inne środowisko. Wybierz **wdrożenie Azure App Service** a następnie wybierz pozycję **Zastosuj**.
 
 14. Wprowadź `Azure Stack Hub` jako **nazwę środowiska**.
 
 15. Na karcie **zadania** Znajdź i wybierz pozycję Azure Stack Hub.
 
-16. Z listy **subskrypcja platformy Azure** wybierz pozycję **AzureStack Traders — statek EP** dla punktu końcowego centrum Azure Stack.
+16. Z listy **subskrypcja platformy Azure** wybierz pozycję **AzureStack Traders-Vessel EP** dla punktu końcowego centrum Azure Stack Hub.
 
 17. Wprowadź nazwę aplikacji sieci Web Azure Stack Hub jako **nazwę usługi App Service**.
 
-18. W obszarze **wybór agenta**wybierz pozycję **AzureStack-b Douglas Fir** z listy **kolejek agentów** .
+18. W obszarze **wybór agenta** wybierz pozycję **AzureStack-b Douglas Fir** z listy **kolejek agentów** .
 
-19. W polu **wdróż Azure App Service**wybierz prawidłowy **pakiet lub folder** dla środowiska. Na stronie **Wybieranie pliku lub folderu**wybierz pozycję **OK** dla **lokalizacji**folderu.
+19. W polu **wdróż Azure App Service** wybierz prawidłowy **pakiet lub folder** dla środowiska. Na stronie **Wybieranie pliku lub folderu** wybierz pozycję **OK** dla **lokalizacji** folderu.
 
 20. Na karcie **zmienna** Znajdź zmienną o nazwie `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS` . Ustaw wartość zmiennej na **true**, a następnie ustaw jej zakres na **Azure Stack Hub**.
 
-21. Na karcie **potok** wybierz ikonę **wyzwalacza ciągłego wdrażania** dla artefaktu sieci Web NorthwindCloud Traders i ustaw **wyzwalacz ciągłego wdrażania** na **włączone**. Wykonaj tę samą czynność dla artefaktu **NorthwindCloud Traders-zbiornika** .
+21. Na karcie **potok** wybierz ikonę **wyzwalacza ciągłego wdrażania** dla artefaktu NorthwindCloud Traders-Web i ustaw **wyzwalacz ciągłego wdrażania** na **włączone**. Wykonaj tę samą czynność dla artefaktu **NorthwindCloud Traders-zbiornika** .
 
 22. W przypadku środowiska Azure Stack Hub wybierz ikonę **warunki przed wdrożeniem** Ustaw wyzwalacz na **po wydaniu**.
 
 23. Zapisz wszystkie zmiany.
 
 > [!Note]  
-> Niektóre ustawienia zadań zlecenia są automatycznie definiowane jako [zmienne środowiskowe](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) podczas tworzenia definicji wydania na podstawie szablonu. Tych ustawień nie można modyfikować w ustawieniach zadania, ale można je modyfikować w elementach środowiska nadrzędnego.
+> Niektóre ustawienia zadań zlecenia są automatycznie definiowane jako [zmienne środowiskowe](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables) podczas tworzenia definicji wydania na podstawie szablonu. Tych ustawień nie można modyfikować w ustawieniach zadania, ale można je modyfikować w elementach środowiska nadrzędnego.
 
 ## <a name="create-a-release"></a>Tworzenie wersji
 

@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: ab0eb885e7b0fefaca8991522712652f979d8712
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: 4f86e5ae4b8b9bd7693617b07419b67dfcf05dc1
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910916"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895316"
 ---
 # <a name="hybrid-patterns-and-solution-examples-for-azure-and-azure-stack"></a>Wzorce hybrydowe i przykłady rozwiązań dla platformy Azure i Azure Stack
 
@@ -40,7 +40,7 @@ Istnieją dwa typy artykułów wzorca:
 - Pojedynczy wzorzec: zawiera wskazówki dotyczące projektowania dla jednego scenariusza ogólnego przeznaczenia.
 - Wiele wzorców: zawiera wskazówki dotyczące projektowania, w których używane są aplikacje wielu wzorców. Ten wzorzec jest często wymagany do rozwiązywania bardziej złożonych scenariuszy lub problemów specyficznych dla branż.
 
-## <a name="solution-deployment-guides"></a>Przewodnik wdrażania rozwiązania
+## <a name="solution-deployment-guides"></a>Przewodniki wdrażania rozwiązania
 
 Wskazówki krok po kroku ułatwiają wdrożenie przykładowego rozwiązania. Przewodnik może również odnosić się do przykładowego kodu pomocnika, który jest przechowywany w [przykładowym repozytorium rozwiązań](https://github.com/Azure-Samples/azure-intelligent-edge-patterns)usługi GitHub.
 
@@ -49,4 +49,4 @@ Wskazówki krok po kroku ułatwiają wdrożenie przykładowego rozwiązania. Prz
 - Zapoznaj się z [rodziną Azure Stack produktów i rozwiązań](/azure-stack) , aby dowiedzieć się więcej o całym portfolio produktów i rozwiązań.
 - Zapoznaj się z sekcją "wzorce" i "przewodniki wdrażania rozwiązania" spisu treści, aby dowiedzieć się więcej o każdej z nich.
 - Przeczytaj o [zagadnieniach dotyczących projektowania aplikacji hybrydowych](overview-app-design-considerations.md) , aby przejrzeć filary jakości oprogramowania do projektowania, wdrażania i obsługi aplikacji hybrydowych.
-- [Skonfiguruj środowisko programistyczne na Azure Stack](/azure-stack/user/azure-stack-dev-start.md) i [Wdróż swoją pierwszą aplikację](/azure-stack/user/azure-stack-dev-start-deploy-app.md) na Azure Stack.
+- [Skonfiguruj środowisko programistyczne na Azure Stack](/azure-stack/user/azure-stack-dev-start) i [Wdróż swoją pierwszą aplikację](/azure-stack/user/azure-stack-dev-start-deploy-app) na Azure Stack.

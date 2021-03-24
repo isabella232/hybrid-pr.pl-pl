@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: ecc42a94e2c59531b2a2e933772b0d8ce8c58609
-ms.sourcegitcommit: 0d5b5336bdb969588d0b92e04393e74b8f682c3b
+ms.openlocfilehash: 0989859fd68847932d3e69defee59740a2bffd44
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353482"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895401"
 ---
 # <a name="deploy-hybrid-app-with-on-premises-data-that-scales-cross-cloud"></a>Wdróż aplikację hybrydową przy użyciu danych lokalnych, które skaluje się z wielu chmur
 
@@ -47,7 +47,7 @@ Ten samouczek obejmuje następujące zadania:
 W tym samouczku założono, że masz podstawową wiedzę na temat globalnego systemu Azure i centrum Azure Stack. Jeśli chcesz dowiedzieć się więcej przed rozpoczęciem pracy z samouczkiem, zapoznaj się z następującymi artykułami:
 
 - [Wprowadzenie do platformy Azure](https://azure.microsoft.com/overview/what-is-azure/)
-- [Podstawowe pojęcia Azure Stack centrum](/azure-stack/operator/azure-stack-overview.md)
+- [Podstawowe pojęcia Azure Stack centrum](/azure-stack/operator/azure-stack-overview)
 
 W tym samouczku przyjęto również założenie, że masz subskrypcję platformy Azure. Jeśli nie masz subskrypcji, przed rozpoczęciem [Utwórz bezpłatne konto](https://azure.microsoft.com/free/) .
 
@@ -55,7 +55,7 @@ W tym samouczku przyjęto również założenie, że masz subskrypcję platformy
 
 Przed rozpoczęciem tego rozwiązania upewnij się, że spełniasz następujące wymagania:
 
-- Azure Stack Development Kit (ASDK) lub subskrypcja zintegrowanego systemu Azure Stack centrum. Aby wdrożyć ASDK, postępuj zgodnie z instrukcjami podanymi w temacie [wdrażanie ASDK przy użyciu Instalatora](/azure-stack/asdk/asdk-install.md).
+- Azure Stack Development Kit (ASDK) lub subskrypcja zintegrowanego systemu Azure Stack centrum. Aby wdrożyć ASDK, postępuj zgodnie z instrukcjami podanymi w temacie [wdrażanie ASDK przy użyciu Instalatora](/azure-stack/asdk/asdk-install).
 - Instalacja centrum Azure Stack powinna mieć zainstalowane następujące elementy:
   - Azure App Service. Współpracuj z operatorem Azure Stack Hub, aby wdrażać i konfigurować Azure App Service w danym środowisku. Ten samouczek wymaga, aby App Service mieć co najmniej jedną dostępną rolę procesu roboczego (1).
   - Obraz systemu Windows Server 2016.
@@ -72,23 +72,23 @@ Przed rozpoczęciem tego rozwiązania upewnij się, że spełniasz następujące
 
 1. Zaloguj się do portalu użytkowników centrum Azure Stack.
 
-2. Na **pulpicie nawigacyjnym**wybierz pozycję **Marketplace**.
+2. Na **pulpicie nawigacyjnym** wybierz pozycję **Marketplace**.
 
     ![Azure Stack centrum Marketplace](media/solution-deployment-guide-hybrid/image1.png)
 
-3. W obszarze **Marketplace**wybierz pozycję **obliczenia**, a następnie wybierz pozycję **więcej**. W obszarze **więcej**wybierz **licencję bezpłatna SQL Server: SQL Server 2017 Developer w obrazie systemu Windows Server** .
+3. W obszarze **Marketplace** wybierz pozycję **obliczenia**, a następnie wybierz pozycję **więcej**. W obszarze **więcej** wybierz **licencję bezpłatna SQL Server: SQL Server 2017 Developer w obrazie systemu Windows Server** .
 
     ![Wybieranie obrazu maszyny wirtualnej w portalu użytkowników Azure Stack Hub](media/solution-deployment-guide-hybrid/image2.png)
 
 4. **Bezpłatna SQL Server Licencja: SQL Server 2017 Developer w systemie Windows Server**, wybierz pozycję **Utwórz**.
 
-5. Na stronie **podstawowe > Skonfiguruj ustawienia podstawowe**, podaj **nazwę** maszyny wirtualnej (VM), **nazwę użytkownika** dla SQL Server sa i **hasło** dla tego skojarzenia.  Z listy rozwijanej **subskrypcja** wybierz subskrypcję, która ma zostać wdrożona. W obszarze **Grupa zasobów**Użyj **opcji wybierz istniejącą** i umieść maszynę wirtualną w tej samej grupie zasobów, co aplikacja sieci Web Centrum Azure Stack.
+5. Na stronie **podstawowe > Skonfiguruj ustawienia podstawowe**, podaj **nazwę** maszyny wirtualnej (VM), **nazwę użytkownika** dla SQL Server sa i **hasło** dla tego skojarzenia.  Z listy rozwijanej **subskrypcja** wybierz subskrypcję, która ma zostać wdrożona. W obszarze **Grupa zasobów** Użyj **opcji wybierz istniejącą** i umieść maszynę wirtualną w tej samej grupie zasobów, co aplikacja sieci Web Centrum Azure Stack.
 
     ![Konfigurowanie podstawowych ustawień maszyny wirtualnej w portalu użytkownika Azure Stack Hub](media/solution-deployment-guide-hybrid/image3.png)
 
-6. W obszarze **rozmiar**wybierz rozmiar maszyny wirtualnej. W tym samouczku zalecamy A2_Standard lub DS2_V2_Standard.
+6. W obszarze **rozmiar** wybierz rozmiar maszyny wirtualnej. W tym samouczku zalecamy A2_Standard lub DS2_V2_Standard.
 
-7. W obszarze **ustawienia > Skonfiguruj funkcje opcjonalne**skonfiguruj następujące ustawienia:
+7. W obszarze **ustawienia > Skonfiguruj funkcje opcjonalne** skonfiguruj następujące ustawienia:
 
    - **Konto magazynu**: Utwórz nowe konto, jeśli będzie potrzebne.
    - **Sieć wirtualna**:
@@ -104,11 +104,11 @@ Przed rozpoczęciem tego rozwiązania upewnij się, że spełniasz następujące
 
      ![Skonfiguruj opcjonalne funkcje maszyny wirtualnej w portalu użytkowników w Azure Stack Hub](media/solution-deployment-guide-hybrid/image4.png)
 
-8. W obszarze **ustawienia SQL Server**skonfiguruj następujące ustawienia:
+8. W obszarze **ustawienia SQL Server** skonfiguruj następujące ustawienia:
 
-   - W przypadku **połączeń SQL**wybierz opcję **publiczny (Internet)**.
-   - W polu **port**pozostaw wartość domyślną **1433**.
-   - W obszarze **uwierzytelnianie SQL**wybierz pozycję **Włącz**.
+   - W przypadku **połączeń SQL** wybierz opcję **publiczny (Internet)**.
+   - W polu **port** pozostaw wartość domyślną **1433**.
+   - W obszarze **uwierzytelnianie SQL** wybierz pozycję **Włącz**.
 
      > [!Note]  
      > Po włączeniu uwierzytelniania SQL należy automatycznie wypełnić przy użyciu informacji "sqladmin", które zostały skonfigurowane w **podstawie**.
@@ -117,7 +117,7 @@ Przed rozpoczęciem tego rozwiązania upewnij się, że spełniasz następujące
 
      ![Konfigurowanie ustawień SQL Server w portalu użytkowników Azure Stack Hub](media/solution-deployment-guide-hybrid/image5.png)
 
-9. Na stronie **Podsumowanie**Przejrzyj konfigurację maszyny wirtualnej, a następnie wybierz pozycję **OK** , aby rozpocząć wdrażanie.
+9. Na stronie **Podsumowanie** Przejrzyj konfigurację maszyny wirtualnej, a następnie wybierz pozycję **OK** , aby rozpocząć wdrażanie.
 
     ![Podsumowanie konfiguracji w portalu użytkowników w Azure Stack Hub](media/solution-deployment-guide-hybrid/image6.png)
 
@@ -139,7 +139,7 @@ Azure App Service upraszcza uruchamianie aplikacji sieci Web i zarządzanie nią
 
 Aby umożliwić użytkownikom dostęp do aplikacji, App Service na Azure Stack Hub muszą być trasowane z publicznej sieci Internet. Jeśli centrum Azure Stack jest dostępne z Internetu, zanotuj publiczny adres IP lub adres URL dla aplikacji sieci Web Centrum Azure Stack.
 
-Jeśli używasz ASDK, możesz [skonfigurować statyczne mapowanie NAT](/azure-stack/operator/azure-stack-create-vpn-connection-one-node.md#configure-the-nat-vm-on-each-asdk-for-gateway-traversal) , aby uwidocznić App Service poza środowiskiem wirtualnym.
+Jeśli używasz ASDK, możesz [skonfigurować statyczne mapowanie NAT](/azure-stack/operator/azure-stack-create-vpn-connection-one-node#configure-the-nat-vm-on-each-asdk-for-gateway-traversal) , aby uwidocznić App Service poza środowiskiem wirtualnym.
 
 ### <a name="connect-a-web-app-in-azure-to-a-hybrid-network"></a>Łączenie aplikacji sieci Web na platformie Azure z siecią hybrydową
 
@@ -153,7 +153,7 @@ Aby zapewnić łączność między frontonem sieci Web na platformie Azure a SQL
 
 Brama sieci wirtualnej na stronie platformy Azure w sieci hybrydowej musi zezwalać na połączenia typu punkt-lokacja z usługą Azure App Service.
 
-1. W Azure Portal przejdź do strony bramy sieci wirtualnej. W obszarze **Ustawienia**wybierz pozycję **Konfiguracja punktu do lokacji**.
+1. W Azure Portal przejdź do strony bramy sieci wirtualnej. W obszarze **Ustawienia** wybierz pozycję **Konfiguracja punktu do lokacji**.
 
     ![Opcja punkt-lokacja w bramie sieci wirtualnej platformy Azure](media/solution-deployment-guide-hybrid/image8.png)
 
@@ -166,7 +166,7 @@ Brama sieci wirtualnej na stronie platformy Azure w sieci hybrydowej musi zezwal
    > [!Note]  
    > Upewnij się, że określony zakres nie pokrywa się z żadnym z zakresów adresów używanych już przez podsieci w globalnych składnikach platformy Azure lub Azure Stack Centrum sieci hybrydowej.
 
-   W obszarze **Typ tunelu**Usuń zaznaczenie **sieci VPN protokołu IKEv2**. Wybierz pozycję **Zapisz** , aby zakończyć konfigurowanie punktu do lokacji.
+   W obszarze **Typ tunelu** Usuń zaznaczenie **sieci VPN protokołu IKEv2**. Wybierz pozycję **Zapisz** , aby zakończyć konfigurowanie punktu do lokacji.
 
    ![Ustawienia punkt-lokacja w bramie sieci wirtualnej platformy Azure](media/solution-deployment-guide-hybrid/image10.png)
 
@@ -174,15 +174,15 @@ Brama sieci wirtualnej na stronie platformy Azure w sieci hybrydowej musi zezwal
 
 1. Aby połączyć aplikację z siecią wirtualną platformy Azure, postępuj zgodnie z instrukcjami w temacie [wymagana integracja](/azure/app-service/web-sites-integrate-with-vnet#gateway-required-vnet-integration)z siecią wirtualną.
 
-2. Przejdź do pozycji **Ustawienia** dla planu App Service hostowania aplikacji sieci Web. W obszarze **Ustawienia**wybierz pozycję **Sieć**.
+2. Przejdź do pozycji **Ustawienia** dla planu App Service hostowania aplikacji sieci Web. W obszarze **Ustawienia** wybierz pozycję **Sieć**.
 
     ![Konfigurowanie sieci dla planu App Service](media/solution-deployment-guide-hybrid/image11.png)
 
-3. W **integracja z siecią wirtualną**wybierz **pozycję kliknij tutaj, aby zarządzać**.
+3. W **integracja z siecią wirtualną** wybierz **pozycję kliknij tutaj, aby zarządzać**.
 
     ![Zarządzanie integracją sieci wirtualnej w ramach planu App Service](media/solution-deployment-guide-hybrid/image12.png)
 
-4. Wybierz sieć wirtualną, którą chcesz skonfigurować. W obszarze **adresy IP kierowane do sieci wirtualnej**Wprowadź zakres adresów IP dla sieci wirtualnej platformy Azure, sieć wirtualną Azure Stack Hub i przestrzenie adresowe punkt-lokacja. Wybierz pozycję **Zapisz** , aby sprawdzić poprawność i zapisać te ustawienia.
+4. Wybierz sieć wirtualną, którą chcesz skonfigurować. W obszarze **adresy IP kierowane do sieci wirtualnej** Wprowadź zakres adresów IP dla sieci wirtualnej platformy Azure, sieć wirtualną Azure Stack Hub i przestrzenie adresowe punkt-lokacja. Wybierz pozycję **Zapisz** , aby sprawdzić poprawność i zapisać te ustawienia.
 
     ![Zakresy adresów IP do rozesłania w ramach integracji Virtual Network](media/solution-deployment-guide-hybrid/image13.png)
 
@@ -196,7 +196,7 @@ Bramę sieci lokalnej w sieci wirtualnej Azure Stack Hub należy skonfigurować 
 
     ![Opcja konfiguracji bramy w bramie sieci lokalnej centrum Azure Stack](media/solution-deployment-guide-hybrid/image14.png)
 
-2. W **obszarze przestrzeń adresowa**Wprowadź zakres adresów punkt-lokacja dla bramy sieci wirtualnej na platformie Azure.
+2. W **obszarze przestrzeń adresowa** Wprowadź zakres adresów punkt-lokacja dla bramy sieci wirtualnej na platformie Azure.
 
     ![Przestrzeń adresowa punkt-lokacja w bramie sieci lokalnej centrum Azure Stack](media/solution-deployment-guide-hybrid/image15.png)
 
@@ -267,7 +267,7 @@ Za pomocą zmiennych środowiskowych App Service można przekazać inne parametr
 
 1. Otwórz aplikację w programie Visual Studio.
 
-2. Otwórz Startup.cs i znajdź następujący blok kodu:
+2. Otwórz Start. cs i znajdź następujący blok kodu:
 
     ```C#
     services.AddDbContext<MyDatabaseContext>(options =>
@@ -314,22 +314,22 @@ Gdy tworzysz aplikację sieci Web w środowisku App Service, rozpocznie się ono
 
 4. Wybierz pozycję **+ Dodaj regułę**.
 
-5. W polu **Źródło metryk**wybierz pozycję **bieżący zasób**. Użyj następujących kryteriów i akcji dla reguły.
+5. W polu **Źródło metryk** wybierz pozycję **bieżący zasób**. Użyj następujących kryteriów i akcji dla reguły.
 
 #### <a name="criteria"></a>Kryteria
 
 1. W obszarze **agregacja czasu** wybierz pozycję **średnia**.
 
-2. W obszarze **Nazwa metryki**wybierz opcję **procent procesora CPU**.
+2. W obszarze **Nazwa metryki** wybierz opcję **procent procesora CPU**.
 
-3. W obszarze **operator**wybierz pozycję **większe niż**.
+3. W obszarze **operator** wybierz pozycję **większe niż**.
 
    - Ustaw **próg** na **50**.
    - Ustaw **czas trwania** na **10**.
 
 #### <a name="action"></a>Akcja
 
-1. W obszarze **operacja**wybierz pozycję **Zwiększ liczbę według**.
+1. W obszarze **operacja** wybierz pozycję **Zwiększ liczbę według**.
 
 2. Ustaw **liczbę wystąpień** na **2**.
 
@@ -339,7 +339,7 @@ Gdy tworzysz aplikację sieci Web w środowisku App Service, rozpocznie się ono
 
 5. Wybierz pozycję **+ Dodaj regułę**.
 
-6. W polu **Źródło metryk**wybierz pozycję **bieżący zasób.**
+6. W polu **Źródło metryk** wybierz pozycję **bieżący zasób.**
 
    > [!Note]  
    > Bieżący zasób będzie zawierać nazwę/identyfikator GUID planu App Service i lista rozwijana **Typ zasobu** i **zasób** będzie niedostępna.
@@ -354,16 +354,16 @@ Po zmniejszeniu natężenia ruchu aplikacja internetowa platformy Azure może au
 
 1. W obszarze **agregacja czasu** wybierz pozycję **średnia**.
 
-2. W obszarze **Nazwa metryki**wybierz opcję **procent procesora CPU**.
+2. W obszarze **Nazwa metryki** wybierz opcję **procent procesora CPU**.
 
-3. W obszarze **operator**wybierz pozycję **mniejsze niż**.
+3. W obszarze **operator** wybierz pozycję **mniejsze niż**.
 
    - Ustaw **próg** na wartość **30**.
    - Ustaw **czas trwania** na **10**.
 
 #### <a name="action"></a>Akcja
 
-1. W obszarze **operacja**wybierz pozycję **Zmniejsz liczbę według**.
+1. W obszarze **operacja** wybierz pozycję **Zmniejsz liczbę według**.
 
    - Ustaw **liczbę wystąpień** na **1**.
    - Ustaw **chłodną** wartość na **5**.
@@ -380,13 +380,13 @@ Utwórz profil Traffic Manager przy użyciu Azure Portal, a następnie skonfigur
 2. Wybierz pozycję **Sieć**.
 3. Wybierz **profil Traffic Manager** i skonfiguruj następujące ustawienia:
 
-   - W polu **Nazwa**wprowadź nazwę profilu. Ta nazwa **musi** być unikatowa w strefie trafficmanager.NET i służy do tworzenia nowej nazwy DNS (na przykład northwindstore.trafficmanager.NET).
-   - W polu **Metoda routingu**wybierz opcję **ważone**.
-   - W obszarze **subskrypcja**wybierz subskrypcję, w której chcesz utworzyć ten profil.
-   - W obszarze **Grupa zasobów**Utwórz nową grupę zasobów dla tego profilu.
+   - W polu **Nazwa** wprowadź nazwę profilu. Ta nazwa **musi** być unikatowa w strefie trafficmanager.NET i służy do tworzenia nowej nazwy DNS (na przykład northwindstore.trafficmanager.NET).
+   - W polu **Metoda routingu** wybierz opcję **ważone**.
+   - W obszarze **subskrypcja** wybierz subskrypcję, w której chcesz utworzyć ten profil.
+   - W obszarze **Grupa zasobów** Utwórz nową grupę zasobów dla tego profilu.
    - W obszarze **Lokalizacja grupy zasobów** wybierz lokalizację grupy zasobów. To ustawienie dotyczy lokalizacji grupy zasobów i nie ma wpływu na profil Traffic Manager, który został wdrożony globalnie.
 
-4. Wybierz pozycję **Utwórz**.
+4. Wybierz przycisk **Utwórz**.
 
     ![Utwórz profil Traffic Manager](media/solution-deployment-guide-hybrid/image19.png)
 
@@ -396,32 +396,32 @@ Utwórz profil Traffic Manager przy użyciu Azure Portal, a następnie skonfigur
 
 1. Wyszukaj utworzony profil Traffic Manager. Jeśli przejdziesz do grupy zasobów profilu, wybierz profil.
 
-2. W oknie **profil Traffic Manager**w obszarze **Ustawienia**wybierz pozycję **punkty końcowe**.
+2. W oknie **profil Traffic Manager** w obszarze **Ustawienia** wybierz pozycję **punkty końcowe**.
 
 3. Wybierz pozycję **Dodaj**.
 
-4. W obszarze **Dodaj punkt końcowy**Użyj następujących ustawień centrum Azure Stack:
+4. W obszarze **Dodaj punkt końcowy** Użyj następujących ustawień centrum Azure Stack:
 
-   - W obszarze **Typ**wybierz pozycję **zewnętrzny punkt końcowy**.
+   - W obszarze **Typ** wybierz pozycję **zewnętrzny punkt końcowy**.
    - Wprowadź **nazwę** punktu końcowego.
-   - W polu w **pełni kwalifikowana nazwa domeny (FQDN) lub adres IP**wprowadź zewnętrzny adres URL aplikacji sieci Web Azure Stack Hub.
-   - W polu **waga**pozostaw wartość domyślną **1**. Ta waga powoduje, że cały ruch przechodzi do tego punktu końcowego, jeśli jest w dobrej kondycji.
+   - W polu w **pełni kwalifikowana nazwa domeny (FQDN) lub adres IP** wprowadź zewnętrzny adres URL aplikacji sieci Web Azure Stack Hub.
+   - W polu **waga** pozostaw wartość domyślną **1**. Ta waga powoduje, że cały ruch przechodzi do tego punktu końcowego, jeśli jest w dobrej kondycji.
    - Pozostaw pole wyboru **Dodaj jako wyłączone wyłączona** .
 
 5. Wybierz **przycisk OK** , aby zapisać punkt końcowy Azure Stack centrum.
 
 Następnie skonfigurujesz punkt końcowy platformy Azure.
 
-1. W obszarze **profil Traffic Manager**wybierz pozycję **punkty końcowe**.
+1. W obszarze **profil Traffic Manager** wybierz pozycję **punkty końcowe**.
 2. Wybierz pozycję **+Dodaj**.
-3. Na stronie **Dodawanie punktu końcowego**Użyj następujących ustawień platformy Azure:
+3. Na stronie **Dodawanie punktu końcowego** Użyj następujących ustawień platformy Azure:
 
-   - W obszarze **Typ**wybierz pozycję **punkt końcowy platformy Azure**.
+   - W obszarze **Typ** wybierz pozycję **punkt końcowy platformy Azure**.
    - Wprowadź **nazwę** punktu końcowego.
-   - W obszarze **Typ zasobu docelowego**wybierz pozycję **App Service**.
-   - W polu **zasób docelowy**wybierz pozycję **Wybierz usługę App Service** , aby wyświetlić listę Web Apps w tej samej subskrypcji.
+   - W obszarze **Typ zasobu docelowego** wybierz pozycję **App Service**.
+   - W polu **zasób docelowy** wybierz pozycję **Wybierz usługę App Service** , aby wyświetlić listę Web Apps w tej samej subskrypcji.
    - W obszarze **Zasoby** wybierz usługę aplikacji, którą chcesz dodać jako pierwszy punkt końcowy.
-   - W obszarze **waga**wybierz pozycję **2**. To ustawienie powoduje, że cały ruch przechodzi do tego punktu końcowego, jeśli podstawowy punkt końcowy ma złą kondycję lub jeśli masz regułę/alert przekierowuje ruch po wyzwoleniu.
+   - W obszarze **waga** wybierz pozycję **2**. To ustawienie powoduje, że cały ruch przechodzi do tego punktu końcowego, jeśli podstawowy punkt końcowy ma złą kondycję lub jeśli masz regułę/alert przekierowuje ruch po wyzwoleniu.
    - Pozostaw pole wyboru **Dodaj jako wyłączone wyłączona** .
 
 4. Wybierz **przycisk OK** , aby zapisać punkt końcowy platformy Azure.
@@ -446,19 +446,19 @@ Ten widok służy do tworzenia alertu skalowania w poziomie i alertu dotycząceg
 
 ### <a name="create-the-scale-out-alert"></a>Tworzenie alertu skalowania w poziomie
 
-1. W obszarze **Konfiguracja**wybierz pozycję **alerty (klasyczne)**.
+1. W obszarze **Konfiguracja** wybierz pozycję **alerty (klasyczne)**.
 2. Wybierz pozycję **Dodaj alert dotyczący metryki (klasyczny)**.
-3. W obszarze **Dodaj regułę**skonfiguruj następujące ustawienia:
+3. W obszarze **Dodaj regułę** skonfiguruj następujące ustawienia:
 
-   - W obszarze **Nazwa**wprowadź polecenie przebicie **na chmurę Azure**.
+   - W obszarze **Nazwa** wprowadź polecenie przebicie **na chmurę Azure**.
    - **Opis** jest opcjonalny.
-   - W obszarze alert **źródłowy**  >  **na**wybierz pozycję **metryki**.
-   - W obszarze **kryteria**wybierz swoją subskrypcję, grupę zasobów dla profilu Traffic Manager i nazwę profilu Traffic Manager dla zasobu.
+   - W obszarze alert **źródłowy**  >  **na** wybierz pozycję **metryki**.
+   - W obszarze **kryteria** wybierz swoją subskrypcję, grupę zasobów dla profilu Traffic Manager i nazwę profilu Traffic Manager dla zasobu.
 
-4. W obszarze **Metryka**wybierz pozycję **Liczba żądań**.
-5. W obszarze **warunek**wybierz opcję **większe niż**.
+4. W obszarze **Metryka** wybierz pozycję **Liczba żądań**.
+5. W obszarze **warunek** wybierz opcję **większe niż**.
 6. W obszarze **próg wprowadź wartość** **2**.
-7. W polu **okres**wybierz pozycję **w ciągu ostatnich 5 minut**.
+7. W polu **okres** wybierz pozycję **w ciągu ostatnich 5 minut**.
 8. W obszarze **Powiadamiaj za pośrednictwem**:
    - Zaznacz pole wyboru dla **właścicieli, współautorów i czytelników poczty e-mail**.
    - Wprowadź swój adres e-mail, aby uzyskać **dodatkowe adresy e-mail administratora**.
@@ -467,19 +467,19 @@ Ten widok służy do tworzenia alertu skalowania w poziomie i alertu dotycząceg
 
 ### <a name="create-the-scale-in-alert"></a>Tworzenie alertu dotyczącego skalowania w poziomie
 
-1. W obszarze **Konfiguracja**wybierz pozycję **alerty (klasyczne)**.
+1. W obszarze **Konfiguracja** wybierz pozycję **alerty (klasyczne)**.
 2. Wybierz pozycję **Dodaj alert dotyczący metryki (klasyczny)**.
-3. W obszarze **Dodaj regułę**skonfiguruj następujące ustawienia:
+3. W obszarze **Dodaj regułę** skonfiguruj następujące ustawienia:
 
-   - W obszarze **Nazwa**wprowadź **skalowanie z powrotem do Azure Stack Hub**.
+   - W obszarze **Nazwa** wprowadź **skalowanie z powrotem do Azure Stack Hub**.
    - **Opis** jest opcjonalny.
-   - W obszarze alert **źródłowy**  >  **na**wybierz pozycję **metryki**.
-   - W obszarze **kryteria**wybierz swoją subskrypcję, grupę zasobów dla profilu Traffic Manager i nazwę profilu Traffic Manager dla zasobu.
+   - W obszarze alert **źródłowy**  >  **na** wybierz pozycję **metryki**.
+   - W obszarze **kryteria** wybierz swoją subskrypcję, grupę zasobów dla profilu Traffic Manager i nazwę profilu Traffic Manager dla zasobu.
 
-4. W obszarze **Metryka**wybierz pozycję **Liczba żądań**.
-5. W obszarze **warunek**wybierz pozycję **mniejsze niż**.
+4. W obszarze **Metryka** wybierz pozycję **Liczba żądań**.
+5. W obszarze **warunek** wybierz pozycję **mniejsze niż**.
 6. W obszarze **próg wprowadź wartość** **2**.
-7. W polu **okres**wybierz pozycję **w ciągu ostatnich 5 minut**.
+7. W polu **okres** wybierz pozycję **w ciągu ostatnich 5 minut**.
 8. W obszarze **Powiadamiaj za pośrednictwem**:
    - Zaznacz pole wyboru dla **właścicieli, współautorów i czytelników poczty e-mail**.
    - Wprowadź swój adres e-mail, aby uzyskać **dodatkowe adresy e-mail administratora**.
@@ -504,12 +504,12 @@ Gdy witryna sieci Web osiągnie skonfigurowane progi, otrzymasz alert. Wykonaj n
 
 2. Wybierz **punkty końcowe**.
 3. Wybierz **punkt końcowy platformy Azure**.
-4. W obszarze **stan**wybierz pozycję **włączone**, a następnie wybierz pozycję **Zapisz**.
+4. W obszarze **stan** wybierz pozycję **włączone**, a następnie wybierz pozycję **Zapisz**.
 
     ![Włącz punkt końcowy platformy Azure w Azure Portal](media/solution-deployment-guide-hybrid/image23.png)
 
 5. W obszarze **punkty końcowe** dla profilu Traffic Manager wybierz pozycję **zewnętrzny punkt końcowy**.
-6. W obszarze **stan**wybierz pozycję **wyłączone**, a następnie wybierz pozycję **Zapisz**.
+6. W obszarze **stan** wybierz pozycję **wyłączone**, a następnie wybierz pozycję **Zapisz**.
 
     ![Wyłącz punkt końcowy Azure Stack Hub w programie Azure Portal](media/solution-deployment-guide-hybrid/image24.png)
 

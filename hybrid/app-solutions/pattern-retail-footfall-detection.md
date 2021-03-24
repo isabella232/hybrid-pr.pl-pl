@@ -7,12 +7,12 @@ ms.date: 10/31/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 10/31/2019
-ms.openlocfilehash: 0bf07bb38537f530a0adb3569c43d53af13b8d56
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: 866557ec3af2337e9f034da84cf417675508563b
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911224"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895333"
 ---
 # <a name="footfall-detection-pattern"></a>FootFall — wzorzec wykrywania
 
@@ -35,7 +35,7 @@ Oto podsumowanie sposobu działania rozwiązania:
 1. Custom Vision AI dev Kit Pobiera konfigurację z IoT Hub, która instaluje IoT Edge środowiska uruchomieniowego i modelu ML.
 2. Jeśli model widzi osobę, pobiera obraz i przekazuje go do Azure Stack centrum obiektów BLOB Storage.
 3. Usługa BLOB Service wyzwala funkcję platformy Azure w centrum Azure Stack.
-4. Funkcja platformy Azure wywołuje kontener z interfejs API rozpoznawania twarzy, aby uzyskać dane demograficzne i rozpoznawania emocji z obrazu.
+4. Funkcja platformy Azure wywołuje kontener z Face API, aby uzyskać dane demograficzne i rozpoznawania emocji z obrazu.
 5. Dane są anonimowe i wysyłane do klastra Event Hubs platformy Azure.
 6. Klaster Event Hubs wypycha dane, aby Stream Analytics.
 7. Stream Analytics agreguje dane i wypycha je do Power BI.
@@ -50,11 +50,11 @@ To rozwiązanie używa następujących składników:
 | Azure | [Azure Event Hubs](/azure/event-hubs/) | Usługa Azure Event Hubs zapewnia skalowalną platformę do pozyskiwania danych anonimowe, które są zintegrowane z Azure Stream Analytics. |
 |  | [Azure Stream Analytics](/azure/stream-analytics/) | Zadanie Azure Stream Analytics agreguje dane anonimowe i grupuje je do 15-sekundowego systemu Windows w celu wizualizacji. |
 |  | [Microsoft Power BI](https://powerbi.microsoft.com/) | Power BI zapewnia łatwy w użyciu interfejs nawigacyjny do wyświetlania danych wyjściowych z Azure Stream Analytics. |
-| Azure Stack Hub | [App Service](/azure-stack/operator/azure-stack-app-service-overview.md) | Dostawca zasobów App Service (RP) stanowi podstawę dla składników brzegowych, w tym funkcje hostingu i zarządzania dla aplikacji sieci Web/interfejsów API i funkcji. |
-| | Klaster aparatu usługi Azure Kubernetes Service [(AKS)](https://github.com/Azure/aks-engine) | AKS RP z klastrem AKS-Engine wdrożonym w usłudze Azure Stack Hub udostępnia skalowalny, odporny na uruchomienie aparat interfejs API rozpoznawania twarzy. |
-| | [Kontenery interfejs API rozpoznawania twarzy](/azure/cognitive-services/face/face-how-to-install-containers) Cognitive Services platformy Azure| Usługa Azure Cognitive Services RP z kontenerami interfejs API rozpoznawania twarzy oferuje funkcje demograficzne, rozpoznawania emocji i unikatowe wykrywanie użytkowników w sieci prywatnej firmy Contoso. |
+| Azure Stack Hub | [App Service](/azure-stack/operator/azure-stack-app-service-overview) | Dostawca zasobów App Service (RP) stanowi podstawę dla składników brzegowych, w tym funkcje hostingu i zarządzania dla aplikacji sieci Web/interfejsów API i funkcji. |
+| | Klaster aparatu usługi Azure Kubernetes Service [(AKS)](https://github.com/Azure/aks-engine) | AKS RP z klastrem AKS-Engine wdrożonym w usłudze Azure Stack Hub zapewnia skalowalny, odporny na awarię aparat do uruchamiania kontenera Face API. |
+| | [Kontenery Face API](/azure/cognitive-services/face/face-how-to-install-containers) Cognitive Services platformy Azure| Usługa Azure Cognitive Services RP z kontenerami Face API oferuje funkcje demograficzne, rozpoznawania emocji i unikatowe wykrywanie użytkowników w sieci prywatnej firmy Contoso. |
 | | Blob Storage | Obrazy przechwycone z zestawu AI, są przekazywane do magazynu obiektów Blob Azure Stack Hub. |
-| | Azure Functions | Funkcja platformy Azure działająca w systemie Azure Stack Hub otrzymuje dane wejściowe z usługi BLOB Storage i zarządza interakcjami z interfejs API rozpoznawania twarzy. Emituje dane anonimowe do klastra Event Hubs znajdującego się na platformie Azure.<br><br>|
+| | Azure Functions | Funkcja platformy Azure działająca w systemie Azure Stack Hub otrzymuje dane wejściowe z usługi BLOB Storage i zarządza interakcjami z Face API. Emituje dane anonimowe do klastra Event Hubs znajdującego się na platformie Azure.<br><br>|
 
 ## <a name="issues-and-considerations"></a>Problemy i kwestie do rozważenia
 
@@ -65,13 +65,13 @@ Podczas decydowania o sposobie wdrożenia tego rozwiązania należy wziąć pod 
 Aby umożliwić skalowanie tego rozwiązania między wieloma aparatami i lokalizacjami, należy upewnić się, że wszystkie składniki mogą obsłużyć zwiększone obciążenie. Może być konieczne wykonanie działań takich jak:
 
 - Zwiększ liczbę Stream Analytics jednostek przesyłania strumieniowego.
-- Skaluj w poziomie wdrożenie interfejs API rozpoznawania twarzy.
+- Skaluj w poziomie wdrożenie Face API.
 - Zwiększ przepływność klastra Event Hubs.
 - W skrajnych przypadkach może być konieczne przeprowadzenie migracji z Azure Functions na maszynę wirtualną.
 
 ### <a name="availability"></a>Dostępność
 
-Ponieważ to rozwiązanie jest warstwowe, należy wziąć pod uwagę sposób postępowania z awariami sieci lub zasilaczem. W zależności od potrzeb firmy można zaimplementować mechanizm buforowania obrazów lokalnie, a następnie przesłać do Azure Stack Hub, gdy połączenie zwróci wartość. Jeśli lokalizacja jest wystarczająco duża, wdrożenie Data Box Edge z kontenerem interfejs API rozpoznawania twarzy do tej lokalizacji może być lepszym rozwiązaniem.
+Ponieważ to rozwiązanie jest warstwowe, należy wziąć pod uwagę sposób postępowania z awariami sieci lub zasilaczem. W zależności od potrzeb firmy można zaimplementować mechanizm buforowania obrazów lokalnie, a następnie przesłać do Azure Stack Hub, gdy połączenie zwróci wartość. Jeśli lokalizacja jest wystarczająco duża, wdrożenie Data Box Edge z kontenerem Face API do tej lokalizacji może być lepszym rozwiązaniem.
 
 ### <a name="manageability"></a>Możliwości zarządzania
 

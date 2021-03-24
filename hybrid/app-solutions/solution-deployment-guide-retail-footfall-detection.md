@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 2177b32474dea695967e197acbd4bc1e18422d7b
-ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
+ms.openlocfilehash: caedbd4758b9ae8c93cf9bb625ed9aac68bfa196
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96901494"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895371"
 ---
 # <a name="deploy-an-ai-based-footfall-detection-solution-using-azure-and-azure-stack-hub"></a>Wdrażanie rozwiązania wykrywania FootFall opartego na formacie AI przy użyciu platformy Azure i usługi Azure Stack Hub
 
@@ -37,22 +37,22 @@ Przed rozpoczęciem pracy z tym przewodnikiem wdrażania upewnij się, że:
 
 - Zapoznaj się z tematem dotyczącym [wzorca wykrywania FootFall](pattern-retail-footfall-detection.md) .
 - Uzyskaj dostęp użytkowników do Azure Stack Development Kit (ASDK) lub zintegrowanego wystąpienia systemowego centrum Azure Stack z:
-  - Azure App Service na zainstalowaniu [dostawcy zasobów centrum Azure Stack](/azure-stack/operator/azure-stack-app-service-overview.md) . Potrzebujesz dostępu operatora do wystąpienia centrum Azure Stack lub skontaktuj się z administratorem, aby zainstalować program.
+  - Azure App Service na zainstalowaniu [dostawcy zasobów centrum Azure Stack](/azure-stack/operator/azure-stack-app-service-overview) . Potrzebujesz dostępu operatora do wystąpienia centrum Azure Stack lub skontaktuj się z administratorem, aby zainstalować program.
   - Subskrypcja oferty zapewniającej przydział App Service i magazynu. Aby utworzyć ofertę, musisz mieć dostęp do operatora.
 - Uzyskaj dostęp do subskrypcji platformy Azure.
   - Jeśli nie masz subskrypcji platformy Azure, przed rozpoczęciem Utwórz [konto bezpłatnej wersji próbnej](https://azure.microsoft.com/free/) .
 - Utwórz dwie jednostki usługi w katalogu:
   - Jeden skonfigurowany do użycia z zasobami platformy Azure z dostępem w zakresie subskrypcji platformy Azure.
   - Jeden skonfigurowany do użycia z zasobami centrum Azure Stack, z dostępem w zakresie subskrypcji centrum Azure Stack.
-  - Aby dowiedzieć się więcej na temat tworzenia jednostek usługi i autoryzowania dostępu, zobacz [Korzystanie z tożsamości aplikacji w celu uzyskania dostępu do zasobów](/azure-stack/operator/azure-stack-create-service-principals.md). Jeśli wolisz używać interfejsu wiersza polecenia platformy Azure, zobacz [Tworzenie jednostki usługi platformy Azure przy użyciu interfejsu wiersza polecenia platformy Azure](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&preserve-view=true).
+  - Aby dowiedzieć się więcej na temat tworzenia jednostek usługi i autoryzowania dostępu, zobacz [Korzystanie z tożsamości aplikacji w celu uzyskania dostępu do zasobów](/azure-stack/operator/azure-stack-create-service-principals). Jeśli wolisz używać interfejsu wiersza polecenia platformy Azure, zobacz [Tworzenie jednostki usługi platformy Azure przy użyciu interfejsu wiersza polecenia platformy Azure](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&preserve-view=true).
 - Wdróż usługę Azure Cognitive Services na platformie Azure lub w centrum Azure Stack.
   - Najpierw [Dowiedz się więcej o Cognitive Services](https://azure.microsoft.com/services/cognitive-services/).
-  - Następnie odwiedź stronę [wdrażanie usługi Azure Cognitive Services w usłudze Azure Stack Hub](/azure-stack/user/azure-stack-solution-template-cognitive-services.md) , aby wdrożyć Cognitive Services na Azure Stack centrum. Najpierw musisz zarejestrować się w celu uzyskania dostępu do wersji zapoznawczej.
+  - Następnie odwiedź stronę [wdrażanie usługi Azure Cognitive Services w usłudze Azure Stack Hub](/azure-stack/user/azure-stack-solution-template-cognitive-services) , aby wdrożyć Cognitive Services na Azure Stack centrum. Najpierw musisz zarejestrować się w celu uzyskania dostępu do wersji zapoznawczej.
 - Klonowanie lub pobieranie nieskonfigurowanego zestawu Azure Custom Vision AI dev Kit. Aby uzyskać szczegółowe informacje, zobacz [Vision AI DevKit](https://azure.github.io/Vision-AI-DevKit-Pages/).
 - Utwórz konto Power BI.
-- Klucz subskrypcji usługi Azure Cognitive Services interfejs API rozpoznawania twarzy i adres URL punktu końcowego. Możesz skorzystać z usługi [Try Cognitive Services](https://azure.microsoft.com/try/cognitive-services/?api=face-api) bezpłatna wersja próbna. Lub postępuj zgodnie z instrukcjami w temacie [Tworzenie konta Cognitive Services](/azure/cognitive-services/cognitive-services-apis-create-account).
+- Klucz subskrypcji usługi Azure Cognitive Services Face API i adres URL punktu końcowego. Możesz skorzystać z usługi [Try Cognitive Services](https://azure.microsoft.com/try/cognitive-services/?api=face-api) bezpłatna wersja próbna. Lub postępuj zgodnie z instrukcjami w temacie [Tworzenie konta Cognitive Services](/azure/cognitive-services/cognitive-services-apis-create-account).
 - Zainstaluj następujące zasoby programistyczne:
-  - [Interfejs wiersza polecenia platformy Azure 2.0](/azure-stack/user/azure-stack-version-profiles-azurecli2.md)
+  - [Interfejs wiersza polecenia platformy Azure 2.0](/azure-stack/user/azure-stack-version-profiles-azurecli2)
   - [Docker CE](https://hub.docker.com/search/?type=edition&offering=community)
   - [Porter](https://porter.sh/). Za pomocą Porter można wdrażać aplikacje w chmurze przy użyciu dodanych manifestów pakietu CNAB.
   - [Visual Studio Code](https://code.visualstudio.com/)
@@ -72,7 +72,7 @@ Najpierw użyj interfejsu wiersza polecenia Porter, aby wygenerować zestaw poś
     - Identyfikator subskrypcji subskrypcji platformy Azure.
     - Jednostka usługi do uzyskiwania dostępu do zasobów centrum Azure Stack, w tym identyfikatora podmiotu zabezpieczeń, klucza i usługi DNS dzierżawy.
     - Identyfikator subskrypcji dla subskrypcji centrum Azure Stack.
-    - Adres URL klucza i punktu końcowego usługi Azure Cognitive Services interfejs API rozpoznawania twarzy.
+    - Adres URL klucza i punktu końcowego usługi Azure Cognitive Services Face API.
 
 1. Uruchom proces generowania poświadczeń Porter i postępuj zgodnie z monitami:
 

@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 27d07070becfa902a715b451baae7c81c7e4b46f
-ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
+ms.openlocfilehash: 9fa2c351d2c13d85fe1adb17a35e165de96ea2a2
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88886836"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895435"
 ---
 # <a name="direct-traffic-with-a-geo-distributed-app-using-azure-and-azure-stack-hub"></a>Kierowanie ruchu za pomocą aplikacji rozproszonej geograficznie przy użyciu platformy Azure i usługi Azure Stack Hub
 
@@ -56,12 +56,12 @@ Przed rozpoczęciem tworzenia rozproszonej aplikacji można znać następujące 
 
 - **Strategia skalowania rozmiaru aplikacji:** Zdecyduj, czy rozmiar aplikacji będzie dystrybuowany między wieloma środowiskami App Service w jednym regionie, wielu regionach, czy też z obu obu sposobów. Decyzja powinna być oparta na oczekiwaniach, w których nastąpi ruch klienta i jak również pozostała część aplikacji obsługującej infrastrukturę zaplecza może skalować. Na przykład w przypadku aplikacji bezstanowej 100% aplikacja może być w znacznym stopniu skalowana przy użyciu kombinacji wielu App Serviceych środowisk w regionie świadczenia usługi Azure, pomnożonych przez App Service środowiska wdrożone w wielu regionach świadczenia usługi Azure. Dzięki 15 i globalnym regionom platformy Azure dostępnym do wyboru klienci mogą naprawdę kompilować skalę na całym świecie. W przypadku przykładowej aplikacji używanej w tym miejscu trzy środowiska App Service zostały utworzone w jednym regionie świadczenia usługi Azure (Południowo-środkowe stany USA).
 
-- **Konwencja nazewnictwa dla środowisk App Service:** Każde środowisko App Service wymaga unikatowej nazwy. Poza jednym lub dwoma środowiskami App Service warto mieć konwencję nazewnictwa ułatwiającą identyfikację każdego środowiska App Service. W przypadku przykładowej aplikacji użytej w tym miejscu użyto prostej konwencji nazewnictwa. Nazwy trzech środowisk App Service to *fe1ase*, *fe2ase*i *fe3ase*.
+- **Konwencja nazewnictwa dla środowisk App Service:** Każde środowisko App Service wymaga unikatowej nazwy. Poza jednym lub dwoma środowiskami App Service warto mieć konwencję nazewnictwa ułatwiającą identyfikację każdego środowiska App Service. W przypadku przykładowej aplikacji użytej w tym miejscu użyto prostej konwencji nazewnictwa. Nazwy trzech środowisk App Service to *fe1ase*, *fe2ase* i *fe3ase*.
 
-- **Konwencja nazewnictwa dla aplikacji:** Ponieważ zostanie wdrożonych wiele wystąpień aplikacji, wymagana jest nazwa dla każdego wystąpienia wdrożonej aplikacji. Za pomocą App Service Environment dla aplikacji zaawansowanych można używać tej samej nazwy aplikacji w wielu środowiskach. Ponieważ każde środowisko App Service ma unikatowy sufiks domeny, deweloperzy mogą skorzystać z dokładnej nazwy aplikacji w każdym środowisku. Na przykład deweloper może mieć aplikacje o nazwie w następujący sposób: *MyApp.Foo1.p.azurewebsites.NET*, *MyApp.foo2.p.azurewebsites.NET*, *MyApp.Foo3.p.azurewebsites.NET*itd. W przypadku aplikacji użytej w tym miejscu każde wystąpienie aplikacji ma unikatową nazwę. Używane nazwy wystąpień aplikacji to *webfrontend1*, *webfrontend2*i *webfrontend3*.
+- **Konwencja nazewnictwa dla aplikacji:** Ponieważ zostanie wdrożonych wiele wystąpień aplikacji, wymagana jest nazwa dla każdego wystąpienia wdrożonej aplikacji. Za pomocą App Service Environment dla aplikacji zaawansowanych można używać tej samej nazwy aplikacji w wielu środowiskach. Ponieważ każde środowisko App Service ma unikatowy sufiks domeny, deweloperzy mogą skorzystać z dokładnej nazwy aplikacji w każdym środowisku. Na przykład deweloper może mieć aplikacje o nazwie w następujący sposób: *MyApp.Foo1.p.azurewebsites.NET*, *MyApp.foo2.p.azurewebsites.NET*, *MyApp.Foo3.p.azurewebsites.NET* itd. W przypadku aplikacji użytej w tym miejscu każde wystąpienie aplikacji ma unikatową nazwę. Używane nazwy wystąpień aplikacji to *webfrontend1*, *webfrontend2* i *webfrontend3*.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![Diagram filarów hybrydowych](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub to rozszerzenie platformy Azure. Usługa Azure Stack Hub zapewnia elastyczność i innowacje w chmurze obliczeniowej w środowisku lokalnym, umożliwiając jedyną chmurę hybrydową, która umożliwia tworzenie i wdrażanie aplikacji hybrydowych w dowolnym miejscu.  
 > 
 > [Zagadnienia dotyczące projektowania aplikacji hybrydowych](overview-app-design-considerations.md) w artykule przegląd filarów jakości oprogramowania (rozmieszczenia, skalowalności, dostępności, odporności, możliwości zarządzania i zabezpieczeń) do projektowania, wdrażania i obsługi aplikacji hybrydowych. Zagadnienia dotyczące projektowania pomagają zoptymalizować projekt aplikacji hybrydowej i zminimalizować wyzwania w środowiskach produkcyjnych.
@@ -97,7 +97,7 @@ Zaktualizuj plik strefy DNS dla domeny. Usługa Azure AD może następnie zweryf
 Skonfiguruj hybrydową ciągłą integrację/ciągłe dostarczanie (CI/CD), aby wdrożyć aplikację sieci Web na platformie Azure i w Azure Stack Hub, a następnie przeprowadź autowypychanie zmian w obu chmurach.
 
 > [!Note]  
-> Wymagane są Azure Stack centrum z odpowiednimi obrazami do uruchomienia (system Windows Server i SQL) oraz wdrożenie App Service. Aby uzyskać więcej informacji, zobacz [wymagania wstępne dotyczące wdrażania App Service w centrum Azure Stack](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md).
+> Wymagane są Azure Stack centrum z odpowiednimi obrazami do uruchomienia (system Windows Server i SQL) oraz wdrożenie App Service. Aby uzyskać więcej informacji, zobacz [wymagania wstępne dotyczące wdrażania App Service w centrum Azure Stack](/azure-stack/operator/azure-stack-app-service-before-you-get-started).
 
 #### <a name="add-code-to-azure-repos"></a>Dodaj kod do Azure Repos
 
@@ -149,7 +149,7 @@ Azure DevOps Services zapewnić wysoce konfigurowalny i zarządzany potok dla wy
 
    ![Zastosuj szablon wdrożenia Azure App Service w programie Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image6.png)
 
-3. W obszarze **Dodawanie artefaktu**Dodaj artefakt dla aplikacji Azure Cloud Build.
+3. W obszarze **Dodawanie artefaktu** Dodaj artefakt dla aplikacji Azure Cloud Build.
 
    ![Dodaj artefakt do usługi Azure Cloud Build w Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image7.png)
 
@@ -161,7 +161,7 @@ Azure DevOps Services zapewnić wysoce konfigurowalny i zarządzany potok dla wy
 
       ![Wybierz subskrypcję platformy Azure dla punktu końcowego w chmurze platformy Azure w Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image9.png)
 
-6. W obszarze **nazwa usługi App Service**Ustaw wymaganą nazwę usługi Azure App Service.
+6. W obszarze **nazwa usługi App Service** Ustaw wymaganą nazwę usługi Azure App Service.
 
       ![Ustaw nazwę usługi Azure App Service w Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image10.png)
 
@@ -173,7 +173,7 @@ Azure DevOps Services zapewnić wysoce konfigurowalny i zarządzany potok dla wy
   
       ![Wybierz pakiet lub folder dla środowiska Azure App Service w programie Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image12.png)
 
-      ![Wybierz pakiet lub folder dla środowiska Azure App Service w programie Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image13.png)
+      ![Okno dialogowe selektora folderów 1](media/solution-deployment-guide-geo-distributed/image13.png)
 
 9. Zapisz wszystkie zmiany i wróć do **potoku wydania**.
 
@@ -212,9 +212,9 @@ Azure DevOps Services zapewnić wysoce konfigurowalny i zarządzany potok dla wy
 
     ![Wybierz folder do wdrożenia Azure App Service w Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image22.png)
 
-    ![Wybierz folder do wdrożenia Azure App Service w Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image23.png)
+    ![Okno dialogowe selektora folderów 2](media/solution-deployment-guide-geo-distributed/image23.png)
 
-18. W obszarze Karta zmienna Dodaj zmienną o nazwie `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS` , ustaw jej wartość na **true**i zakres na Azure Stack Hub.
+18. W obszarze Karta zmienna Dodaj zmienną o nazwie `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS` , ustaw jej wartość na **true** i zakres na Azure Stack Hub.
 
     ![Dodawanie zmiennej do wdrożenia aplikacji platformy Azure w Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image24.png)
 
@@ -229,7 +229,7 @@ Azure DevOps Services zapewnić wysoce konfigurowalny i zarządzany potok dla wy
 21. Zapisz wszystkie zmiany.
 
 > [!Note]  
-> Niektóre ustawienia zadań mogą zostać automatycznie zdefiniowane jako [zmienne środowiskowe](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) podczas tworzenia definicji wydania na podstawie szablonu. Tych ustawień nie można modyfikować w ustawieniach zadania; Zamiast tego należy wybrać element środowiska nadrzędnego, aby edytować te ustawienia.
+> Niektóre ustawienia zadań mogą zostać automatycznie zdefiniowane jako [zmienne środowiskowe](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables) podczas tworzenia definicji wydania na podstawie szablonu. Tych ustawień nie można modyfikować w ustawieniach zadania; Zamiast tego należy wybrać element środowiska nadrzędnego, aby edytować te ustawienia.
 
 ## <a name="part-2-update-web-app-options"></a>Część 2: Aktualizowanie opcji aplikacji sieci Web
 
@@ -267,7 +267,7 @@ Zaktualizuj plik strefy DNS dla domeny. Usługa Azure AD sprawdzi własność ni
 Aby na przykład dodać wpisy DNS dla northwindcloud.com i www \. northwindcloud.com, skonfiguruj ustawienia DNS dla domeny katalogu głównego northwindcloud.com.
 
 > [!Note]  
-> Nazwę domeny można zakupić przy użyciu [Azure Portal](/azure/app-service/manage-custom-dns-buy-domain). Aby zamapować niestandardową nazwę DNS na aplikację internetową, dla tej aplikacji internetowej musisz mieć płatną warstwę [planu usługi App Service](https://azure.microsoft.com/pricing/details/app-service/) (**Współdzielona**, **Podstawowa**, **Standardowa** lub ** Premium**).
+> Nazwę domeny można zakupić przy użyciu [Azure Portal](/azure/app-service/manage-custom-dns-buy-domain). Aby zamapować niestandardową nazwę DNS na aplikację internetową, dla tej aplikacji internetowej musisz mieć płatną warstwę [planu usługi App Service](https://azure.microsoft.com/pricing/details/app-service/) (**Współdzielona**, **Podstawowa**, **Standardowa** lub **Premium**).
 
 ### <a name="create-and-map-cname-and-a-records"></a>Tworzenie i mapowanie rekordów CNAME i A
 
@@ -280,7 +280,7 @@ Aby na przykład dodać wpisy DNS dla northwindcloud.com i www \. northwindcloud
 
 2. Znajdź stronę służącą do zarządzania rekordami DNS. Każdy dostawca domeny ma własny interfejs rekordów DNS. Poszukaj obszarów witryny z etykietą **Nazwa domeny**, **DNS** lub **Zarządzanie serwerami nazw**.
 
-Strona rekordów DNS może być wyświetlana w obszarze **Moje domeny**. Znajdź łącze o nazwie **plik strefy**, **rekordy DNS**lub **Konfiguracja zaawansowana**.
+Strona rekordów DNS może być wyświetlana w obszarze **Moje domeny**. Znajdź łącze o nazwie **plik strefy**, **rekordy DNS** lub **Konfiguracja zaawansowana**.
 
 Poniższy zrzut ekranu przedstawia przykład strony rekordów DNS:
 
@@ -382,7 +382,7 @@ Aby używać certyfikatu w usłudze App Service, musi on spełniać wszystkie na
 
 #### <a name="prepare-the-web-app"></a>Przygotowywanie aplikacji sieci Web
 
-Aby powiązać niestandardowy certyfikat SSL z aplikacją internetową, [plan App Service](https://azure.microsoft.com/pricing/details/app-service/) musi znajdować się w warstwie **podstawowa**, **standardowa**lub **Premium** .
+Aby powiązać niestandardowy certyfikat SSL z aplikacją internetową, [plan App Service](https://azure.microsoft.com/pricing/details/app-service/) musi znajdować się w warstwie **podstawowa**, **standardowa** lub **Premium** .
 
 #### <a name="sign-in-to-azure"></a>Logowanie do platformy Azure
 
@@ -471,9 +471,9 @@ Gdy usługi IIS lub **Certreq.exe** są używane do generowania żądania certyf
 
 2. Wybierz pozycję **Przekaż certyfikat**.
 
-3. W **pliku certyfikatu PFX**wybierz pozycję plik PFX.
+3. W **pliku certyfikatu PFX** wybierz pozycję plik PFX.
 
-4. W polu **hasło certyfikatu**wpisz hasło utworzone podczas EKSPORTOWANIA pliku PFX.
+4. W polu **hasło certyfikatu** wpisz hasło utworzone podczas EKSPORTOWANIA pliku PFX.
 
 5. Wybierz pozycję **Przekaż**.
 
@@ -496,7 +496,7 @@ Po zakończeniu przekazywania certyfikatu App Service zostanie on wyświetlony n
 
     - **Protokół SSL oparty na SNI**: można dodać wiele powiązań SSL opartych na SNI. Ta opcja umożliwia zabezpieczenie wielu domen na tym samym adresie IP za pomocą wielu certyfikatów protokołu SSL. Większość nowoczesnych przeglądarek (w tym programy Internet Explorer, Chrome, Firefox i Opera) obsługuje funkcję SNI. Bardziej szczegółowe informacje dotyczące obsługi przeglądarek możesz znaleźć w artykule [Server Name Indication (Oznaczanie nazwy serwera)](https://wikipedia.org/wiki/Server_Name_Indication).
 
-    - **Protokół SSL oparty na**protokole IP: można dodać tylko jedno powiązanie SSL oparte na adresie IP. Ta opcja umożliwia zabezpieczenie dedykowanego publicznego adresu IP za pomocą tylko jednego certyfikatu protokołu SSL. Aby zabezpieczyć wiele domen, zabezpiecz je wszystkie przy użyciu tego samego certyfikatu SSL. Protokół SSL oparty na protokole IP jest tradycyjną opcją dla powiązania SSL.
+    - **Protokół SSL oparty na** protokole IP: można dodać tylko jedno powiązanie SSL oparte na adresie IP. Ta opcja umożliwia zabezpieczenie dedykowanego publicznego adresu IP za pomocą tylko jednego certyfikatu protokołu SSL. Aby zabezpieczyć wiele domen, zabezpiecz je wszystkie przy użyciu tego samego certyfikatu SSL. Protokół SSL oparty na protokole IP jest tradycyjną opcją dla powiązania SSL.
 
 4. Wybierz pozycję **Dodaj powiązanie**.
 
@@ -533,7 +533,7 @@ Na stronie aplikacja sieci Web wybierz pozycję **Ustawienia SL**. Następnie w 
 
 ![Wymuszanie protokołu HTTPS](media/solution-deployment-guide-geo-distributed/image43.png)
 
-Po zakończeniu operacji przejdź do dowolnego adresu URL protokołu HTTP, który wskazuje aplikację. Przykład:
+Po zakończeniu operacji przejdź do dowolnego adresu URL protokołu HTTP, który wskazuje aplikację. Na przykład:
 
 - https://<app_name>. azurewebsites.net
 - `https://northwindcloud.com`
@@ -545,27 +545,27 @@ Aplikacja domyślnie zezwala na [protokół TLS](https://wikipedia.org/wiki/Tran
 
 1. Na stronie aplikacja sieci Web w lewym okienku nawigacji wybierz pozycję **Ustawienia protokołu SSL**.
 
-2. W polu **wersja protokołu TLS**wybierz pozycję minimalna wersja protokołu TLS.
+2. W polu **wersja protokołu TLS** wybierz pozycję minimalna wersja protokołu TLS.
 
     ![Wymuszanie protokołu TLS 1.1 lub 1.2](media/solution-deployment-guide-geo-distributed/image44.png)
 
 ### <a name="create-a-traffic-manager-profile"></a>Tworzenie profilu usługi Traffic Manager
 
-1. Wybierz kolejno pozycje **Utwórz zasób**  >  **Sieć**  >  **Traffic Manager**  >  **Utwórz**profil.
+1. Wybierz kolejno pozycje **Utwórz zasób**  >  **Sieć**  >  **Traffic Manager**  >  **Utwórz** profil.
 
 2. W obszarze **Tworzenie profilu usługi Traffic Manager** podaj następujące informacje:
 
-    1. W polu **Nazwa**Podaj nazwę profilu. Ta nazwa musi być unikatowa w obrębie strefy manager.net ruchu i powoduje, że w polu Nazwa DNS trafficmanager.net, która jest używana do uzyskiwania dostępu do profilu Traffic Manager.
+    1. W polu **Nazwa** Podaj nazwę profilu. Ta nazwa musi być unikatowa w obrębie strefy manager.net ruchu i powoduje, że w polu Nazwa DNS trafficmanager.net, która jest używana do uzyskiwania dostępu do profilu Traffic Manager.
 
-    2. W obszarze **Metoda routingu**wybierz **metodę routingu geograficznego**.
+    2. W obszarze **Metoda routingu** wybierz **metodę routingu geograficznego**.
 
-    3. W obszarze **subskrypcja**wybierz subskrypcję, w ramach której chcesz utworzyć ten profil.
+    3. W obszarze **subskrypcja** wybierz subskrypcję, w ramach której chcesz utworzyć ten profil.
 
     4. W obszarze **Grupy zasobów** utwórz nową grupę zasobów, w której zostanie umieszczony ten profil.
 
     5. W obszarze **Lokalizacja grupy zasobów** wybierz lokalizację grupy zasobów. To ustawienie dotyczy lokalizacji grupy zasobów i nie ma wpływu na profil Traffic Manager wdrożony globalnie.
 
-    6. Wybierz pozycję **Utwórz**.
+    6. Wybierz przycisk **Utwórz**.
 
     7. Po ukończeniu globalnego wdrożenia profilu Traffic Manager jest on wyświetlany w odpowiedniej grupie zasobów jako jeden z zasobów.
 
@@ -575,13 +575,13 @@ Aplikacja domyślnie zezwala na [protokół TLS](https://wikipedia.org/wiki/Tran
 
 1. Na pasku wyszukiwania portalu Wyszukaj nazwę **profilu Traffic Manager** utworzoną w poprzedniej sekcji, a następnie wybierz profil usługi Traffic Manager w wyświetlonych wynikach.
 
-2. W obszarze **profil Traffic Manager**w sekcji **Ustawienia** wybierz pozycję **punkty końcowe**.
+2. W obszarze **profil Traffic Manager** w sekcji **Ustawienia** wybierz pozycję **punkty końcowe**.
 
 3. Wybierz pozycję **Dodaj**.
 
 4. Dodawanie punktu końcowego Azure Stack Hub.
 
-5. W obszarze **Typ**wybierz pozycję **zewnętrzny punkt końcowy**.
+5. W obszarze **Typ** wybierz pozycję **zewnętrzny punkt końcowy**.
 
 6. Podaj **nazwę** dla tego punktu końcowego, najlepiej nazwę centrum Azure Stack.
 
@@ -593,17 +593,17 @@ Aplikacja domyślnie zezwala na [protokół TLS](https://wikipedia.org/wiki/Tran
 
 10. Pozycję **Dodaj jako wyłączone** pozostaw niezaznaczoną.
 
-11. Wybierz pozycję **OK**.
+11. Wybierz przycisk **OK**.
 
 12. Dodawanie punkt końcowy platformy Azure:
 
-    1. W obszarze **Typ**wybierz pozycję **punkt końcowy platformy Azure**.
+    1. W obszarze **Typ** wybierz pozycję **punkt końcowy platformy Azure**.
 
     2. Podaj **nazwę** punktu końcowego.
 
-    3. W obszarze **Typ zasobu docelowego**wybierz pozycję **App Service**.
+    3. W obszarze **Typ zasobu docelowego** wybierz pozycję **App Service**.
 
-    4. W polu **zasób docelowy**wybierz pozycję **Wybierz usługę App Service** , aby wyświetlić listę Web Apps w ramach tej samej subskrypcji. W obszarze **zasób**wybierz usługę App Service używaną jako pierwszy punkt końcowy.
+    4. W polu **zasób docelowy** wybierz pozycję **Wybierz usługę App Service** , aby wyświetlić listę Web Apps w ramach tej samej subskrypcji. W obszarze **zasób** wybierz usługę App Service używaną jako pierwszy punkt końcowy.
 
 13. W obszarze mapowanie geograficzne wybierz region/kontynent, w którym znajduje się zasób. Na przykład **Ameryka Północna/środkowe Ameryki/Karaiby.**
 
@@ -611,7 +611,7 @@ Aplikacja domyślnie zezwala na [protokół TLS](https://wikipedia.org/wiki/Tran
 
 15. Pozycję **Dodaj jako wyłączone** pozostaw niezaznaczoną.
 
-16. Wybierz pozycję **OK**.
+16. Wybierz przycisk **OK**.
 
     > [!Note]  
     >  Utwórz co najmniej jeden punkt końcowy z zakresem geograficznym (World), który będzie używany jako domyślny punkt końcowy dla zasobu.
