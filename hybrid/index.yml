@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 03/09/2021
-  ms.openlocfilehash: 198095c4a96cfcca76a89b47ecc5f716b6b6770a
-  ms.sourcegitcommit: 817b61dd59371b24281419936295da239a2cca18
+  ms.openlocfilehash: 23834253d05753219efbd5b5e15a216741388e8a
+  ms.sourcegitcommit: d218ae31c564b862f2d79bb560075f5983f1771c
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/23/2021
-  ms.locfileid: "104891087"
+  ms.lasthandoff: 03/24/2021
+  ms.locfileid: "105048922"
 highlightedContent:
   items:
   - title: 'Zapłon 2021: sesje hybrydowe'
@@ -396,7 +396,19 @@ additionalContent:
         text: Implementowanie hybrydowej infrastruktury serwera plików
       - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
         text: Implementowanie hybrydowego tworzenia i odzyskiwania kopii zapasowych przy użyciu usługi IaaS i systemu Windows Server
-  - title: Dodatkowe zasoby
+    - title: Windows Server
+      links:
+      - url: /learn/paths/implement-windows-server-hybrid-cloud-infrastructure/
+        text: Implementacja infrastruktury chmury hybrydowej systemu Windows Server
+      - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
+        text: Implementowanie hybrydowego tworzenia i odzyskiwania kopii zapasowych przy użyciu usługi IaaS i systemu Windows Server
+      - url: /learn/modules/implement-hybrid-identity-windows-server/
+        text: Implementowanie tożsamości hybrydowej przy użyciu systemu Windows Server
+      - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
+        text: Monitorowanie maszyn wirtualnych IaaS z systemem Windows Server i wystąpień hybrydowych
+      - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+        text: Monitorowanie i zabezpieczenia chmury hybrydowej systemu Windows Server oraz zarządzanie nią
+  - title: Zasoby dodatkowe
     items:
     - title: Ogólne
       links:
