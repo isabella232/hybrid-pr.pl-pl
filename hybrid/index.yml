@@ -1,445 +1,439 @@
 ### YamlMime:Hub
 title: Dokumentacja hybrydowej i wielochmurowej platformy Azure
-summary: Zasoby służące do tworzenia oraz obsługi rozwiązań hybrydowych i wielochmurowych, które obejmują chmurę globalną, centrum danych i urządzenia brzegowe.
+summary: 'Zasoby służące do tworzenia oraz obsługi rozwiązań hybrydowych i wielochmurowych, które obejmują chmurę globalną, centrum danych i urządzenia brzegowe.'
 brand: azure
 metadata:
   title: Dokumentacja hybrydowej i wielochmurowej platformy Azure
-  description: Zasoby służące do tworzenia oraz obsługi rozwiązań hybrydowych i wielochmurowych, które obejmują chmurę globalną, centrum danych i urządzenia brzegowe.
+  description: 'Zasoby służące do tworzenia oraz obsługi rozwiązań hybrydowych i wielochmurowych, które obejmują chmurę globalną, centrum danych i urządzenia brzegowe.'
   ms.service: multiple
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
   ms.date: 03/09/2021
   ms.custom: e2e-hybrid
-  ms.openlocfilehash: 63dedc60e43b3dac708772821bd6f2a0b00c38fb
-  ms.sourcegitcommit: 6404be204d56d42f96ab525baf6108f4b710da77
-  ms.translationtype: MT
-  ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/29/2021
-  ms.locfileid: "105735596"
 highlightedContent:
   items:
-  - title: 'Zapłon 2021: sesje hybrydowe'
-    itemType: video
-    url: https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=hybrid
-  - title: 'Zapłon 2021: sesje usługi Azure Arc'
-    itemType: video
-    url: https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=" Arc "
-  - title: 'Zapłon 2021: sesje z krawędzią AI'
-    itemType: video
-    url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=" AI edge"
-  - title: Tworzenie nowoczesnych aplikacji hybrydowych przy użyciu usługi Azure Arc i Azure Stack
-    itemType: video
-    url: https://channel9.msdn.com/Shows/Azure-Friday/Building-modern-hybrid-applications-with-Azure-Arc-and-Azure-Stack
-  - title: 'Rozmowy IT: wszystkie elementy hybrydowe (z Russinovich marką)'
-    itemType: video
-    url: https://techcommunity.microsoft.com/t5/itops-talk-blog/bg-p/ITOpsTalkBlog/label-name/ITOps%20Talks?WT.mc_modinfra-12531-socuff
-  - title: Wprowadzenie do usługi Azure Modular Datacenter
-    itemType: video
-    url: https://azure.microsoft.com/resources/videos/azure-modular-datacenter/
-  - title: 'Inspire 2020: Co nowego w rozwiązaniu Azure Stack HCI'
-    itemType: video
-    url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030
-  - title: 'Build 2020: sesje poświęcone rozwiązaniom hybrydowym'
-    itemType: video
-    url: https://mybuild.microsoft.com/sessions?q=hybrid%2520%2522%2520Arc%2520%2522%2520%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522&g=%255B%2522on-demand%2522%255D
+    - title: 'Ignite 2021: Sesje hybrydowe'
+      itemType: video
+      url: 'https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=hybrid'
+    - title: 'Ignite 2021: Azure Arc sesji'
+      itemType: video
+      url: 'https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=" Arc "'
+    - title: 'Ignite 2021: Sesje z konferencji Edge aI'
+      itemType: video
+      url: 'https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=" AI edge"'
+    - title: Tworzenie nowoczesnych aplikacji hybrydowych za pomocą Azure Arc i Azure Stack
+      itemType: video
+      url: 'https://channel9.msdn.com/Shows/Azure-Friday/Building-modern-hybrid-applications-with-Azure-Arc-and-Azure-Stack'
+    - title: 'Rozmowy dotyczące operacyjno-it: wszystko hybrydowe (z udziałem Marka Russinovicha)'
+      itemType: video
+      url: 'https://techcommunity.microsoft.com/t5/itops-talk-blog/bg-p/ITOpsTalkBlog/label-name/ITOps%20Talks?WT.mc_modinfra-12531-socuff'
+    - title: Wprowadzenie do usługi Azure Modular Datacenter
+      itemType: video
+      url: 'https://azure.microsoft.com/resources/videos/azure-modular-datacenter/'
+    - title: 'Inspire 2020: Co nowego w rozwiązaniu Azure Stack HCI'
+      itemType: video
+      url: 'https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030'
+    - title: 'Build 2020: sesje poświęcone rozwiązaniom hybrydowym'
+      itemType: video
+      url: 'https://mybuild.microsoft.com/sessions?q=hybrid%2520%2522%2520Arc%2520%2522%2520%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522&g=%255B%2522on-demand%2522%255D'
 productDirectory:
   title: Hybrydowa i wielochmurowa platforma Azure
   summary: Platformy służące do tworzenia oraz obsługi rozwiązań hybrydowych i wielochmurowych.
   items:
-  - title: Platforma globalnej chmury publicznej/suwerennej Azure.
-    imageSrc: media/index/logo_azure.svg
-    links:
-    - url: /azure
-      text: Usługi platformy Azure
-  - title: Platformy chmur prywatnych dla hostowanych, lokalnych i mobilnych centrów danych.
-    imageSrc: media/index/azure-stack-hub.svg
-    links:
-    - url: /azure-stack/mdc
-      text: Azure Modular Datacenter
-    - url: /azure-stack/hci
-      text: Azure Stack HCI
-    - url: /azure-stack#azure-stack-hub
-      text: Azure Stack Hub
-    - url: /azure-stack/ruggedized
-      text: Azure Stack Hub Ruggedized
-  - title: Platformy inteligentnych urządzeń brzegowych dla urządzeń.
-    imageSrc: media/index/intelligent.svg
-    links:
-    - url: /azure/iot-edge/
-      text: Azure IoT Edge
-    - url: /azure-sphere
-      text: Azure Sphere
-    - url: /azure/databox-online/
-      text: Azure Stack Edge
-    - url: /windows/iot-core/
-      text: System Windows dla Internetu rzeczy
+    - title: Platforma globalnej chmury publicznej/suwerennej Azure.
+      imageSrc: 'https://static.docs.com/ui/media/product/azure/azure.svg'
+      links:
+        - url: /azure
+          text: Usługi platformy Azure
+    - title: 'Platformy chmur prywatnych dla hostowanych, lokalnych i mobilnych centrów danych.'
+      imageSrc: media/index/azure-stack-hub.svg
+      links:
+        - url: /azure-stack/mdc
+          text: Azure Modular Datacenter
+        - url: /azure-stack/hci
+          text: Azure Stack HCI
+        - url: /azure-stack#azure-stack-hub
+          text: Azure Stack Hub
+        - url: /azure-stack/ruggedized
+          text: Azure Stack Hub Ruggedized
+    - title: Platformy inteligentnych urządzeń brzegowych dla urządzeń.
+      imageSrc: media/index/intelligent.svg
+      links:
+        - url: /azure/iot-edge/
+          text: Azure IoT Edge
+        - url: /azure-sphere
+          text: Azure Sphere
+        - url: /azure/databox-online/
+          text: Azure Stack Edge
+        - url: /windows/iot-core/
+          text: System Windows dla Internetu rzeczy
 conceptualContent:
   title: Technologie hybrydowe i wielochmurowe
   summary: Usługi i produkty do tworzenia oraz obsługi rozwiązań hybrydowych i wielochmurowych.
   items:
-  - title: SI i uczenie maszynowe
-    links:
-    - url: /azure/bot-service
-      itemType: overview
-      text: Usługa Azure Bot
-    - url: /azure/search/
-      itemType: overview
-      text: Azure Cognitive Search
-    - url: /azure/cognitive-services/
-      itemType: overview
-      text: Azure Cognitive Services
-    - url: /azure/machine-learning/
-      itemType: overview
-      text: Azure Machine Learning
-  - title: Containers
-    links:
-    - url: /azure/azure-arc/kubernetes/
-      itemType: overview
-      text: Platforma Kubernetes z obsługą usługi Azure Arc (wersja zapoznawcza)
-    - url: /azure/container-instances/
-      itemType: overview
-      text: Azure Container Instances
-    - url: /azure/container-registry/
-      itemType: overview
-      text: Azure Container Registry
-    - url: /azure/aks/
-      itemType: overview
-      text: Usługi Azure Kubernetes Service na platformie Azure
-    - url: /azure-stack/user/azure-stack-kubernetes-aks-engine-overview
-      itemType: overview
-      text: Usługi Azure Kubernetes Service w infrastrukturze Azure Stack Hub
-    - url: /azure/docker/
-      itemType: overview
-      text: Rozwiązanie Docker na platformie Azure
-    - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
-      itemType: overview
-      text: Usługa IoT Edge na platformie Kubernetes
-  - title: baza danych
-    links:
-    - url: /azure/azure-arc/data/overview
-      itemType: overview
-      text: Usługi danych z obsługą usługi Azure Arc (wersja zapoznawcza)
-    - url: /sql/sql-server/azure-arc/overview
-      itemType: overview
-      text: Program SQL Server z obsługą usługi Azure Arc (wersja zapoznawcza)
-    - url: /azure/azure-sql-edge/overview
-      itemType: overview
-      text: Azure SQL Edge (wersja zapoznawcza)
-  - title: Programowanie i integracja
-    links:
-    - url: /azure-stack/operator/azure-stack-app-service-overview
-      itemType: overview
-      text: Usługa App Service w infrastrukturze Azure Stack Hub
-    - url: /azure/app-service/app-service-hybrid-connections
-      itemType: overview
-      text: Połączenia hybrydowe usługi Azure App Service
-    - url: /azure/devops
-      itemType: overview
-      text: Usługa Azure DevOps na potrzeby ciągłej integracji/ciągłego wdrażania
-    - url: /azure/event-hubs/
-      itemType: overview
-      text: Azure Event Hubs
-    - url: /azure/azure-functions/
-      itemType: overview
-      text: Azure Functions
-    - url: /azure/iot-hub/
-      itemType: overview
-      text: Azure IoT Hub
-    - url: /azure/logic-apps/
-      itemType: overview
-      text: Azure Logic Apps
-    - url: /azure/azure-monitor/app/app-insights-overview
-      itemType: overview
-      text: Azure Monitor — Application Insights
-    - url: /azure/service-fabric/
-      itemType: overview
-      text: Azure Service Fabric
-    - url: /azure-stack/user/event-hubs-overview
-      itemType: overview
-      text: Usługa Event Hubs w infrastrukturze Azure Stack Hub
-    - url: /azure-stack/user/iot-hub-overview
-      itemType: overview
-      text: Usługa IoT Hub w infrastrukturze Azure Stack Hub (wersja zapoznawcza)
-  - title: Edge
-    links:
-    - url: /azure/databox-online/data-box-gateway-overview
-      itemType: overview
-      text: Azure Databox Gateway
-    - url: /azure/iot-edge/
-      itemType: overview
-      text: Azure IoT Edge
-    - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
-      itemType: overview
-      text: Usługa Azure IoT Edge na platformie Kubernetes
-    - url: /azure-sphere
-      itemType: overview
-      text: Azure Sphere
-    - url: /azure/databox-online/azure-stack-edge-overview
-      itemType: overview
-      text: Azure Stack Edge
-    - url: /azure/azure-sql-edge/overview
-      itemType: overview
-      text: Azure SQL Edge (wersja zapoznawcza)
-    - url: /windows/iot-core/
-      itemType: overview
-      text: System Windows dla Internetu rzeczy
-  - title: Obsługa tożsamości i zabezpieczeń
-    links:
-    - url: /azure/active-directory/hybrid/
-      itemType: overview
-      text: Tożsamość hybrydowa w usłudze Azure AD
-    - url: /azure/security-center/
-      itemType: overview
-      text: Azure Security Center
-    - url: /azure/sentinel/
-      itemType: overview
-      text: Usługa Azure Sentinel
-    - url: /azure/active-directory/devices/concept-azure-ad-join-hybrid
-      itemType: overview
-      text: Urządzenia dołączone hybrydowo do usługi Azure AD
-  - title: Zarządzanie
-    links:
-    - url: /azure/azure-arc/data/overview
-      itemType: overview
-      text: Usługi danych z obsługą usługi Azure Arc (wersja zapoznawcza)
-    - url: /azure/azure-arc/kubernetes/
-      itemType: overview
-      text: Platforma Kubernetes z obsługą usługi Azure Arc (wersja zapoznawcza)
-    - url: /azure/azure-arc/servers
-      itemType: overview
-      text: Serwery z usługą Azure Arc
-    - url: /sql/sql-server/azure-arc/overview
-      itemType: overview
-      text: Program SQL Server z obsługą usługi Azure Arc (wersja zapoznawcza)
-    - url: /azure/automation/
-      itemType: overview
-      text: Azure Automation
-    - url: /azure/storage/files/
-      itemType: overview
-      text: Azure Files
-    - url: /azure/azure-monitor
-      itemType: overview
-      text: Azure Monitor
-    - url: /azure/site-recovery/
-      itemType: overview
-      text: Azure Site Recovery
-    - url: /azure-stack/hci/overview
-      itemType: overview
-      text: Możliwości pracy hybrydowej usługi Azure Stack HCI
-    - url: /windows-server/manage/windows-admin-center/azure/
-      itemType: overview
-      text: Usługi hybrydowe platformy Azure w usłudze Windows Admin Center
-  - title: Networking
-    links:
-    - url: /azure/networking/edge-zones-overview
-      itemType: overview
-      text: Strefy usługi Azure Edge Zone
-    - url: /azure/expressroute/
-      itemType: overview
-      text: Azure ExpressRoute
-    - url: /azure/networking/azure-orbital-overview
-      itemType: overview
-      text: Azure Orbital (wersja zapoznawcza)
-    - url: /azure/load-balancer/
-      itemType: overview
-      text: Azure Load Balancer
-    - url: /azure/private-link/
-      itemType: overview
-      text: Link prywatny platformy Azure
-    - url: /azure/azure-relay/
-      itemType: overview
-      text: Azure Relay
-    - url: /azure/traffic-manager/
-      itemType: overview
-      text: Azure Traffic Manager
-    - url: /azure/virtual-network/
-      itemType: overview
-      text: Azure Virtual Network
-    - url: /azure/vpn-gateway/
-      itemType: overview
-      text: Azure VPN Gateway
-  - title: Storage
-    links:
-    - url: /azure/avere-vfxt/avere-vfxt-overview
-      itemType: overview
-      text: Avere vFXT for Azure
-    - url: /azure/backup/
-      itemType: overview
-      text: Azure Backup
-    - url: /azure/storage/files/storage-files-introduction
-      itemType: overview
-      text: Azure Files
-    - url: /azure/site-recovery/
-      itemType: overview
-      text: Azure Site Recovery
-    - url: /azure/fxt-edge-filer/fxt-overview
-      itemType: overview
-      text: Azure FXT Edge Filer
-additionalContent:
-  sections:
-  - title: Rozwiązania hybrydowe i wielochmurowe
-    summary: Wskazówki i przykłady umożliwiające eksplorowanie oraz ponowne używanie w projektach hybrydowych i wielochmurowych.
-    items:
-    - title: Przykłady rozwiązań i wzorce aplikacji
+    - title: SI i uczenie maszynowe
       links:
-      - url: ./app-solutions/overview-patterns-solution-examples.md
-        text: Co to są przykłady wzorców i rozwiązań?
-      - url: ./app-solutions/overview-app-design-considerations.md
-        text: Zagadnienia dotyczące projektowania aplikacji
-    - title: Eksplorowanie wzorców aplikacji
+        - url: /azure/bot-service
+          itemType: overview
+          text: Usługa Azure Bot
+        - url: /azure/search/
+          itemType: overview
+          text: Azure Cognitive Search
+        - url: /azure/cognitive-services/
+          itemType: overview
+          text: Azure Cognitive Services
+        - url: /azure/machine-learning/
+          itemType: overview
+          text: Azure Machine Learning
+    - title: Containers
       links:
-      - url: ./app-solutions/pattern-cross-cloud-scale.md
-        text: Skalowanie między chmurami
-      - url: ./app-solutions/pattern-cicd-pipeline.md
-        text: Hybrydowa ciągła integracja/ciągłe wdrażanie w metodyce DevOps
-      - url: ./app-solutions/pattern-retail-footfall-detection.md
-        text: Wykrywanie osób odwiedzających sklep (sprzedaż detaliczna)
-      - url: ./app-solutions/pattern-geo-distributed.md
-        text: Aplikacja rozproszona geograficznie
-      - url: ./app-solutions/pattern-highly-available-kubernetes.md
-        text: Klaster Kubernetes o wysokiej dostępności
-    - title: Wdrażanie przykładów rozwiązań aplikacji
+        - url: /azure/azure-arc/kubernetes/
+          itemType: overview
+          text: Platforma Kubernetes z obsługą usługi Azure Arc (wersja zapoznawcza)
+        - url: /azure/container-instances/
+          itemType: overview
+          text: Azure Container Instances
+        - url: /azure/container-registry/
+          itemType: overview
+          text: Azure Container Registry
+        - url: /azure/aks/
+          itemType: overview
+          text: Usługi Azure Kubernetes Service na platformie Azure
+        - url: /azure-stack/user/azure-stack-kubernetes-aks-engine-overview
+          itemType: overview
+          text: Usługi Azure Kubernetes Service w infrastrukturze Azure Stack Hub
+        - url: /azure/docker/
+          itemType: overview
+          text: Rozwiązanie Docker na platformie Azure
+        - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
+          itemType: overview
+          text: Usługa IoT Edge na platformie Kubernetes
+    - title: baza danych
       links:
-      - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
-        text: Skalowanie między chmurami
-      - url: https://aka.ms/hybriddevopsdeploy
-        text: Hybrydowa ciągła integracja/ciągłe wdrażanie w metodyce DevOps
-      - url: ./app-solutions/solution-deployment-guide-retail-footfall-detection.md
-        text: Wykrywanie osób odwiedzających sklep (sprzedaż detaliczna)
-      - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
-        text: Aplikacja rozproszona geograficznie
-      - url: ./app-solutions/solution-deployment-guide-highly-available-kubernetes.md
-        text: Klaster Kubernetes o wysokiej dostępności
-  - title: Zasoby do oceny i szkolenia
-    items:
-    - title: Azure Stack
+        - url: /azure/azure-arc/data/overview
+          itemType: overview
+          text: Usługi danych z obsługą usługi Azure Arc (wersja zapoznawcza)
+        - url: /sql/sql-server/azure-arc/overview
+          itemType: overview
+          text: Program SQL Server z obsługą usługi Azure Arc (wersja zapoznawcza)
+        - url: /azure/azure-sql-edge/overview
+          itemType: overview
+          text: Azure SQL Edge (wersja zapoznawcza)
+    - title: Programowanie i integracja
       links:
-      - url: /azure-stack/asdk
-        text: Zestaw deweloperski usługi Azure Stack
-      - url: https://github.com/Azure/AzureStackHCI-EvalGuide
-        text: Przewodnik dotyczący oceny rozwiązania Azure Stack HCI
-      - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
-        text: Wprowadzenie do aplikacji hybrydowych usługi Azure Stack
-      - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
-        text: Dynamiczne skalowanie od infrastruktury Azure Stack Hub do platformy Azure
+        - url: /azure-stack/operator/azure-stack-app-service-overview
+          itemType: overview
+          text: Usługa App Service w infrastrukturze Azure Stack Hub
+        - url: /azure/app-service/app-service-hybrid-connections
+          itemType: overview
+          text: Połączenia hybrydowe usługi Azure App Service
+        - url: /azure/devops
+          itemType: overview
+          text: Usługa Azure DevOps na potrzeby ciągłej integracji/ciągłego wdrażania
+        - url: /azure/event-hubs/
+          itemType: overview
+          text: Azure Event Hubs
+        - url: /azure/azure-functions/
+          itemType: overview
+          text: Azure Functions
+        - url: /azure/iot-hub/
+          itemType: overview
+          text: Azure IoT Hub
+        - url: /azure/logic-apps/
+          itemType: overview
+          text: Azure Logic Apps
+        - url: /azure/azure-monitor/app/app-insights-overview
+          itemType: overview
+          text: Azure Monitor — Application Insights
+        - url: /azure/service-fabric/
+          itemType: overview
+          text: Azure Service Fabric
+        - url: /azure-stack/user/event-hubs-overview
+          itemType: overview
+          text: Usługa Event Hubs w infrastrukturze Azure Stack Hub
+        - url: /azure-stack/user/iot-hub-overview
+          itemType: overview
+          text: Usługa IoT Hub w infrastrukturze Azure Stack Hub (wersja zapoznawcza)
     - title: Edge
       links:
-      - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
-        text: Akcelerator rozwiązań analizy wideo przez sztuczną inteligencję w usłudze Azure IoT Edge
-      - url: https://labs.iotedge.dev/
-        text: Praktyczne laboratoria z usługi Azure IoT Edge
-      - url: https://www.azureiotsolutions.com/Accelerators
-        text: Akceleratory rozwiązań Azure IoT
-      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
-        text: Certyfikacja dla urządzeń usługi Azure IoT Edge
-    - title: Ogólne
-      links:
-      - url: /learn/modules/align-requirements-in-azure/
-        text: Dopasowywanie wymagań do typów chmury i modeli usług na platformie Azure
-      - url: /azure/architecture/browse/?azure_categories=hybrid
-        text: Architektury hybrydowe platformy Azure
-      - url: https://azure.microsoft.com/overview/azure-hybrid/
-        text: Możliwości pracy hybrydowej platformy Azure
-      - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
-        text: Wirtualne wydarzenie poświęcone użyciu hybrydowemu platformy Azure
-      - url: /azure/cloud-adoption-framework/scenarios/hybrid/scenario-overview
-        text: Środowisko wdrażania chmury — scenariusz hybrydowy i wielochmurowy
-      - url: /learn/modules/intro-to-azure-hybrid-services/
-        text: Wprowadzenie do usług chmury hybrydowej platformy Azure
-      - url: https://events.microsoft.com/
-        text: Wykaz zdarzeń firmy Microsoft
-      - url: /learn
-        text: Microsoft Learn
+        - url: /azure/databox-online/data-box-gateway-overview
+          itemType: overview
+          text: Azure Databox Gateway
+        - url: /azure/iot-edge/
+          itemType: overview
+          text: Azure IoT Edge
+        - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
+          itemType: overview
+          text: Usługa Azure IoT Edge na platformie Kubernetes
+        - url: /azure-sphere
+          itemType: overview
+          text: Azure Sphere
+        - url: /azure/databox-online/azure-stack-edge-overview
+          itemType: overview
+          text: Azure Stack Edge
+        - url: /azure/azure-sql-edge/overview
+          itemType: overview
+          text: Azure SQL Edge (wersja zapoznawcza)
+        - url: /windows/iot-core/
+          itemType: overview
+          text: System Windows dla Internetu rzeczy
     - title: Obsługa tożsamości i zabezpieczeń
       links:
-      - url: /learn/modules/azure-sentinel-deploy-configure/
-        text: Wdrażanie usługi Azure Sentinel i nawiązywanie połączenia ze źródłami danych
-      - url: /learn/modules/expose-hybrid-services-with-azure-relay/
-        text: Bezpieczne uwidacznianie usług hybrydowych za pomocą usługi Azure Relay
-      - url: /learn/modules/implement-manage-hybrid-identity/
-        text: Zaimplementuj tożsamość hybrydową i zarządzaj nią
-      - url: /learn/modules/implement-hybrid-identity-windows-server/
-        text: Implementowanie tożsamości hybrydowej przy użyciu systemu Windows Server
-      - url: /learn/modules/intro-to-azure-sentinel/
-        text: Wprowadzenie do usługi Azure Sentinel
-      - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
-        text: Monitorowanie i zabezpieczenia chmury hybrydowej systemu Windows Server oraz zarządzanie nią
+        - url: /azure/active-directory/hybrid/
+          itemType: overview
+          text: Tożsamość hybrydowa w usłudze Azure AD
+        - url: /azure/security-center/
+          itemType: overview
+          text: Azure Security Center
+        - url: /azure/sentinel/
+          itemType: overview
+          text: Usługa Azure Sentinel
+        - url: /azure/active-directory/devices/concept-azure-ad-join-hybrid
+          itemType: overview
+          text: Urządzenia dołączone hybrydowo do usługi Azure AD
     - title: Zarządzanie
       links:
-      - url: https://azurearcjumpstart.io/
-        text: Przewodniki do szybkiego rozpoczynania pracy z usługą Azure Arc
-      - url: /learn/browse/?terms=%22%20Arc%20%22
-        text: Usługa Azure Arc — informacje o modułach
-      - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
-        text: Opisywanie strategii wysokiej dostępności i odzyskiwania po awarii
-      - url: /learn/browse/?terms="disaster%20recovery"
-        text: Odzyskiwanie po awarii modułów — informacje
-      - url: /learn/browse/?terms="high%20availability"
-        text: Moduły uczenia wysokiej dostępności
-      - url: /learn/modules/intro-to-azure-arc/
-        text: Wprowadzenie do usługi Azure Arc
-      - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
-        text: Monitorowanie maszyn wirtualnych IaaS z systemem Windows Server i wystąpień hybrydowych
-      - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
-        text: Monitorowanie i zabezpieczenia chmury hybrydowej systemu Windows Server oraz zarządzanie nią
+        - url: /azure/azure-arc/data/overview
+          itemType: overview
+          text: Usługi danych z obsługą usługi Azure Arc (wersja zapoznawcza)
+        - url: /azure/azure-arc/kubernetes/
+          itemType: overview
+          text: Platforma Kubernetes z obsługą usługi Azure Arc (wersja zapoznawcza)
+        - url: /azure/azure-arc/servers
+          itemType: overview
+          text: Serwery z usługą Azure Arc
+        - url: /sql/sql-server/azure-arc/overview
+          itemType: overview
+          text: Program SQL Server z obsługą usługi Azure Arc (wersja zapoznawcza)
+        - url: /azure/automation/
+          itemType: overview
+          text: Azure Automation
+        - url: /azure/storage/files/
+          itemType: overview
+          text: Azure Files
+        - url: /azure/azure-monitor
+          itemType: overview
+          text: Azure Monitor
+        - url: /azure/site-recovery/
+          itemType: overview
+          text: Azure Site Recovery
+        - url: /azure-stack/hci/overview
+          itemType: overview
+          text: Możliwości pracy hybrydowej usługi Azure Stack HCI
+        - url: /windows-server/manage/windows-admin-center/azure/
+          itemType: overview
+          text: Usługi hybrydowe platformy Azure w usłudze Windows Admin Center
     - title: Networking
       links:
-      - url: /learn/modules/design-a-hybrid-network-architecture/
-        text: Projektowanie architektury sieci hybrydowej na platformie Azure
-      - url: /learn/modules/expose-hybrid-services-with-azure-relay/
-        text: Bezpieczne uwidacznianie usług hybrydowych za pomocą usługi Azure Relay
-      - url: /learn/modules/implement-hybrid-network-infrastructure/
-        text: Implementowanie hybrydowej infrastruktury sieciowej
+        - url: /azure/networking/edge-zones-overview
+          itemType: overview
+          text: Strefy usługi Azure Edge Zone
+        - url: /azure/expressroute/
+          itemType: overview
+          text: Azure ExpressRoute
+        - url: /azure/networking/azure-orbital-overview
+          itemType: overview
+          text: Azure Orbital (wersja zapoznawcza)
+        - url: /azure/load-balancer/
+          itemType: overview
+          text: Azure Load Balancer
+        - url: /azure/private-link/
+          itemType: overview
+          text: Link prywatny platformy Azure
+        - url: /azure/azure-relay/
+          itemType: overview
+          text: Azure Relay
+        - url: /azure/traffic-manager/
+          itemType: overview
+          text: Azure Traffic Manager
+        - url: /azure/virtual-network/
+          itemType: overview
+          text: Azure Virtual Network
+        - url: /azure/vpn-gateway/
+          itemType: overview
+          text: Azure VPN Gateway
     - title: Storage
       links:
-      - url: /learn/modules/implement-hybrid-file-server-infrastructure/
-        text: Implementowanie hybrydowej infrastruktury serwera plików
-      - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
-        text: Implementowanie hybrydowego tworzenia i odzyskiwania kopii zapasowych przy użyciu usługi IaaS i systemu Windows Server
-    - title: Windows Server
-      links:
-      - url: /learn/paths/implement-windows-server-hybrid-cloud-infrastructure/
-        text: Implementacja infrastruktury chmury hybrydowej systemu Windows Server
-      - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
-        text: Implementowanie hybrydowego tworzenia i odzyskiwania kopii zapasowych przy użyciu usługi IaaS i systemu Windows Server
-      - url: /learn/modules/implement-hybrid-identity-windows-server/
-        text: Implementowanie tożsamości hybrydowej przy użyciu systemu Windows Server
-      - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
-        text: Monitorowanie maszyn wirtualnych IaaS z systemem Windows Server i wystąpień hybrydowych
-      - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
-        text: Monitorowanie i zabezpieczenia chmury hybrydowej systemu Windows Server oraz zarządzanie nią
-  - title: Zasoby dodatkowe
-    items:
-    - title: Ogólne
-      links:
-      - url: https://azure.microsoft.com/blog/topics/hybrid/
-        text: Blog poświęcony hybrydowej platformie Azure
-      - url: https://azure.microsoft.com/overview/azure-hybrid/
-        text: Możliwości pracy hybrydowej platformy Azure
-      - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
-        text: Rozwiązania usługi Azure Stack Hub klientów
-      - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
-        text: Scenariusze chmury hybrydowej klientów
-    - title: Pomoc techniczna
-      links:
-      - url: https://azure.microsoft.com/support/options/
-        text: Pomoc techniczna platformy Azure
-      - url: https://feedback.azure.com/
-        text: Opinia w witrynie User Voice platformy Azure
-      - url: /answers/products/
-        text: Fora Microsoft Q&A
-      - url: https://stackoverflow.com/
-        text: Stack Overflow
-    - title: Szczegóły techniczne
-      links:
-      - url: /azure/developer/
-        text: Dokumentacja i narzędzia dla deweloperów platformy Azure
-      - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
-        text: Rozszerzenie Azure IoT Tools dla programu Visual Studio Code
-      - url: /samples/browse/
-        text: Przeglądarka przykładów kodu
-      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-        text: Zestaw Vision AI Developer Kit
-      - url: /visualstudio/azure/
-        text: Programowanie dla platformy Azure w programie Visual Studio
+        - url: /azure/avere-vfxt/avere-vfxt-overview
+          itemType: overview
+          text: Avere vFXT for Azure
+        - url: /azure/backup/
+          itemType: overview
+          text: Azure Backup
+        - url: /azure/storage/files/storage-files-introduction
+          itemType: overview
+          text: Azure Files
+        - url: /azure/site-recovery/
+          itemType: overview
+          text: Azure Site Recovery
+        - url: /azure/fxt-edge-filer/fxt-overview
+          itemType: overview
+          text: Azure FXT Edge Filer
+additionalContent:
+  sections:
+    - title: Rozwiązania hybrydowe i wielochmurowe
+      summary: Wskazówki i przykłady umożliwiające eksplorowanie oraz ponowne używanie w projektach hybrydowych i wielochmurowych.
+      items:
+        - title: Przykłady rozwiązań i wzorce aplikacji
+          links:
+            - url: ./app-solutions/overview-patterns-solution-examples.md
+              text: Co to są przykłady wzorców i rozwiązań?
+            - url: ./app-solutions/overview-app-design-considerations.md
+              text: Zagadnienia dotyczące projektowania aplikacji
+        - title: Eksplorowanie wzorców aplikacji
+          links:
+            - url: ./app-solutions/pattern-cross-cloud-scale.md
+              text: Skalowanie między chmurami
+            - url: ./app-solutions/pattern-cicd-pipeline.md
+              text: Hybrydowa ciągła integracja/ciągłe wdrażanie w metodyce DevOps
+            - url: ./app-solutions/pattern-retail-footfall-detection.md
+              text: Wykrywanie osób odwiedzających sklep (sprzedaż detaliczna)
+            - url: ./app-solutions/pattern-geo-distributed.md
+              text: Aplikacja rozproszona geograficznie
+            - url: ./app-solutions/pattern-highly-available-kubernetes.md
+              text: Klaster Kubernetes o wysokiej dostępności
+        - title: Wdrażanie przykładów rozwiązań aplikacji
+          links:
+            - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
+              text: Skalowanie między chmurami
+            - url: 'https://aka.ms/hybriddevopsdeploy'
+              text: Hybrydowa ciągła integracja/ciągłe wdrażanie w metodyce DevOps
+            - url: ./app-solutions/solution-deployment-guide-retail-footfall-detection.md
+              text: Wykrywanie osób odwiedzających sklep (sprzedaż detaliczna)
+            - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
+              text: Aplikacja rozproszona geograficznie
+            - url: ./app-solutions/solution-deployment-guide-highly-available-kubernetes.md
+              text: Klaster Kubernetes o wysokiej dostępności
+    - title: Zasoby do oceny i szkolenia
+      items:
+        - title: Azure Stack
+          links:
+            - url: /azure-stack/asdk
+              text: Zestaw deweloperski usługi Azure Stack
+            - url: 'https://github.com/Azure/AzureStackHCI-EvalGuide'
+              text: Przewodnik dotyczący oceny rozwiązania Azure Stack HCI
+            - url: 'https://www.youtube.com/watch?v=to8D7Xl9SU8'
+              text: Wprowadzenie do aplikacji hybrydowych usługi Azure Stack
+            - url: 'https://www.youtube.com/watch?v=2lw8zOpJTn0'
+              text: Dynamiczne skalowanie od infrastruktury Azure Stack Hub do platformy Azure
+        - title: Edge
+          links:
+            - url: 'https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator'
+              text: Akcelerator rozwiązań analizy wideo przez sztuczną inteligencję w usłudze Azure IoT Edge
+            - url: 'https://labs.iotedge.dev/'
+              text: Praktyczne laboratoria z usługi Azure IoT Edge
+            - url: 'https://www.azureiotsolutions.com/Accelerators'
+              text: Akceleratory rozwiązań Azure IoT
+            - url: 'https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}'
+              text: Certyfikacja dla urządzeń usługi Azure IoT Edge
+        - title: Ogólne
+          links:
+            - url: /learn/modules/align-requirements-in-azure/
+              text: Dopasowywanie wymagań do typów chmury i modeli usług na platformie Azure
+            - url: /azure/architecture/browse/?azure_categories=hybrid
+              text: Architektury hybrydowe platformy Azure
+            - url: 'https://azure.microsoft.com/overview/azure-hybrid/'
+              text: Możliwości pracy hybrydowej platformy Azure
+            - url: 'https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf'
+              text: Wirtualne wydarzenie poświęcone użyciu hybrydowemu platformy Azure
+            - url: /azure/cloud-adoption-framework/scenarios/hybrid/scenario-overview
+              text: Cloud Adoption Framework — scenariusz hybrydowy i wielochmurowy
+            - url: /learn/modules/intro-to-azure-hybrid-services/
+              text: Wprowadzenie do usług chmury hybrydowej platformy Azure
+            - url: 'https://events.microsoft.com/'
+              text: Katalog zdarzeń firmy Microsoft
+            - url: /learn
+              text: Microsoft Learn
+        - title: Obsługa tożsamości i zabezpieczeń
+          links:
+            - url: /learn/modules/azure-sentinel-deploy-configure/
+              text: Wdrażanie usługi Azure Sentinel i nawiązywanie połączenia ze źródłami danych
+            - url: /learn/modules/expose-hybrid-services-with-azure-relay/
+              text: Bezpieczne uwidacznianie usług hybrydowych za pomocą usługi Azure Relay
+            - url: /learn/modules/implement-manage-hybrid-identity/
+              text: Implementowanie tożsamości hybrydowej i zarządzanie nimi
+            - url: /learn/modules/implement-hybrid-identity-windows-server/
+              text: Implementowanie tożsamości hybrydowej przy użyciu systemu Windows Server
+            - url: /learn/modules/intro-to-azure-sentinel/
+              text: Wprowadzenie do usługi Azure Sentinel
+            - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+              text: Monitorowanie i zabezpieczenia chmury hybrydowej systemu Windows Server oraz zarządzanie nią
+        - title: Zarządzanie
+          links:
+            - url: 'https://azurearcjumpstart.io/'
+              text: Przewodniki do szybkiego rozpoczynania pracy z usługą Azure Arc
+            - url: /learn/browse/?terms=%22%20Arc%20%22
+              text: Azure Arc learn
+            - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
+              text: Opis strategii wysokiej dostępności i odzyskiwania po awarii
+            - url: /learn/browse/?terms="disaster%20recovery"
+              text: Moduły learn odzyskiwania po awarii
+            - url: /learn/browse/?terms="high%20availability"
+              text: Moduły Learn o wysokiej dostępności
+            - url: /learn/modules/intro-to-azure-arc/
+              text: Wprowadzenie do usługi Azure Arc
+            - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
+              text: Monitorowanie maszyn wirtualnych IaaS z systemem Windows Server i wystąpień hybrydowych
+            - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+              text: Monitorowanie i zabezpieczenia chmury hybrydowej systemu Windows Server oraz zarządzanie nią
+        - title: Networking
+          links:
+            - url: /learn/modules/design-a-hybrid-network-architecture/
+              text: Projektowanie architektury sieci hybrydowej na platformie Azure
+            - url: /learn/modules/expose-hybrid-services-with-azure-relay/
+              text: Bezpieczne uwidacznianie usług hybrydowych za pomocą usługi Azure Relay
+            - url: /learn/modules/implement-hybrid-network-infrastructure/
+              text: Implementowanie hybrydowej infrastruktury sieciowej
+        - title: Storage
+          links:
+            - url: /learn/modules/implement-hybrid-file-server-infrastructure/
+              text: Implementowanie hybrydowej infrastruktury serwera plików
+            - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
+              text: Implementowanie hybrydowego tworzenia i odzyskiwania kopii zapasowych przy użyciu usługi IaaS i systemu Windows Server
+        - title: Windows Server
+          links:
+            - url: /learn/paths/implement-windows-server-hybrid-cloud-infrastructure/
+              text: Implementacja infrastruktury chmury hybrydowej systemu Windows Server
+            - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
+              text: Implementowanie hybrydowego tworzenia i odzyskiwania kopii zapasowych przy użyciu usługi IaaS i systemu Windows Server
+            - url: /learn/modules/implement-hybrid-identity-windows-server/
+              text: Implementowanie tożsamości hybrydowej przy użyciu systemu Windows Server
+            - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
+              text: Monitorowanie maszyn wirtualnych IaaS z systemem Windows Server i wystąpień hybrydowych
+            - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+              text: Monitorowanie i zabezpieczenia chmury hybrydowej systemu Windows Server oraz zarządzanie nią
+    - title: Zasoby dodatkowe
+      items:
+        - title: Ogólne
+          links:
+            - url: 'https://azure.microsoft.com/blog/topics/hybrid/'
+              text: Blog poświęcony hybrydowej platformie Azure
+            - url: 'https://azure.microsoft.com/overview/azure-hybrid/'
+              text: Możliwości pracy hybrydowej platformy Azure
+            - url: 'https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22'
+              text: Rozwiązania usługi Azure Stack Hub klientów
+            - url: 'https://customers.microsoft.com/en-us/search?sq="hybrid cloud"'
+              text: Scenariusze chmury hybrydowej klientów
+        - title: Pomoc techniczna
+          links:
+            - url: 'https://azure.microsoft.com/support/options/'
+              text: Pomoc techniczna platformy Azure
+            - url: 'https://feedback.azure.com/'
+              text: Opinia w witrynie User Voice platformy Azure
+            - url: /answers/products/
+              text: Fora Microsoft Q&A
+            - url: 'https://stackoverflow.com/'
+              text: Stack Overflow
+        - title: Szczegóły techniczne
+          links:
+            - url: /azure/developer/
+              text: Dokumentacja i narzędzia dla deweloperów platformy Azure
+            - url: 'https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools'
+              text: Rozszerzenie Azure IoT Tools dla programu Visual Studio Code
+            - url: /samples/browse/
+              text: Przeglądarka przykładów kodu
+            - url: 'https://azure.github.io/Vision-AI-DevKit-Pages/'
+              text: Zestaw Vision AI Developer Kit
+            - url: /visualstudio/azure/
+              text: Programowanie dla platformy Azure w programie Visual Studio
