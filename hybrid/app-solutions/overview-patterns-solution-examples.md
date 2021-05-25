@@ -1,52 +1,52 @@
 ---
-title: Wzorce hybrydowe i przykłady rozwiązań dla platformy Azure i centrum Azure Stack
-description: Omówienie wzorców hybrydowych i przykładów rozwiązań służących do uczenia się i tworzenia rozwiązań hybrydowych na platformie Azure i Azure Stack centrum.
+title: Wzorce hybrydowe i przykłady rozwiązań dla platformy Azure i Azure Stack Hub
+description: Omówienie hybrydowych wzorców i przykładów rozwiązań do uczenia się i tworzenia rozwiązań hybrydowych na platformie Azure i Azure Stack Hub.
 author: BryanLa
 ms.topic: overview
-ms.date: 11/05/2019
+ms.date: 05/24/2021
 ms.author: bryanla
 ms.reviewer: anajod
-ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 4f86e5ae4b8b9bd7693617b07419b67dfcf05dc1
-ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.lastreviewed: 05/24/2021
+ms.openlocfilehash: 9f3f13c23bec31c5132c7e90294356b9463fd72b
+ms.sourcegitcommit: cf2c4033d1b169f5b63980ce1865281366905e2e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104895316"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110343862"
 ---
-# <a name="hybrid-patterns-and-solution-examples-for-azure-and-azure-stack"></a>Wzorce hybrydowe i przykłady rozwiązań dla platformy Azure i Azure Stack
+# <a name="hybrid-solution-patterns-and-examples-for-azure-and-azure-stack"></a>Wzorce i przykłady rozwiązań hybrydowych dla platformy Azure i Azure Stack
 
-Firma Microsoft udostępnia produkty i rozwiązania platformy Azure i Azure Stack jako jeden spójny ekosystem platformy Azure. Rodzina Microsoft Azure Stack to rozszerzenie platformy Azure.
+Firma Microsoft udostępnia platformę Azure Azure Stack i rozwiązania jako jeden spójny ekosystem platformy Azure. Rodzina Microsoft Azure Stack to rozszerzenie platformy Azure.
 
 ## <a name="the-hybrid-cloud-and-hybrid-apps"></a>Chmura hybrydowa i aplikacje hybrydowe
 
-Azure Stack zapewnia elastyczność obliczeń w chmurze w środowisku lokalnym i na krawędzi przez włączenie *chmury hybrydowej*. Azure Stack Hub, Azure Stack HCL i Azure Stack Edge rozszerzenie platformy Azure z chmury do swoich suwerennych centrów danych, biur oddziałów, pól i poza nią. Dzięki temu różnorodnemu zestawowi możliwości można:
+Azure Stack zapewnia elastyczność przetwarzania w chmurze w środowisku lokalnym i na brzegu sieci, włączając *chmurę hybrydową.* Azure Stack Hub, Azure Stack HCI i Azure Stack Edge platformy Azure z chmury na suwerenne centra danych, oddziały, pola i nie tylko. Ten zróżnicowany zestaw możliwości umożliwia:
 
-- Używaj ponownie kodu i Uruchamiaj aplikacje natywne w chmurze na platformie Azure i w środowiskach lokalnych.
-- Uruchamiaj tradycyjne Zwirtualizowane obciążenia z opcjonalnymi połączeniami z usługami platformy Azure.
-- Przenieś dane do chmury lub Zachowaj je w suwerennym centrum danych, aby zachować zgodność.
-- Uruchamiaj przyspieszane sprzętowo Uczenie maszynowe, kontenery lub zwirtualizowane obciążenia, a wszystko to w inteligentnej krawędzi.
+- Ponowne używanie kodu i spójne uruchamianie aplikacji natywnych dla chmury na platformie Azure i w środowiskach lokalnych.
+- Uruchamiaj tradycyjne zwirtualizowane obciążenia z opcjonalnymi połączeniami z usługami platformy Azure.
+- Przesyłaj dane do chmury lub przechowuj je w suwerennych centrach danych, aby zachować zgodność.
+- Uruchamiaj sprzętowo przyspieszone obciążenia uczenia maszynowego, konteneryzowane lub zwirtualizowane na inteligentnych urządzeniach brzegowych.
 
-Aplikacje obejmujące chmury są również nazywane *aplikacjami hybrydowymi*. Możesz tworzyć hybrydowe aplikacje w chmurze na platformie Azure i wdrażać je w połączonym lub rozłączonym centrum danych znajdującym się w dowolnym miejscu.
+Aplikacje obejmujące chmury są również nazywane aplikacjami *hybrydowymi.* Możesz tworzyć hybrydowe aplikacje w chmurze na platformie Azure i wdrażać je w połączonym lub odłączonym centrum danych, które znajduje się w dowolnym miejscu.
 
-Scenariusze aplikacji hybrydowych różnią się w zależności od zasobów, które są dostępne do programowania. Obejmują one również kwestie, takie jak Geografia, zabezpieczenia, dostęp do Internetu i inne. Chociaż opisane tutaj wzorce i rozwiązania mogą nie dotyczyć wszystkich wymagań, udostępniają wskazówki i przykłady umożliwiające eksplorowanie i ponowne użycie podczas implementowania rozwiązań hybrydowych.
+Scenariusze aplikacji hybrydowych różnią się znacznie w zależności od zasobów dostępnych do tworzenia. Obejmują one również zagadnienia, takie jak lokalizacja geograficzna, zabezpieczenia, dostęp do Internetu i inne. Chociaż opisane tutaj wzorce i przykłady rozwiązań mogą nie spełniać wszystkich wymagań, zawierają wskazówki i przykłady do zbadania i ponownego użycia podczas wdrażania rozwiązań hybrydowych.
 
-## <a name="design-patterns"></a>Wzorce projektowe
+## <a name="solution-patterns"></a>Wzorce rozwiązań
 
-Wzorce projektowe wycofane wskazówki dotyczące projektowania, które zostały uogólnione z rzeczywistymi scenariuszami i środowiskami klientów. Wzorzec jest abstrakcyjny, co pozwala na zastosowanie go do różnych typów scenariuszy lub branż w pionie. Każdy wzorzec dokumentuje kontekst i problem i zawiera omówienie przykładu rozwiązania. Przykładem rozwiązania jest to możliwa implementacja wzorca.
+Wzorce rozwiązań są nakierowane na uogólnione, powtarzalne wskazówki dotyczące projektowania z rzeczywistych scenariuszy i doświadczeń klientów. Wzorzec jest abstrakcyjny, co pozwala na zastosowanie go do różnych typów scenariuszy lub branż pionowych. Każdy wzorzec dokumentuje kontekst i problem oraz zawiera omówienie przykładowego rozwiązania. Przykład rozwiązania jest przeznaczony jako możliwa implementacja wzorca.
 
-Istnieją dwa typy artykułów wzorca:
+Istnieją dwa typy artykułów dotyczących wzorców:
 
-- Pojedynczy wzorzec: zawiera wskazówki dotyczące projektowania dla jednego scenariusza ogólnego przeznaczenia.
-- Wiele wzorców: zawiera wskazówki dotyczące projektowania, w których używane są aplikacje wielu wzorców. Ten wzorzec jest często wymagany do rozwiązywania bardziej złożonych scenariuszy lub problemów specyficznych dla branż.
+- Pojedynczy wzorzec: zawiera wskazówki dotyczące projektowania dla pojedynczego scenariusza ogólnego przeznaczenia.
+- Wiele wzorców: zawiera wskazówki dotyczące projektowania, w których jest używane zastosowanie wielu wzorców. Ten wzorzec jest często wymagany do rozwiązywania bardziej złożonych scenariuszy lub problemów branżowych.
 
 ## <a name="solution-deployment-guides"></a>Przewodniki wdrażania rozwiązania
 
-Wskazówki krok po kroku ułatwiają wdrożenie przykładowego rozwiązania. Przewodnik może również odnosić się do przykładowego kodu pomocnika, który jest przechowywany w [przykładowym repozytorium rozwiązań](https://github.com/Azure-Samples/azure-intelligent-edge-patterns)usługi GitHub.
+Przewodniki krok po kroku dotyczące wdrażania pomagają we wdrażaniu przykładowego rozwiązania. Przewodnik może również odwoływać się do przykładowego kodu towarzyszącego przechowywanego w repozytorium [przykładowych](https://github.com/Azure-Samples/azure-intelligent-edge-patterns)rozwiązań Usługi GitHub.
 
 ## <a name="next-steps"></a>Następne kroki
 
-- Zapoznaj się z [rodziną Azure Stack produktów i rozwiązań](/azure-stack) , aby dowiedzieć się więcej o całym portfolio produktów i rozwiązań.
-- Zapoznaj się z sekcją "wzorce" i "przewodniki wdrażania rozwiązania" spisu treści, aby dowiedzieć się więcej o każdej z nich.
-- Przeczytaj o [zagadnieniach dotyczących projektowania aplikacji hybrydowych](overview-app-design-considerations.md) , aby przejrzeć filary jakości oprogramowania do projektowania, wdrażania i obsługi aplikacji hybrydowych.
-- [Skonfiguruj środowisko programistyczne na Azure Stack](/azure-stack/user/azure-stack-dev-start) i [Wdróż swoją pierwszą aplikację](/azure-stack/user/azure-stack-dev-start-deploy-app) na Azure Stack.
+- Zobacz Azure Stack [produktów i rozwiązań,](/azure-stack) aby dowiedzieć się więcej o całym portfolio produktów i rozwiązań.
+- Zapoznaj się z sekcjami "Patterns" (Wzorce) i "Solution deployment guides" (Przewodniki wdrażania rozwiązań) w owym przewodniku, aby dowiedzieć się więcej o każdym z nich.
+- Przeczytaj o [zagadnieniach dotyczących projektowania aplikacji hybrydowych,](overview-app-design-considerations.md) aby zapoznać się z filarami jakości oprogramowania w zakresie projektowania, wdrażania i obsługi aplikacji hybrydowych.
+- [Skonfiguruj środowisko projektowe na komputerze Azure Stack](/azure-stack/user/azure-stack-dev-start) i [wd wdrażaj pierwszą aplikację na](/azure-stack/user/azure-stack-dev-start-deploy-app) Azure Stack.
