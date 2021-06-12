@@ -9,14 +9,14 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 03/09/2021
+  ms.date: 06/11/2021
   ms.custom: e2e-hybrid
 highlightedContent:
   items:
     - title: 'Kompilacja 2021: sesje hybrydowe'
       itemType: video
       url: 'https://mybuild.microsoft.com/sessions?t={"from":"2021-05-25T00:00:00-07:00","to":"2021-05-27T23:59:00-07:00"}&q=hybrid'
-    - title: 'Kompilacja 2021: sesje arc'
+    - title: 'Build 2021: Sesje arc'
       itemType: video
       url: 'https://mybuild.microsoft.com/sessions?t={"from":"2021-05-25T00:00:00-07:00","to":"2021-05-27T23:59:00-07:00"}&q=" Arc "'
     - title: 'Ignite 2021: Sesje hybrydowe'
@@ -319,6 +319,20 @@ additionalContent:
               text: Dynamiczne skalowanie od infrastruktury Azure Stack Hub do platformy Azure
             - url: 'https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030'
               text: Co nowego dla Azure Stack HCI
+        - title: Programowanie i integracja
+          links:
+            - url: 'https://www.youtube.com/watch?v=to8D7Xl9SU8'
+              text: Wprowadzenie do aplikacji hybrydowych usługi Azure Stack
+            - url: 'https://mybuild.microsoft.com/sessions/2debfc2e-f0b3-4adf-bcec-d126930f806f'
+              text: Tworzenie aplikacji natywnych dla chmury działających w dowolnym miejscu
+            - url: 'https://mybuild.microsoft.com/sessions/9f56bc10-30bd-42e2-afc8-b61b22260c49'
+              text: Tworzenie spójnych aplikacji hybrydowych i wielochmurowych za Azure Arc (zapytaj ekspertów)
+            - url: 'https://www.youtube.com/watch?v=2lw8zOpJTn0'
+              text: Dynamiczne skalowanie od infrastruktury Azure Stack Hub do platformy Azure
+            - url: 'https://mybuild.microsoft.com/sessions/92bd3e12-fbf4-4278-b68f-fe776b02adfa'
+              text: Logic Apps — powering the future of Integration (Powering the future of Integration )
+            - url: 'https://mybuild.microsoft.com/sessions/76ebac39-517d-44da-a58e-df4193b5efa9'
+              text: Przyszłość nowoczesnego tworzenia aplikacji za pomocą programu .NET
         - title: Edge
           links:
             - url: 'https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator'
