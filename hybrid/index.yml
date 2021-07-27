@@ -9,14 +9,20 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 06/11/2021
+  ms.date: 07/23/2021
   ms.custom: e2e-hybrid
 highlightedContent:
   items:
+    - title: 'Inspire 2021: Sesje hybrydowe'
+      itemType: video
+      url: 'https://myinspire.microsoft.com/sessions?q=hybrid&f=%255B%257B%2522name%2522%253A%2522Azure%255CtAzure%2522%252C%2522facetName%2522%253A%2522solutionArea%2522%257D%255D&s=%257B%2522name%2522%253A%2522translate.refine.label.sort.relevance%2522%252C%2522type%2522%253A0%257D&t=%257B%2522from%2522%253A%25222021-07-14T00%253A00%253A00-07%253A00%2522%252C%2522to%2522%253A%25222021-07-16T23%253A59%253A00-07%253A00%2522%257D'
+    - title: 'Inspire 2021: Sesje Arc'
+      itemType: video
+      url: 'https://myinspire.microsoft.com/sessions?q=%2522%2520arc%2520%2522&f=%255B%257B%2522name%2522%253A%2522Azure%255CtAzure%2522%252C%2522facetName%2522%253A%2522solutionArea%2522%257D%255D&s=%257B%2522name%2522%253A%2522translate.refine.label.sort.relevance%2522%252C%2522type%2522%253A0%257D&t=%257B%2522from%2522%253A%25222021-07-14T00%253A00%253A00-07%253A00%2522%252C%2522to%2522%253A%25222021-07-16T23%253A59%253A00-07%253A00%2522%257D'
     - title: 'Kompilacja 2021: sesje hybrydowe'
       itemType: video
       url: 'https://mybuild.microsoft.com/sessions?t={"from":"2021-05-25T00:00:00-07:00","to":"2021-05-27T23:59:00-07:00"}&q=hybrid'
-    - title: 'Build 2021: Sesje arc'
+    - title: 'Kompilacja 2021: sesje arc'
       itemType: video
       url: 'https://mybuild.microsoft.com/sessions?t={"from":"2021-05-25T00:00:00-07:00","to":"2021-05-27T23:59:00-07:00"}&q=" Arc "'
     - title: 'Ignite 2021: Sesje hybrydowe'
@@ -25,18 +31,12 @@ highlightedContent:
     - title: 'Ignite 2021: Azure Arc sesji'
       itemType: video
       url: 'https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=" Arc "'
-    - title: 'Ignite 2021: Sesje z konferencji Edge aI'
+    - title: 'Ignite 2021: Sesje edge AI'
       itemType: video
       url: 'https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=" AI edge"'
     - title: Tworzenie nowoczesnych aplikacji hybrydowych za pomocą Azure Arc i Azure Stack
       itemType: video
       url: 'https://channel9.msdn.com/Shows/Azure-Friday/Building-modern-hybrid-applications-with-Azure-Arc-and-Azure-Stack'
-    - title: 'Rozmowy dotyczące operacyjno-it: wszystko hybrydowe (z udziałem Marka Russinovicha)'
-      itemType: video
-      url: 'https://techcommunity.microsoft.com/t5/itops-talk-blog/bg-p/ITOpsTalkBlog/label-name/ITOps%20Talks?WT.mc_modinfra-12531-socuff'
-    - title: Wprowadzenie do usługi Azure Modular Datacenter
-      itemType: video
-      url: 'https://azure.microsoft.com/resources/videos/azure-modular-datacenter/'
 productDirectory:
   title: Hybrydowa i wielochmurowa platforma Azure
   summary: Platformy służące do tworzenia oraz obsługi rozwiązań hybrydowych i wielochmurowych.
@@ -317,7 +317,9 @@ additionalContent:
               text: Wprowadzenie do aplikacji hybrydowych usługi Azure Stack
             - url: 'https://www.youtube.com/watch?v=2lw8zOpJTn0'
               text: Dynamiczne skalowanie od infrastruktury Azure Stack Hub do platformy Azure
-            - url: 'https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030'
+            - url: 'https://azure.microsoft.com/resources/videos/azure-modular-datacenter/'
+              text: Wprowadzenie do usługi Azure Modular Datacenter
+            - url: 'https://www.youtube.com/watch?v=DPG7wGhh3sA'
               text: Co nowego dla Azure Stack HCI
         - title: Programowanie i integracja
           links:
@@ -332,7 +334,7 @@ additionalContent:
             - url: 'https://mybuild.microsoft.com/sessions/92bd3e12-fbf4-4278-b68f-fe776b02adfa'
               text: Logic Apps — powering the future of Integration (Powering the future of Integration )
             - url: 'https://mybuild.microsoft.com/sessions/76ebac39-517d-44da-a58e-df4193b5efa9'
-              text: Przyszłość nowoczesnego tworzenia aplikacji za pomocą programu .NET
+              text: Przyszłość nowoczesnego tworzenia aplikacji za pomocą platformy .NET
         - title: Edge
           links:
             - url: 'https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator'
@@ -357,8 +359,10 @@ additionalContent:
               text: Cloud Adoption Framework — scenariusz hybrydowy i wielochmurowy
             - url: /learn/modules/intro-to-azure-hybrid-services/
               text: Wprowadzenie do usług chmury hybrydowej platformy Azure
+            - url: 'https://techcommunity.microsoft.com/t5/itops-talk-blog/bg-p/ITOpsTalkBlog/label-name/ITOps%20Talks?WT.mc_modinfra-12531-socuff'
+              text: Rozmowy dotyczące operacyjną it — wszystko hybrydowe (z udziałem Marka Russinovicha)
             - url: 'https://events.microsoft.com/'
-              text: Katalog zdarzeń firmy Microsoft
+              text: Zdarzenia Microsoft Katalog
             - url: /learn
               text: Microsoft Learn
         - title: Obsługa tożsamości i zabezpieczeń
