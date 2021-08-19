@@ -33,29 +33,29 @@
 - name: Przewodniki wdrażania rozwiązania
   items:
     - name: Skalowanie między chmurami
-      href: solution-deployment-guide-cross-cloud-scaling.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
     - name: Skalowanie między chmurami (dane lokalne)
-      href: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data
     - name: Hybrydowa ciągła integracja/ciągłe wdrażanie w metodyce DevOps
       href: 'https://aka.ms/hybriddevopsdeploy'
     - name: Wykrywanie osób odwiedzających sklep (sprzedaż detaliczna)
-      href: solution-deployment-guide-retail-footfall-detection.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
     - name: Aplikacja rozproszona geograficznie
-      href: solution-deployment-guide-geo-distributed.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed
     - name: Klaster Kubernetes o wysokiej dostępności
-      href: solution-deployment-guide-highly-available-kubernetes.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes
     - name: Łączność hybrydowa
-      href: solution-deployment-guide-connectivity.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-connectivity
     - name: Tożsamość hybrydowa
-      href: solution-deployment-guide-identity.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-identity
     - name: Przekaźnik hybrydowy
       href: 'https://aka.ms/hybridrelaydeployment'
     - name: Dane warstwowe
       href: 'https://aka.ms/tiereddatadeploy'
     - name: Baza danych MongoDB o wysokiej dostępności
-      href: solution-deployment-guide-mongodb-ha.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-mongodb-ha
     - name: Serwer SQL Server 2016 o wysokiej dostępności
-      href: solution-deployment-guide-sql-ha.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-sql-ha
     - name: Braki magazynowe na urządzeniu brzegowym
       href: 'https://aka.ms/edgeinferencingdeploy'
     - name: Trenowanie modeli uczenia maszynowego na urządzeniu brzegowym

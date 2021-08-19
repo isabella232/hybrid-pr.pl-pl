@@ -295,15 +295,15 @@ additionalContent:
               text: Klaster Kubernetes o wysokiej dostępności
         - title: Wdrażanie przykładów rozwiązań aplikacji
           links:
-            - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
               text: Skalowanie między chmurami
             - url: 'https://aka.ms/hybriddevopsdeploy'
               text: Hybrydowa ciągła integracja/ciągłe wdrażanie w metodyce DevOps
-            - url: ./app-solutions/solution-deployment-guide-retail-footfall-detection.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
               text: Wykrywanie osób odwiedzających sklep (sprzedaż detaliczna)
-            - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed
               text: Aplikacja rozproszona geograficznie
-            - url: ./app-solutions/solution-deployment-guide-highly-available-kubernetes.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes
               text: Klaster Kubernetes o wysokiej dostępności
     - title: Zasoby do oceny i szkolenia
       items:
@@ -320,7 +320,7 @@ additionalContent:
             - url: 'https://azure.microsoft.com/resources/videos/azure-modular-datacenter/'
               text: Wprowadzenie do usługi Azure Modular Datacenter
             - url: 'https://www.youtube.com/watch?v=DPG7wGhh3sA'
-              text: Co nowego dla Azure Stack HCI
+              text: Co nowego w programie Azure Stack HCI
         - title: Programowanie i integracja
           links:
             - url: 'https://www.youtube.com/watch?v=to8D7Xl9SU8'
@@ -360,7 +360,7 @@ additionalContent:
             - url: /learn/modules/intro-to-azure-hybrid-services/
               text: Wprowadzenie do usług chmury hybrydowej platformy Azure
             - url: 'https://techcommunity.microsoft.com/t5/itops-talk-blog/bg-p/ITOpsTalkBlog/label-name/ITOps%20Talks?WT.mc_modinfra-12531-socuff'
-              text: Rozmowy dotyczące operacyjną it — wszystko hybrydowe (z udziałem Marka Russinovicha)
+              text: Rozmowy z operacyjną operacyjną erą IT — wszystko hybrydowe (z udziałem Marka Russinovicha)
             - url: 'https://events.microsoft.com/'
               text: Zdarzenia Microsoft Katalog
             - url: /learn
